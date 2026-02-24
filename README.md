@@ -10,7 +10,6 @@
 
 **SudoChem** is my **experimental repo** — the digital sandbox where I blend chemical engineering, computation, and curiosity.
 
-While [`CollegeCodebase`](https://github.com/mridun-gupta/CollegeCodebase) is the structured, academic archive — this is the **after-hours lab**.
 Expect creative hacks, original scripts, idea dumps, failed simulations, and maybe the next big thing.
 
 ---
@@ -64,7 +63,6 @@ As long as you:
 - 💼 [LinkedIn](https://www.linkedin.com/in/mridungupta)
 - 🔗 [GitHub](http://github.com/mridun-gupta)
 - ✉️ gmridun@gmail.com | admin@mridungupta.eu.org
-- 🧪 Also see: [`CollegeCodebase`](https://github.com/mridun-gupta/CollegeCodebase) — the academic twin.
 
 ---
 

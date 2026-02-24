@@ -1,7 +1,6 @@
 ## 📁 About This Folder
 
-This section of the `SudoChem` repository archives **all graded assignment Jupyter notebooks** — built during *Semester 2* under the *Engineering Applications of Digital Computers* course of the**Integrated Masters of Technology in Chemical Technology** program at **Institute of Chemical Technology, Mumbai – Marathwada Campus, Jalna (MarJ, in short)**.
-
+This section of the `SudoChem` repository archives **all graded assignment Jupyter notebooks**
 These aren’t just submissions. They’re **numerical explorations**, **ODE/PDE experiments**, and **Excel-powered insights** — built with Python, logic, and just enough caffeine.
 
 > 📌 For non-assignment practice notebooks, check the [`notebooks/`](../notebooks/) folder.
@@ -21,8 +20,6 @@ These aren’t just submissions. They’re **numerical explorations**, **ODE/PDE
 - 🛠️ **Tools:** `matplotlib`, `random`
 - ✅ **Skills Gained:** Input/output handling, control structures, basic data visualization
 
----
-
 ### `Assignment 2: ODE Solvers (Runge-Kutta)`
 
 - 🧾 **Topics:** RK2 (Heun & Midpoint), Classical RK4, Custom RK4
@@ -31,8 +28,6 @@ These aren’t just submissions. They’re **numerical explorations**, **ODE/PDE
 - 📊 **Outputs:** Tables of `x, y, k1, k2…` and solution plots
 - 🛠️ **Tools:** `numpy`, `matplotlib`
 - ✅ **Skills Gained:** Precision control, iterative thinking, RK method trade-offs
-
----
 
 ### `Assignment 3: Wave Equation (FDM)`
 
@@ -43,8 +38,6 @@ These aren’t just submissions. They’re **numerical explorations**, **ODE/PDE
 - 📊 **Outputs:** Tabulated `u(x,t)` values at discrete points
 - 🛠️ **Tools:** `numpy`, `pandas`
 - ✅ **Skills Gained:** Discretization, PDE solvers, tabular data management
-
----
 
 ### `Assignment 4: Heat Equation (Crank-Nicolson)`
 
@@ -58,8 +51,6 @@ These aren’t just submissions. They’re **numerical explorations**, **ODE/PDE
 - 🛠️ **Tools:** `numpy`, `matplotlib`, `pandas`
 - ✅ **Skills Gained:** Stability-focused PDE solving, 3D plotting, matrix systems
 
----
-
 ### `Assignment 5: Advanced Methods & Visualization`
 
 - 🧾 **Topics:**
@@ -70,8 +61,6 @@ These aren’t just submissions. They’re **numerical explorations**, **ODE/PDE
 - 📊 **Outputs:** Tables, plots, and rotating surface animations
 - 🛠️ **Tools:** `tabulate`, `numpy`, `matplotlib`
 - ✅ **Skills Gained:** Scientific computing, equation modeling, dynamic plotting
-
----
 
 ## `Excel Assignments`
 
@@ -99,7 +88,7 @@ These aren’t just submissions. They’re **numerical explorations**, **ODE/PDE
 
 ---
 
-## 🎓 Academic Reflection
+## 🎓 Academic Portfolio Reflection
 
 These assignments reflect a hands-on journey through:
 
@@ -109,6 +98,10 @@ These assignments reflect a hands-on journey through:
 - 📈 Visualization that makes math visible
 
 > This isn’t just coursework. It’s a coded chronicle of problem-solving, debugging, and growing one loop at a time.
+
+---
+
+> Part of [**SudoChem**](https://github.com/mridun-gupta/SudoChem) — Experimental Code Lab for Chemical Engineering
 
 ---
 

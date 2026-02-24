@@ -1,8 +1,6 @@
 ## 📁 About This Folder
 
-This section of the [`SudoChem`](https://github.com/mridun-gupta/SudoChem) repo documents the **non-assignment Jupyter notebooks** — built during *Semester 2* under the *Engineering Applications of Digital Computers* course of the**Integrated Masters of Technology in Chemical Technology** program at **Institute of Chemical Technology, Mumbai – Marathwada Campus, Jalna (MarJ, in short)**.
-
-These notebooks explore:
+These notebooks explores and documents **non-assignment Jupyter notebooks**:
 
 - 🧠 Python for engineering problems
 - 🔢 Numerical solvers (ODEs, PDEs, nonlinear equations)
@@ -21,37 +19,25 @@ These aren't graded submissions — they’re **practice**, **experiments**, and
 - 🧾 **Topics:** Basic Python, NumPy arrays, Matplotlib plots
 - 🎯 **Goal:** Build foundation in Python syntax, math operations, and plotting
 
----
-
 ### `5_March_2025.ipynb`
 - 🧾 **Topics:** User-defined functions, text ciphering, error handling
 - 🎯 **Goal:** Write modular Python code and understand function design
-
----
 
 ### `12_March_2025.ipynb`
 - 🧾 **Topics:** Command-line calculator, GUI with `tkinter`, linear algebra
 - 🎯 **Goal:** Develop functional and GUI-based calculators for engineering math
 
----
-
 ### `19_March_2025.ipynb`
 - 🧾 **Topics:** Nonlinear equation solvers — Bisection, Regula Falsi, Newton-Raphson
 - 🎯 **Goal:** Build numerical solvers with GUI interfaces
-
----
 
 ### `26_March_2025.ipynb`
 - 🧾 **Topics:** Newton-Raphson for Van der Waals and drag equations
 - 🎯 **Goal:** Apply numerical methods to real-world ChemEng problems
 
----
-
 ### `9_April_2025.ipynb`
 - 🧾 **Topics:** Euler’s Method for ODEs, error analysis
 - 🎯 **Goal:** Numerically solve first-order ODEs and compare with exact solutions
-
----
 
 ### `30_April_2025.ipynb`
 - 🧾 **Topics:** Crank-Nicolson method for PDEs
@@ -70,6 +56,10 @@ From building solvers like **Euler’s Method** and **Crank-Nicolson**, to craft
 * ⚗️ Integration of chemical engineering problems into code
 
 > These aren’t just notebooks. They’re milestones in a self-taught journey through the computational side of ChemEng.
+
+---
+
+> Part of [**SudoChem**](https://github.com/mridun-gupta/SudoChem) — Experimental Code Lab for Chemical Engineering
 
 ---
 
