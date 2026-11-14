@@ -1,0 +1,114 @@
+{
+  "schema_id": "ENERGY008-REACTION-NETWORK-0.1.0",
+  "reaction_network_version": "ENERGY008-RXN-0.1.0",
+  "status": "STOICHIOMETRY_DEFINED; PROCESS_EXTENTS_NOT_PREDICTED",
+  "species_order": [
+    "CO2",
+    "H2",
+    "CO",
+    "CH3OH",
+    "H2O",
+    "O2"
+  ],
+  "component_ids": [
+    "CMP-CO2",
+    "CMP-H2",
+    "CMP-CO",
+    "CMP-MEOH",
+    "CMP-H2O",
+    "CMP-O2"
+  ],
+  "reaction_order": [
+    "R-01",
+    "R-02",
+    "E-01"
+  ],
+  "reaction_descriptions": [
+    {
+      "reaction_id": "R-01",
+      "equation": "CO2 + 3 H2 <-> CH3OH + H2O",
+      "kind": "SYNTHESIS",
+      "independence": "INDEPENDENT",
+      "source_id": "ENERGY008_Reaction_Network.xlsx / Reaction Register; Prompt 6 model definition"
+    },
+    {
+      "reaction_id": "R-02",
+      "equation": "CO2 + H2 <-> CO + H2O(g)",
+      "kind": "RWGS",
+      "independence": "INDEPENDENT",
+      "source_id": "ENERGY008_Reaction_Network.xlsx / Reaction Register; Prompt 6 model definition"
+    },
+    {
+      "reaction_id": "E-01",
+      "equation": "2 H2O(l) -> 2 H2(g) + O2(g)",
+      "kind": "ELECTROLYSIS",
+      "independence": "INDEPENDENT_SUBSYSTEM",
+      "source_id": "ENERGY008_Reaction_Network.xlsx / Reaction Register; Prompt 6 model definition"
+    }
+  ],
+  "stoichiometric_matrix_products_positive": [
+    [
+      -1,
+      -1,
+      0
+    ],
+    [
+      -3,
+      -1,
+      2
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      -2
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "element_matrix_rows_C_H_O": [
+    [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      4,
+      2,
+      0
+    ],
+    [
+      2,
+      0,
+      1,
+      1,
+      1,
+      2
+    ]
+  ],
+  "rank": 3,
+  "dependent_reaction_note": "CO hydrogenation is not an independent vector in the selected basis: nu(CO hydrogenation) = nu(R-01) - nu(R-02).",
+  "execution_guardrails": [
+    "A zero R-02 extent in the Prompt 17 benchmark is a reference-only limiting assumption, not a reactor prediction.",
+    "Reject any extent that creates negative component flow.",
+    "Do not infer reactor kinetics, equilibrium, flash split, recycle or purge from stoichiometry alone."
+  ]
+}

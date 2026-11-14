@@ -1,0 +1,223 @@
+{
+  "schema_version": "ENERGY008-SCHEMA-0.1.0",
+  "project_id": "ENERGY-008",
+  "status": "CONTROLLED_INTERFACE_CONTRACT_NOT_A_VALIDATED_FLOWSHEET_DATASET",
+  "canonical_units": {
+    "mass_flow": "kg/h",
+    "molar_flow": "kmol/h",
+    "temperature": "K",
+    "pressure": "MPa(a)",
+    "power": "kW",
+    "energy": "kJ or kWh with explicit basis",
+    "density": "kg/m3",
+    "viscosity": "Pa.s",
+    "thermal_conductivity": "W/(m.K)"
+  },
+  "null_semantics": "Null/blank plus an explicit data_status such as BLOCKED, NOT_AVAILABLE or NOT_APPLICABLE. Never replace an unknown with numeric zero.",
+  "common_provenance_classes": [
+    "MEASURED",
+    "EVALUATED_REFERENCE",
+    "EVALUATED_MODEL_METADATA",
+    "EVALUATED_CORRELATION",
+    "VENDOR_SPECIFIED",
+    "CALCULATED",
+    "ASSUMED",
+    "FITTED",
+    "MODEL_CANDIDATE_NOT_EVALUATED",
+    "NOT_AVAILABLE"
+  ],
+  "common_statuses": [
+    "CALCULATED",
+    "REFERENCE_ONLY",
+    "SCREENING_ONLY",
+    "BLOCKED",
+    "FAILED",
+    "NOT_RUN"
+  ],
+  "entities": {
+    "components": {
+      "required_fields": [
+        "component_id",
+        "name",
+        "formula",
+        "molecular_weight_kg_kmol",
+        "elemental_composition",
+        "phase_capabilities",
+        "source_id",
+        "provenance_class",
+        "data_status"
+      ],
+      "constraints": [
+        "component_id unique",
+        "molecular weight positive when populated",
+        "element counts nonnegative integers",
+        "source_id traceable to a source record"
+      ]
+    },
+    "reactions": {
+      "required_fields": [
+        "reaction_id",
+        "stoichiometry",
+        "reaction_basis",
+        "independent_or_dependent",
+        "source_ids",
+        "data_status"
+      ],
+      "constraints": [
+        "reaction_id unique",
+        "species IDs must resolve to components",
+        "products positive and reactants negative",
+        "A*nu equals zero for declared conserved elements",
+        "reaction rank and dependent columns recorded",
+        "extents must not create negative component flow"
+      ]
+    },
+    "streams": {
+      "required_fields": [
+        "stream_id",
+        "scenario_id",
+        "from_equipment_id",
+        "to_equipment_id",
+        "phase",
+        "temperature_K",
+        "pressure_MPa_abs",
+        "component_flows",
+        "composition_basis",
+        "composition_status",
+        "data_status",
+        "source_ids"
+      ],
+      "constraints": [
+        "stream_id unique within scenario",
+        "pressure is absolute",
+        "flow and composition basis declared",
+        "complete compositions sum to one within declared tolerance",
+        "incomplete compositions are not normalised or silently completed",
+        "component IDs must resolve",
+        "unknown flow/state values remain null"
+      ]
+    },
+    "equipment": {
+      "required_fields": [
+        "equipment_id",
+        "scenario_id",
+        "equipment_type",
+        "service",
+        "provenance_class",
+        "data_status"
+      ],
+      "constraints": [
+        "equipment_id unique within scenario",
+        "capacity has unit",
+        "operating and design pressures are absolute",
+        "property model dependency declared for performance calculations",
+        "design ratings require code/vendor basis"
+      ]
+    },
+    "utility_systems": {
+      "required_fields": [
+        "utility_id",
+        "utility_type",
+        "supply_state",
+        "return_state",
+        "capacity_or_duty",
+        "units",
+        "source_id",
+        "data_status"
+      ],
+      "constraints": [
+        "supply/return conditions and units explicit",
+        "site tariffs and emission factors cannot default to generic values",
+        "missing utility data remains BLOCKED"
+      ]
+    },
+    "scenarios": {
+      "required_fields": [
+        "scenario_id",
+        "scenario_name",
+        "scenario_type",
+        "design_basis_version",
+        "status"
+      ],
+      "constraints": [
+        "scenario_id unique",
+        "all referenced stream/equipment IDs resolve",
+        "assumptions and disturbances are identified separately from measured inputs"
+      ]
+    },
+    "kpis": {
+      "required_fields": [
+        "kpi_id",
+        "name",
+        "equation_or_method",
+        "system_boundary",
+        "numerator_units",
+        "denominator_units",
+        "status",
+        "provenance"
+      ],
+      "constraints": [
+        "unit-consistent numerator/denominator",
+        "system boundary explicit",
+        "reference and screening KPIs labelled",
+        "missing factors block KPI rather than being zero-filled"
+      ]
+    },
+    "diagnostics": {
+      "required_fields": [
+        "code",
+        "severity",
+        "module",
+        "message",
+        "context",
+        "input_ids",
+        "remediation",
+        "timestamp"
+      ],
+      "constraints": [
+        "machine-readable code",
+        "actionable remediation",
+        "preserve residuals and last iterate on failure"
+      ]
+    }
+  },
+  "file_validation": {
+    "supported_runtime_formats": [
+      ".csv",
+      ".json",
+      ".xlsx"
+    ],
+    "required_checks": [
+      "declared schema version",
+      "headers and required columns",
+      "units and unit basis",
+      "missing-value/null semantics",
+      "duplicate primary keys",
+      "numeric ranges and physical bounds",
+      "component/reaction/stream foreign keys",
+      "composition basis and sum-to-one only when complete",
+      "source IDs and provenance metadata",
+      "file hash and manifest integrity"
+    ],
+    "csv_rules": [
+      "UTF-8 preferred",
+      "one header row",
+      "unique column names",
+      "no implicit unit conversions",
+      "required columns compared case-insensitively only if schema declares that behaviour"
+    ],
+    "json_rules": [
+      "top-level object",
+      "schema or manifest-pinned schema ID",
+      "required keys and types",
+      "null remains distinct from zero"
+    ],
+    "xlsx_rules": [
+      "only declared workbook/sheet names",
+      "required headers and columns per sheet schema",
+      "no guessed header row",
+      "formula values and cached values treated explicitly",
+      "hidden sheets do not replace required visible data without declaration"
+    ]
+  }
+}

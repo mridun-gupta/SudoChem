@@ -1,0 +1,31 @@
+ENERGY-008 PROMPT 22 SCREENING VALIDATION LOG
+Date: 2026-11-02
+Execution: Python closed-form calculations and artifact_tool spreadsheet checks; MATLAB/Octave not run.
+OAT studies: 12; points: 36; metric records: 156
+LHS: N=1000; dimensions=8; seed=20261102; sampled Pareto rows=11
+Independent checks: 22 records; PASS=22; FAIL=0
+
+P22-001 | PASS | 12 independent OAT studies present | Study count=12
+P22-002 | PASS | Three OAT values per study | OAT point count=36
+P22-003 | PASS | OAT metric rows retained with explicit status | Metric records=156; statuses all SCREENING ONLY
+P22-004 | PASS | LHS sample count is 1,000 | N=1000
+P22-005 | PASS | LHS dimensions count is eight | Dimensions=8
+P22-006 | PASS | Every LHS dimension fills each of 1,000 strata once | One point per equal-width stratum for all 8 inputs
+P22-007 | PASS | LHS values remain within declared ranges | All sampled inputs bounded by their declared min/max.
+P22-008 | PASS | Independent reference check: CO2_kg_day | expected=68674.9225233; actual=68674.9225233; abs_dev=0; tol=1e-06
+P22-009 | PASS | Independent reference check: H2_kg_day | expected=9437.0808223; actual=9437.0808223; abs_dev=0; tol=1e-08
+P22-010 | PASS | Independent reference check: DI_water_stoich_kg_day | expected=84336.1972917; actual=84336.1972917; abs_dev=0; tol=1e-06
+P22-011 | PASS | Independent reference check: O2_kg_day | expected=74899.1164694; actual=74899.1164694; abs_dev=0; tol=1e-06
+P22-012 | PASS | Independent reference check: reaction_water_kg_day | expected=28112.0657639; actual=28112.0657639; abs_dev=0; tol=1e-06
+P22-013 | PASS | Independent reference check: specific_power_kWh_kgMeOH | expected=10.3807889045; actual=10.3807889045; abs_dev=0; tol=1e-12
+P22-014 | PASS | Independent reference check: electrolyser_power_MW | expected=21.6266435511; actual=21.6266435511; abs_dev=0; tol=1e-12
+P22-015 | PASS | Independent reference check: electricity_cost_INR_kgMeOH | expected=51.9039445226; actual=51.9039445226; abs_dev=0; tol=1e-12
+P22-016 | PASS | Independent reference check: electricity_emissions_kgCO2e_kgMeOH | expected=4.15231556181; actual=4.15231556181; abs_dev=0; tol=1e-12
+P22-017 | PASS | HX area reproduces Prompt 17 reference | Calculated area=56.2847632954 m2
+P22-018 | PASS | Pump duty power and margin flow reproduce Prompt 17 references | Duty power=0.683743030068 kW; 10% margin capacity=3.87704016302 m3/h
+P22-019 | PASS | Sampled Pareto set contains no pairwise dominated rows | Non-dominated sampled points=11; objective pair cost/emissions.
+P22-020 | PASS | Physical operating window remains blocked, not imputed | Temperature, pressure, residence time, kinetics, recycle, product grade, equipment limits, full energy/exergy and LCOM remain BLOCKED.
+P22-021 | PASS | MATLAB engine/GUI runtime not misrepresented | No MATLAB/Octave runtime executed; Prompt 22 numerical screening is Python closed-form only.
+P22-022 | PASS | No relative error formed against zero targets | No relative deviation against a zero target; use absolute differences or N/A.
+
+LIMITATIONS: all numeric cases are SCREENING ONLY. No physical process solver, MATLAB runtime, GUI run, operating limit validation, product grade calculation, full energy/exergy closure, CAPEX/OPEX or LCOM.

@@ -1,0 +1,12 @@
+item,independent_result,reference_result,absolute_difference,unit,status
+Ethanol log fugacity residual,-0.019120534623567078,-0.019120534623567,7.632783294297951e-17,dimensionless,FAIL: magnitude exceeds 1e-6
+Water log fugacity residual,-0.1188632575948906,-0.1188632575948906,0.0,dimensionless,FAIL: magnitude exceeds 1e-6
+Reference temperature,445.1253289473684,445.1253289473684,0.0,K,PASS: configured reference state
+Ethanol liquid mole fraction,0.3884802631578942,0.3884802631578942,0.0,mol/mol,PASS
+Ethanol vapour mole fraction,0.5482401315789471,0.5482401315789471,0.0,mol/mol,PASS
+Vapour fraction,0.6980459983116128,0.6980459983116128,0.0,mol/mol,PASS
+Total molar closure,0.0,0.0,0.0,kmol/h,PASS
+Maximum component closure,0.0,0.0,0.0,kmol/h,PASS
+Mass closure,0.0,0.0,0.0,kg/h,PASS
+Max absolute log fugacity residual,0.1188632575948906,1e-06,0.1188622575948906,dimensionless,FAIL: exceeds criterion
+Residual exceedance factor,118863.2575948906,1.0,118862.2575948906,fold,FAIL: exceedance

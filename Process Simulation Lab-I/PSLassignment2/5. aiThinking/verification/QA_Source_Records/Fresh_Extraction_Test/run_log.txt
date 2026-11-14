@@ -1,0 +1,137 @@
+Fresh extraction test: 2026-11-02T18:12:17Z
+Python: Python 3.13.5
+Location: /mnt/data/ENERGY008_fresh_extract/ENERGY-008_Submission
+--- Locked dependency versions present ---
+numpy==2.3.5
+scipy==1.17.0
+pandas==2.2.3
+matplotlib==3.10.8
+pytest==9.0.2
+setuptools==82.0.1
+--- Editable install (no dependency mutation; exact locked versions already present) ---
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Obtaining file:///mnt/data/ENERGY008_fresh_extract/ENERGY-008_Submission/Python
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: energy008-python
+  Building editable for energy008-python (pyproject.toml): started
+  Building editable for energy008-python (pyproject.toml): finished with status 'done'
+  Created wheel for energy008-python: filename=energy008_python-0.1.0-0.editable-py3-none-any.whl size=5040 sha256=aa29e70d48f75ecf66c7de5d82bff736d923602620ebd106f4ed2beb06766442
+  Stored in directory: /tmp/pip-ephem-wheel-cache-okp4b4r2/wheels/b5/15/a8/9f11de31089bc58440d18fcc7f25a330c5431561ea05706978
+Successfully built energy008-python
+Installing collected packages: energy008-python
+Successfully installed energy008-python-0.1.0
+--- Pytest ---
+.......................                                                  [100%]
+23 passed in 4.57s
+--- Default CLI (Route C 50 t/day reference) ---
+{
+  "case": {
+    "case_id": "C-BIOCO2-REH2-ALK-REF-50TPD",
+    "route_id": "Route C",
+    "case_status": "REFERENCE_ONLY",
+    "methanol_component_equivalent_kg_day": 50000.0
+  },
+  "overall_status": "SCREENING_ONLY",
+  "module_status": {
+    "input_validation": "CALCULATED",
+    "material_balance": "REFERENCE_ONLY",
+    "property_models": "SCREENING_ONLY",
+    "energy_balance": "SCREENING_ONLY",
+    "equipment_sizing": "SCREENING_ONLY",
+    "entropy_exergy": "BLOCKED",
+    "utilities_model": "BLOCKED",
+    "economics": "BLOCKED",
+    "environmental_kpis": "BLOCKED",
+    "reactor_calculation": "BLOCKED",
+    "recycle_solver": "BLOCKED",
+    "control_logic": "BLOCKED",
+    "material_kpis": "REFERENCE_ONLY",
+    "sensitivity_optimisation": "SCREENING_ONLY"
+  },
+  "export_directory": "/mnt/data/ENERGY008_fresh_extract/ENERGY-008_Submission/Python/results/20261102T181234Z_e845df16"
+}
+--- Route A common-core CLI ---
+{
+  "case": {
+    "case_id": "A-INDCO2-REH2-ALK-REF-50TPD",
+    "route_id": "Route A",
+    "case_status": "REFERENCE_ONLY",
+    "methanol_component_equivalent_kg_day": 50000.0
+  },
+  "overall_status": "SCREENING_ONLY",
+  "module_status": {
+    "input_validation": "CALCULATED",
+    "material_balance": "REFERENCE_ONLY",
+    "property_models": "SCREENING_ONLY",
+    "energy_balance": "SCREENING_ONLY",
+    "equipment_sizing": "SCREENING_ONLY",
+    "entropy_exergy": "BLOCKED",
+    "utilities_model": "BLOCKED",
+    "economics": "BLOCKED",
+    "environmental_kpis": "BLOCKED",
+    "reactor_calculation": "BLOCKED",
+    "recycle_solver": "BLOCKED",
+    "control_logic": "BLOCKED",
+    "material_kpis": "REFERENCE_ONLY",
+    "sensitivity_optimisation": "SCREENING_ONLY"
+  },
+  "export_directory": "/mnt/data/ENERGY008_fresh_extract/ENERGY-008_Submission/Python/results/20261102T181236Z_641f1aaf"
+}
+--- Route B blocked CLI ---
+{
+  "case": {
+    "case_id": "B-BIOMASS-SYNGAS-50TPD",
+    "route_id": "Route B",
+    "case_status": "BLOCKED",
+    "methanol_component_equivalent_kg_day": 50000.0
+  },
+  "overall_status": "BLOCKED",
+  "module_status": {
+    "input_validation": "BLOCKED",
+    "material_balance": "BLOCKED",
+    "property_models": "BLOCKED",
+    "energy_balance": "BLOCKED",
+    "equipment_sizing": "BLOCKED",
+    "entropy_exergy": "BLOCKED",
+    "utilities_model": "BLOCKED",
+    "economics": "BLOCKED",
+    "environmental_kpis": "BLOCKED",
+    "reactor_calculation": "BLOCKED",
+    "recycle_solver": "BLOCKED",
+    "control_logic": "BLOCKED",
+    "material_kpis": "BLOCKED",
+    "sensitivity_optimisation": "BLOCKED"
+  },
+  "export_directory": "/mnt/data/ENERGY008_fresh_extract/ENERGY-008_Submission/Python/results/20261102T181238Z_ab39f2a2"
+}
+--- Route C turndown CLI ---
+{
+  "case": {
+    "case_id": "C-BIOCO2-REH2-ALK-TURNDOWN-25TPD",
+    "route_id": "Route C",
+    "case_status": "SCREENING_ONLY",
+    "methanol_component_equivalent_kg_day": 25000.0
+  },
+  "overall_status": "SCREENING_ONLY",
+  "module_status": {
+    "input_validation": "CALCULATED",
+    "material_balance": "SCREENING_ONLY",
+    "property_models": "SCREENING_ONLY",
+    "energy_balance": "SCREENING_ONLY",
+    "equipment_sizing": "SCREENING_ONLY",
+    "entropy_exergy": "BLOCKED",
+    "utilities_model": "BLOCKED",
+    "economics": "BLOCKED",
+    "environmental_kpis": "BLOCKED",
+    "reactor_calculation": "BLOCKED",
+    "recycle_solver": "BLOCKED",
+    "control_logic": "BLOCKED",
+    "material_kpis": "SCREENING_ONLY",
+    "sensitivity_optimisation": "SCREENING_ONLY"
+  },
+  "export_directory": "/mnt/data/ENERGY008_fresh_extract/ENERGY-008_Submission/Python/results/20261102T181240Z_1563a387"
+}
+--- End of run ---

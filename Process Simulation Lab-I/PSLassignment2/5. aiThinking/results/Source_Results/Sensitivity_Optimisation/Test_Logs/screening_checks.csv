@@ -1,0 +1,23 @@
+Test_ID,Description,Status,Detail
+P22-001,12 independent OAT studies present,PASS,Study count=12
+P22-002,Three OAT values per study,PASS,OAT point count=36
+P22-003,OAT metric rows retained with explicit status,PASS,Metric records=156; statuses all SCREENING ONLY
+P22-004,"LHS sample count is 1,000",PASS,N=1000
+P22-005,LHS dimensions count is eight,PASS,Dimensions=8
+P22-006,"Every LHS dimension fills each of 1,000 strata once",PASS,One point per equal-width stratum for all 8 inputs
+P22-007,LHS values remain within declared ranges,PASS,All sampled inputs bounded by their declared min/max.
+P22-008,Independent reference check: CO2_kg_day,PASS,expected=68674.9225233; actual=68674.9225233; abs_dev=0; tol=1e-06
+P22-009,Independent reference check: H2_kg_day,PASS,expected=9437.0808223; actual=9437.0808223; abs_dev=0; tol=1e-08
+P22-010,Independent reference check: DI_water_stoich_kg_day,PASS,expected=84336.1972917; actual=84336.1972917; abs_dev=0; tol=1e-06
+P22-011,Independent reference check: O2_kg_day,PASS,expected=74899.1164694; actual=74899.1164694; abs_dev=0; tol=1e-06
+P22-012,Independent reference check: reaction_water_kg_day,PASS,expected=28112.0657639; actual=28112.0657639; abs_dev=0; tol=1e-06
+P22-013,Independent reference check: specific_power_kWh_kgMeOH,PASS,expected=10.3807889045; actual=10.3807889045; abs_dev=0; tol=1e-12
+P22-014,Independent reference check: electrolyser_power_MW,PASS,expected=21.6266435511; actual=21.6266435511; abs_dev=0; tol=1e-12
+P22-015,Independent reference check: electricity_cost_INR_kgMeOH,PASS,expected=51.9039445226; actual=51.9039445226; abs_dev=0; tol=1e-12
+P22-016,Independent reference check: electricity_emissions_kgCO2e_kgMeOH,PASS,expected=4.15231556181; actual=4.15231556181; abs_dev=0; tol=1e-12
+P22-017,HX area reproduces Prompt 17 reference,PASS,Calculated area=56.2847632954 m2
+P22-018,Pump duty power and margin flow reproduce Prompt 17 references,PASS,Duty power=0.683743030068 kW; 10% margin capacity=3.87704016302 m3/h
+P22-019,Sampled Pareto set contains no pairwise dominated rows,PASS,Non-dominated sampled points=11; objective pair cost/emissions.
+P22-020,"Physical operating window remains blocked, not imputed",PASS,"Temperature, pressure, residence time, kinetics, recycle, product grade, equipment limits, full energy/exergy and LCOM remain BLOCKED."
+P22-021,MATLAB engine/GUI runtime not misrepresented,PASS,No MATLAB/Octave runtime executed; Prompt 22 numerical screening is Python closed-form only.
+P22-022,No relative error formed against zero targets,PASS,No relative deviation against a zero target; use absolute differences or N/A.

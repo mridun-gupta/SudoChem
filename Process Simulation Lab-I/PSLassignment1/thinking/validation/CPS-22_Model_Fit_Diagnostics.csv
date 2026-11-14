@@ -1,0 +1,2 @@
+a12,b12_K,a21,b21_K,kij,alpha,train_rms_ln_f,train_max_abs_ln_f,holdout_2000kPa_rms_ln_f,holdout_2000kPa_max_abs_ln_f,status
+14.1972287,-6290.96309,-3.7562598,2210.37873,0.25,0.3,0.04058746,0.16212342,0.1369515,0.3344125,REJECTED_BOUND_LIMITED_AND_HOLDOUT_FAILURE

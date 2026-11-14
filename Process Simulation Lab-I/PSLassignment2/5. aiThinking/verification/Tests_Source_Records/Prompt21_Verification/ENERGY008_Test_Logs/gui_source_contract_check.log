@@ -1,0 +1,3 @@
+Prompt 20 GUI static source-contract check: PASS (80 checks)
+This is a file/source-contract check only. It does not parse MATLAB, launch the GUI, or execute engine modules.
+exit=0

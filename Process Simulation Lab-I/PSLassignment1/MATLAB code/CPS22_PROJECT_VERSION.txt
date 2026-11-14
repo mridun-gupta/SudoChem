@@ -1,0 +1,6 @@
+CPS-22 MATLAB Release R4
+Canonical-data standalone release.
+The canonical experimental CSV is data/CPS22_reference_vle_expanded.csv.
+Do not copy old source files into this folder. Extract this complete release to a clean folder.
+
+Expanded literature dataset: 207 mixture-VLE records, seven isobars (100, 101, 300, 500, 700, 1500, 2000 kPa). Numeric records at 101/300/500/700 kPa sourced from ACS Omega 2026 DOI 10.1021/acsomega.6c04827.

@@ -1,0 +1,386 @@
+{
+  "source_equation_lines": 186,
+  "equation_ids_by_card": {
+    "HC-001": [
+      "HC-001.1",
+      "HC-001.2",
+      "HC-001.3"
+    ],
+    "HC-002": [
+      "HC-002.1",
+      "HC-002.2",
+      "HC-002.3",
+      "HC-002.4",
+      "HC-002.5",
+      "HC-002.6"
+    ],
+    "HC-003": [
+      "HC-003.1",
+      "HC-003.2",
+      "HC-003.3",
+      "HC-003.4",
+      "HC-003.5",
+      "HC-003.6"
+    ],
+    "HC-004": [
+      "HC-004.1",
+      "HC-004.2",
+      "HC-004.3",
+      "HC-004.4",
+      "HC-004.5",
+      "HC-004.6"
+    ],
+    "HC-005": [
+      "HC-005.1",
+      "HC-005.2",
+      "HC-005.3",
+      "HC-005.4",
+      "HC-005.5",
+      "HC-005.6"
+    ],
+    "HC-006": [
+      "HC-006.1",
+      "HC-006.2",
+      "HC-006.3",
+      "HC-006.4",
+      "HC-006.5",
+      "HC-006.6"
+    ],
+    "HC-007": [
+      "HC-007.1",
+      "HC-007.2",
+      "HC-007.3",
+      "HC-007.4"
+    ],
+    "HC-008": [
+      "HC-008.1",
+      "HC-008.2",
+      "HC-008.3",
+      "HC-008.4",
+      "HC-008.5",
+      "HC-008.6",
+      "HC-008.7"
+    ],
+    "HC-009": [
+      "HC-009.1",
+      "HC-009.2",
+      "HC-009.3",
+      "HC-009.4",
+      "HC-009.5",
+      "HC-009.6",
+      "HC-009.7"
+    ],
+    "HC-010": [
+      "HC-010.1",
+      "HC-010.2",
+      "HC-010.3",
+      "HC-010.4",
+      "HC-010.5",
+      "HC-010.6"
+    ],
+    "HC-011": [
+      "HC-011.1",
+      "HC-011.2",
+      "HC-011.3",
+      "HC-011.4",
+      "HC-011.5",
+      "HC-011.6",
+      "HC-011.7"
+    ],
+    "HC-012": [
+      "HC-012.1",
+      "HC-012.2",
+      "HC-012.3",
+      "HC-012.4",
+      "HC-012.5",
+      "HC-012.6",
+      "HC-012.7"
+    ],
+    "HC-013": [
+      "HC-013.1",
+      "HC-013.2",
+      "HC-013.3",
+      "HC-013.4",
+      "HC-013.5",
+      "HC-013.6",
+      "HC-013.7"
+    ],
+    "HC-014": [
+      "HC-014.1",
+      "HC-014.2",
+      "HC-014.3"
+    ],
+    "HC-015": [
+      "HC-015.1",
+      "HC-015.2",
+      "HC-015.3",
+      "HC-015.4",
+      "HC-015.5",
+      "HC-015.6",
+      "HC-015.7"
+    ],
+    "HC-016": [
+      "HC-016.1",
+      "HC-016.2",
+      "HC-016.3",
+      "HC-016.4",
+      "HC-016.5"
+    ],
+    "HC-017": [
+      "HC-017.1",
+      "HC-017.2"
+    ],
+    "HC-018": [
+      "HC-018.1",
+      "HC-018.2",
+      "HC-018.3"
+    ],
+    "CAL-001": [
+      "CAL-001.1",
+      "CAL-001.2",
+      "CAL-001.3",
+      "CAL-001.4",
+      "CAL-001.5",
+      "CAL-001.6",
+      "CAL-001.7",
+      "CAL-001.8"
+    ],
+    "CAL-002": [
+      "CAL-002.1",
+      "CAL-002.2",
+      "CAL-002.3",
+      "CAL-002.4",
+      "CAL-002.5",
+      "CAL-002.6"
+    ],
+    "CAL-003": [
+      "CAL-003.1",
+      "CAL-003.2",
+      "CAL-003.3",
+      "CAL-003.4"
+    ],
+    "CAL-004": [
+      "CAL-004.1",
+      "CAL-004.2",
+      "CAL-004.3",
+      "CAL-004.4"
+    ],
+    "CAL-005": [
+      "CAL-005.1",
+      "CAL-005.2",
+      "CAL-005.3",
+      "CAL-005.4",
+      "CAL-005.5"
+    ],
+    "CAL-006": [
+      "CAL-006.1",
+      "CAL-006.2",
+      "CAL-006.3",
+      "CAL-006.4",
+      "CAL-006.5"
+    ],
+    "CAL-007": [
+      "CAL-007.1",
+      "CAL-007.2",
+      "CAL-007.3",
+      "CAL-007.4",
+      "CAL-007.5",
+      "CAL-007.6"
+    ],
+    "CAL-008": [
+      "CAL-008.1",
+      "CAL-008.2",
+      "CAL-008.3",
+      "CAL-008.4",
+      "CAL-008.5",
+      "CAL-008.6",
+      "CAL-008.7"
+    ],
+    "CAL-009": [
+      "CAL-009.1",
+      "CAL-009.2",
+      "CAL-009.3",
+      "CAL-009.4"
+    ],
+    "CAL-010": [
+      "CAL-010.1",
+      "CAL-010.2",
+      "CAL-010.3",
+      "CAL-010.4",
+      "CAL-010.5"
+    ],
+    "CAL-011": [
+      "CAL-011.1",
+      "CAL-011.2",
+      "CAL-011.3",
+      "CAL-011.4",
+      "CAL-011.5"
+    ],
+    "CAL-012": [
+      "CAL-012.1",
+      "CAL-012.2",
+      "CAL-012.3",
+      "CAL-012.4",
+      "CAL-012.5",
+      "CAL-012.6"
+    ],
+    "CAL-013": [
+      "CAL-013.1",
+      "CAL-013.2",
+      "CAL-013.3",
+      "CAL-013.4",
+      "CAL-013.5"
+    ],
+    "CAL-014": [
+      "CAL-014.1",
+      "CAL-014.2",
+      "CAL-014.3",
+      "CAL-014.4",
+      "CAL-014.5",
+      "CAL-014.6",
+      "CAL-014.7",
+      "CAL-014.8",
+      "CAL-014.9"
+    ],
+    "CAL-015": [
+      "CAL-015.1",
+      "CAL-015.2",
+      "CAL-015.3",
+      "CAL-015.4",
+      "CAL-015.5",
+      "CAL-015.6"
+    ],
+    "CAL-016": [
+      "CAL-016.1",
+      "CAL-016.2",
+      "CAL-016.3"
+    ]
+  },
+  "sample_equations": [
+    {
+      "id": "HC-001.1",
+      "source": "n-dot_MeOH = m-dot_MeOH / MW_MeOH",
+      "latex": "\\dot{n}_{\\text{MeOH}} = \\dot{m}_{\\text{MeOH}} / \\text{MW}_{\\text{MeOH}}"
+    },
+    {
+      "id": "HC-001.2",
+      "source": "n-dot = 50,000 kg/day ÷ 32.0419 kg/kmol = 1,560.4567769 kmol/day.",
+      "latex": "\\dot{n} = 50,000 \\text{kg day}^{-1} \\div 32.0419 \\text{kg kmol}^{-1} = 1,560.4567769 \\text{kmol day}^{-1}"
+    },
+    {
+      "id": "HC-001.3",
+      "source": "Hourly rate = 1,560.4567769 ÷ 24 = 65.0190324 kmol/h.",
+      "latex": "\\text{Hourly rate} = 1,560.4567769 \\div 24 = 65.0190324 \\text{kmol h}^{-1}"
+    },
+    {
+      "id": "HC-002.1",
+      "source": "n_CO2 = |nu_CO2,R01| × xi_R01 = 1 × n_MeOH",
+      "latex": "n_{\\text{CO}_{2}} = |\\nu_{\\text{CO}_{2},\\text{R01}}| \\times \\xi_{\\text{R01}} = 1 \\times n_{\\text{MeOH}}"
+    },
+    {
+      "id": "HC-002.2",
+      "source": "m_CO2 = n_CO2 × MW_CO2",
+      "latex": "m_{\\text{CO}_{2}} = n_{\\text{CO}_{2}} \\times \\text{MW}_{\\text{CO}_{2}}"
+    },
+    {
+      "id": "HC-002.3",
+      "source": "n_CO2 = 1 × 1,560.4567769 = 1,560.4567769 kmol/day.",
+      "latex": "n_{\\text{CO}_{2}} = 1 \\times 1,560.4567769 = 1,560.4567769 \\text{kmol day}^{-1}"
+    },
+    {
+      "id": "HC-002.4",
+      "source": "m_CO2 = 1,560.4567769 × 44.0095 = 68,674.9225 kg/day.",
+      "latex": "m_{\\text{CO}_{2}} = 1,560.4567769 \\times 44.0095 = 68,674.9225 \\text{kg day}^{-1}"
+    },
+    {
+      "id": "HC-002.5",
+      "source": "Hourly mass = 68,674.9225 ÷ 24 = 2,861.4551 kg/h.",
+      "latex": "\\text{Hourly mass} = 68,674.9225 \\div 24 = 2,861.4551 \\text{kg h}^{-1}"
+    },
+    {
+      "id": "HC-002.6",
+      "source": "Specific minimum = 68,674.9225 ÷ 50 = 1,373.4985 kg CO2/t MeOH.",
+      "latex": "\\text{Specific minimum} = 68,674.9225 \\div 50 = 1,373.4985 kg \\text{CO}_{2}/t \\text{MeOH}"
+    },
+    {
+      "id": "HC-003.1",
+      "source": "n_H2 = 3 × n_MeOH",
+      "latex": "n_{\\text{H}_{2}} = 3 \\times n_{\\text{MeOH}}"
+    },
+    {
+      "id": "HC-003.2",
+      "source": "m_H2 = n_H2 × MW_H2",
+      "latex": "m_{\\text{H}_{2}} = n_{\\text{H}_{2}} \\times \\text{MW}_{\\text{H}_{2}}"
+    },
+    {
+      "id": "HC-003.3",
+      "source": "n_H2 = 3 × 1,560.4567769 = 4,681.3703307 kmol/day.",
+      "latex": "n_{\\text{H}_{2}} = 3 \\times 1,560.4567769 = 4,681.3703307 \\text{kmol day}^{-1}"
+    },
+    {
+      "id": "HC-003.4",
+      "source": "m_H2 = 4,681.3703307 × 2.01588 = 9,437.0808 kg/day.",
+      "latex": "m_{\\text{H}_{2}} = 4,681.3703307 \\times 2.01588 = 9,437.0808 \\text{kg day}^{-1}"
+    },
+    {
+      "id": "HC-003.5",
+      "source": "Hourly H2 flow = 9,437.0808 ÷ 24 = 393.2117 kg/h.",
+      "latex": "\\text{Hourly H}_{2}\\text{ flow} = 9,437.0808 \\div 24 = 393.2117 \\text{kg h}^{-1}"
+    },
+    {
+      "id": "HC-003.6",
+      "source": "Specific minimum = 9,437.0808 ÷ 50 = 188.741616 kg H2/t MeOH.",
+      "latex": "\\text{Specific minimum} = 9,437.0808 \\div 50 = 188.741616 kg \\text{H}_{2}/t \\text{MeOH}"
+    },
+    {
+      "id": "HC-004.1",
+      "source": "2 H2O -> 2 H2 + O2",
+      "latex": "2 \\text{H}_{2}\\text{O} \\rightarrow 2 \\text{H}_{2} + \\text{O}_{2}"
+    },
+    {
+      "id": "HC-004.2",
+      "source": "n_H2O,ely = n_H2",
+      "latex": "n_{\\text{H}_{2}\\text{O},\\text{ely}} = n_{\\text{H}_{2}}"
+    },
+    {
+      "id": "HC-004.3",
+      "source": "m_H2O,ely = n_H2O,ely × MW_H2O",
+      "latex": "m_{\\text{H}_{2}\\text{O},\\text{ely}} = n_{\\text{H}_{2}\\text{O},\\text{ely}} \\times \\text{MW}_{\\text{H}_{2}\\text{O}}"
+    },
+    {
+      "id": "HC-004.4",
+      "source": "n_H2O,ely = 4,681.3703307 kmol/day.",
+      "latex": "n_{\\text{H}_{2}\\text{O},\\text{ely}} = 4,681.3703307 \\text{kmol day}^{-1}"
+    },
+    {
+      "id": "HC-004.5",
+      "source": "m_H2O,ely = 4,681.3703307 × 18.01528 = 84,336.1973 kg/day.",
+      "latex": "m_{\\text{H}_{2}\\text{O},\\text{ely}} = 4,681.3703307 \\times 18.01528 = 84,336.1973 \\text{kg day}^{-1}"
+    },
+    {
+      "id": "HC-004.6",
+      "source": "Hourly water mass = 84,336.1973 ÷ 24 = 3,514.0082 kg/h.",
+      "latex": "\\text{Hourly water mass} = 84,336.1973 \\div 24 = 3,514.0082 \\text{kg h}^{-1}"
+    },
+    {
+      "id": "HC-005.1",
+      "source": "xi_E01 = n_H2 / 2",
+      "latex": "\\xi_{\\text{E01}} = n_{\\text{H}_{2}} / 2"
+    },
+    {
+      "id": "HC-005.2",
+      "source": "n_O2 = xi_E01 = n_H2 / 2",
+      "latex": "n_{\\text{O}_{2}} = \\xi_{\\text{E01}} = n_{\\text{H}_{2}} / 2"
+    },
+    {
+      "id": "HC-005.3",
+      "source": "m_O2 = n_O2 × MW_O2",
+      "latex": "m_{\\text{O}_{2}} = n_{\\text{O}_{2}} \\times \\text{MW}_{\\text{O}_{2}}"
+    },
+    {
+      "id": "HC-005.4",
+      "source": "xi_E01 = 4,681.3703307 ÷ 2 = 2,340.6851654 kmol reaction/day.",
+      "latex": "\\xi_{\\text{E01}} = 4,681.3703307 \\div 2 = 2,340.6851654 \\text{kmol reaction day}^{-1}"
+    }
+  ]
+}

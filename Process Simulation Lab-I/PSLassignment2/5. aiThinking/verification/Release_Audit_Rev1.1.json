@@ -1,0 +1,19 @@
+{
+  "release": "ENERGY-008 Rev 1.1",
+  "top_level_folders": [
+    "MATLAB",
+    "thinking"
+  ],
+  "manifest_entries": 576,
+  "main_report_pages": 124,
+  "calculation_book_pages": 59,
+  "combined_report_pages": 183,
+  "presentation_slides": 12,
+  "main_report_native_math_objects": 35,
+  "calculation_book_native_math_objects": 186,
+  "matlab_runtime": "NOT RUN",
+  "gui_runtime": "NOT RUN",
+  "matlab_python_parity": "NOT RUN",
+  "physical_plant_model": "BLOCKED / SCREENING ONLY per report and issue register",
+  "zip_self_hash": "External companion checksum; excluded from internal manifest"
+}

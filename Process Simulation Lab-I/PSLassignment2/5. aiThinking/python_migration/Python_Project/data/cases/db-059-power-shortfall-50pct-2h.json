@@ -1,0 +1,26 @@
+{
+  "schema_id": "ENERGY008-DISTURBANCE-CASE-0.1.0",
+  "case_id": "DB-059-POWER-SHORTFALL-50PCT-2H",
+  "case_version": "0.1.0",
+  "scenario_type": "DISTURBANCE_SCREENING",
+  "scenario_name": "50% available renewable power for 2 hours",
+  "status": "SCREENING_ONLY",
+  "source_id": "DB-059 / Prompt 15 selected disturbance definition",
+  "available_power_fraction": 0.5,
+  "duration_h": 2.0,
+  "base_case_id": "C-BIOCO2-REH2-ALK-REF-50TPD",
+  "assumptions": {
+    "H2_production_scales_linearly_with_available_power": true,
+    "nominal_H2_flow_basis": "Prompt 17 ideal stoichiometric H2 demand at 50 t/day",
+    "storage_or_buffer_sizing": false
+  },
+  "limitations": [
+    "No electrolyser OEM efficiency, minimum load, ramp rate, buffer inventory or synthesis turndown map is available.",
+    "Linear power-to-H2 scaling is a transparent screening assumption only.",
+    "Calculated H2 deficit is not a buffer size, process trip threshold or operating instruction."
+  ],
+  "units": {
+    "available_power_fraction": "fraction",
+    "duration_h": "h"
+  }
+}

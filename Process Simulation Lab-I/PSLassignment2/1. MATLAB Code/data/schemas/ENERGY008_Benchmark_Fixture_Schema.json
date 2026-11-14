@@ -1,0 +1,66 @@
+{
+  "schema_id": "ENERGY008-HAND-FIXTURE-0.1.0",
+  "schema_version": "0.1.0",
+  "applies_to": "ENERGY008_Benchmark_Fixture.json",
+  "source_schema_note": "The source Prompt 17 fixture exposes revision=0.1-DRAFT, not a schema_version field. This sidecar pins the expected schema version without mutating the immutable source fixture.",
+  "required_top_level_keys": [
+    "fixture_id",
+    "revision",
+    "created_date",
+    "route",
+    "status",
+    "design_basis_status",
+    "basis",
+    "reaction_network",
+    "expected_outputs",
+    "blocked_values",
+    "acceptance_tolerances",
+    "independent_test_cases",
+    "sensitivity_and_uncertainty",
+    "calculation_id_conventions"
+  ],
+  "required_basis_keys": [
+    "methanol_component_equivalent_kg_day",
+    "hours_per_day",
+    "molecular_weights_kg_per_kmol",
+    "source_ids"
+  ],
+  "required_reaction_keys": [
+    "R01",
+    "R02",
+    "E01",
+    "integrated_net",
+    "ideal_reference_extents_kmol_day",
+    "R02_zero_extent_status"
+  ],
+  "required_expected_output_keys": [
+    "methanol_kmol_day",
+    "co2_kmol_day",
+    "h2_kmol_day",
+    "reaction_water_kmol_day",
+    "electrolyser_water_kmol_day",
+    "net_water_kmol_day",
+    "oxygen_kmol_day",
+    "methanol_kg_day"
+  ],
+  "minimum_independent_test_cases": 18,
+  "blocked_status_required_for": [
+    "physical_recycle_S209",
+    "purge_fraction_S207",
+    "separator_flash_split_V301",
+    "actual_meoh_product_composition_S314",
+    "reactor_kinetic_conversion",
+    "reactor_volume_or_catalyst_mass",
+    "plant_energy_closure",
+    "plant_entropy_generation",
+    "plant_exergy_destruction",
+    "compressor_power_K101_K201_K301",
+    "actual_HX301_duty_and_area"
+  ],
+  "semantic_constraints": [
+    "Route C is a working route only; G3 not frozen.",
+    "50 t/day is an illustrative hand-calculation component-equivalent basis, not a validated plant capacity.",
+    "R02 zero extent is a reference-block assumption only.",
+    "Physical recycle/purge, plant energy and entropy/exergy outputs must remain blocked until validated data are supplied."
+  ]
+}

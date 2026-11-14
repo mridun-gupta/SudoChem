@@ -1,0 +1,26 @@
+{
+  "case": {
+    "case_id": "B-BIOMASS-SYNGAS-50TPD",
+    "route_id": "Route B",
+    "case_status": "BLOCKED",
+    "methanol_component_equivalent_kg_day": 50000.0
+  },
+  "overall_status": "BLOCKED",
+  "module_status": {
+    "input_validation": "BLOCKED",
+    "material_balance": "BLOCKED",
+    "property_models": "BLOCKED",
+    "energy_balance": "BLOCKED",
+    "equipment_sizing": "BLOCKED",
+    "entropy_exergy": "BLOCKED",
+    "utilities_model": "BLOCKED",
+    "economics": "BLOCKED",
+    "environmental_kpis": "BLOCKED",
+    "reactor_calculation": "BLOCKED",
+    "recycle_solver": "BLOCKED",
+    "control_logic": "BLOCKED",
+    "material_kpis": "BLOCKED",
+    "sensitivity_optimisation": "BLOCKED"
+  },
+  "export_directory": "/mnt/data/ENERGY008_MATLAB/Python/results/20261102T044218Z_d837f600"
+}

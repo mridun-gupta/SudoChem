@@ -1,0 +1,174 @@
+{
+  "data_version": "ENERGY008-DATA-0.1.0",
+  "schema_version": "ENERGY008-SCHEMA-0.1.0",
+  "validation_version": "ENERGY008-VALIDATION-0.1.0",
+  "freeze_date": "2026-11-01",
+  "status": "FROZEN_NARROW_REFERENCE_SUBSET_FOR_HAND_CALCULATION_BASELINE",
+  "route": "Route C: biogenic CO2 + renewable electrolytic H2; ALK reference; Route A/B alternatives retained",
+  "governing_design_basis": "ENERGY008_Design_Basis.xlsx Rev 0.1-DRAFT; G3 is not frozen",
+  "record_counts": {
+    "components_and_pseudocomponents": 21,
+    "property_records": 259,
+    "mixtures": 8,
+    "shomate_intervals": 15,
+    "antoine_intervals": 10,
+    "reactions": 3
+  },
+  "frozen_scope": [
+    "NIST WebBook molecular weights for core components; source-specific CoolProp metadata values are retained separately",
+    "CoolProp 8.0.0 pure-fluid critical metadata for selected fluids",
+    "NIST/JANAF Shomate ideal-gas Cp correlations for H2, CO2, CO, O2, N2 and H2O vapour over listed intervals",
+    "NIST methanol gas-phase Cp tabular values; no fitted or interpolated Cp correlation",
+    "NIST Antoine vapour-pressure correlations for methanol and water over exact intervals",
+    "Selected standard formation enthalpies and standard molar entropies at 298.15 K and 0.1 MPa(a), phase explicit",
+    "Balanced reference stoichiometry for CO2 hydrogenation, RWGS and CO hydrogenation",
+    "Calculated standard-state reaction enthalpies and source-propagated uncertainty"
+  ],
+  "blocked_scope": [
+    "Full synthesis-loop mixture EOS, binary interaction parameters, fugacity and phase-stability validation",
+    "Methanol-water VLE fitting/flash model and pressure-specific distillation data",
+    "Numerical process-state density, viscosity or thermal conductivity",
+    "Raw biogenic CO2 source assay, actual contaminants and chain-of-custody",
+    "Biomass feed/syngas assay and pseudo-component properties",
+    "ALK electrolyte model and guaranteed H2/O2 purity/performance",
+    "Kinetic model validated at 7 MPa(a)/70 bar(a); classic cited datasets extend to approximately 50–51 bar",
+    "Process stream balances, equipment sizing, full energy/entropy/exergy, process simulation, cost or emissions results"
+  ],
+  "validation_status": "PASS_WITH_BLOCKED_DATA_GAPS",
+  "validation_checks": [
+    "PASS unique Component_ID in components",
+    "PASS unique Property_Record_ID in property records",
+    "PASS unique Correlation_ID in Shomate correlations",
+    "PASS unique Correlation_ID in Antoine correlations",
+    "PASS unique Reaction_ID in reactions",
+    "PASS unique Mixture_ID in mixtures",
+    "PASS fail-closed null semantics for property records",
+    "PASS Shomate intervals and positive Cp at interval endpoints/midpoints",
+    "PASS Antoine intervals and positive pressure within interval",
+    "PASS normal-boiling Antoine spot checks (MeOH=1.0193 bar, H2O=1.0079 bar)",
+    "PASS C/H/O atom balance for RXN-001 through RXN-003",
+    "PASS reaction ΔH° and root-sum-square uncertainty recomputation",
+    "PASS all mixture records are explicit and no mixture property values are supplied",
+    "PASS source-specific MW values retained separately (5 small source differences logged, not overwritten)"
+  ],
+  "unit_test_count": 11,
+  "unit_test_status": "PASS",
+  "source_specific_molecular_weight_differences": [
+    {
+      "component_id": "CMP-CO2",
+      "records": [
+        [
+          "NIST-WB-CO2",
+          44.0095
+        ],
+        [
+          "CP-CO2",
+          44.0098
+        ]
+      ]
+    },
+    {
+      "component_id": "CMP-MEOH",
+      "records": [
+        [
+          "NIST-WB-MEOH",
+          32.0419
+        ],
+        [
+          "CP-MEOH",
+          32.04216
+        ]
+      ]
+    },
+    {
+      "component_id": "CMP-H2O",
+      "records": [
+        [
+          "NIST-WB-H2O",
+          18.0153
+        ],
+        [
+          "CP-H2O",
+          18.015268
+        ]
+      ]
+    },
+    {
+      "component_id": "CMP-N2",
+      "records": [
+        [
+          "NIST-WB-N2",
+          28.0134
+        ],
+        [
+          "CP-N2",
+          28.01348
+        ]
+      ]
+    },
+    {
+      "component_id": "CMP-CH4",
+      "records": [
+        [
+          "NIST-WB-CH4",
+          16.0425
+        ],
+        [
+          "CP-CH4",
+          16.0428
+        ]
+      ]
+    }
+  ],
+  "hash_scope": "SHA-256 included for every local file in 05_Data except data_version.json and ENERGY008_Data_Manifest.csv, avoiding self-reference.",
+  "frozen_artifact_sha256": {
+    "ENERGY008_Data_Quality_Report.md": "3f594d1891b16a9acaa63b93947c9d4c4ba94561352eeeb8eda2cb652d8368f2",
+    "ENERGY008_Property_Register.xlsx": "5863874a82b8a401d26ac31b90357a02a2f20e3965e440fc2d4ab17d4c7faf55",
+    "ENERGY008_Stream_and_Reaction_Data_Dictionary.xlsx": "8ea939bf6b8105dc79cb78d20ffbe12d7c5f9f93abd03ef5765b04280bfee470",
+    "README.md": "1d325fa2df733d2c7e4e8ee73c749cb80c8ee1826a2170519b071542cf4d1506",
+    "processed/antoine_correlations.csv": "58d4991ae0620b2a169cfe070d9a950dd8481950c2c56193a8ce6271a0c0d743",
+    "processed/component_inventory.csv": "7cdc77cfa5a112d70fe9630259b07e42415ccc734c7115b6c50694afb13964f2",
+    "processed/curated_reference_data.json": "ba529f144cda5a571ca67a39998a2e72a0e268a668baae308673dd32bb7345bd",
+    "processed/data_quality_validation.json": "ff4b8aa279c43ce29b357186c313211bab5bfa2ba7864c5e4fd49cdf1a0e424b",
+    "processed/data_schema.json": "97a7ba4868ce43da2e22822983c42462c8c6f9e5016d0be5a0253f0dab281f76",
+    "processed/formation_enthalpy.csv": "3541e234242298dfb2a96def11e5fcd08ab459e6a663ab5b4eea36706b140372",
+    "processed/heat_capacity_tabular.csv": "df171941ceae9c92700e9dc7eaf3af58c9e693cfff8ed82744aadd75f52775f1",
+    "processed/mixture_register.csv": "d8c254569aba6da1d6e7e8401fb0682e3a4ae35b6186529f89ea0e8ed44dc043",
+    "processed/molecular_weight_source_differences.csv": "52ef198b7d8b487c73be14e024ba18f6d92e52c1994dc96c9e1d3c130b7fcd86",
+    "processed/property_correlation_index.csv": "eace695994243e0b27bb8ecd50afecd4b3063637c9ec5cae64113efa471fa70f",
+    "processed/property_records.csv": "8e6e6604f7c3da0109bb648fd16375b6f1b1c81531b1c83ac33ed541d4155d82",
+    "processed/reaction_stoichiometry.csv": "f6e6aef53ae734536b96802d69330f36cae2b00f75ae14e921e052dc67d8cb33",
+    "processed/reaction_thermochemistry.csv": "f609c28395a9e6aa13b313393eea4ae27ea8c32c5dff8d0dc261f9d93ddd7d4e",
+    "processed/shomate_coefficients.csv": "6421b622df8f7bda060758642457ae3d4ac4010fe054ca7aa4ae1710be466a68",
+    "processed/standard_entropy.csv": "3765dfb23b4195e327c30c49371b3dcc39e414769b29f5ce1eaa0c62d51d6dc0",
+    "raw/MISSING_INPUTS.md": "369845e93547d7999c010907ff98633ad47bacaeff3a56afdf2d2d869454c438",
+    "raw/context_packages/ENERGY008_Requirements_Baseline.zip": "21657bb5f56b2389daaa8372a6e3b49c7d3ccd23c2ede650fa243e36fbbb3a0c",
+    "raw/context_packages/ENERGY008_Research_Package.zip": "3ce0125305f57a06ff3267c2c25e2626a35c776c7a534c2e6b7bde511b5a77b1",
+    "raw/prompt1_requirements/ENERGY008_Assignment_Extraction.md": "955cb62edabd21742be63bc149e3a9e1e3b869ae57f08df8fd2b02e7845eba2a",
+    "raw/prompt1_requirements/ENERGY008_Open_Decisions.csv": "3d2b5220bafc8be9681b38c5cb9643edc9d818d067a5f323894a90b00ae9149e",
+    "raw/prompt1_requirements/ENERGY008_Phase_Gates.md": "0c66c7d8eb1f84f68c9c6663cab58db358f56ade3fdf493ab199e0796c9b1659",
+    "raw/prompt1_requirements/ENERGY008_Requirements_Traceability.xlsx": "d490af8e816686bf23820a246155f1bf33b08f19b2817d08ae38c37d8a1253d1",
+    "raw/prompt2_route/ENERGY008_Base_and_Alternative_Cases.csv": "6c7ff7153ac18c66913c37b25b97e9735c2554b48d2826b4f43216a89a6192f2",
+    "raw/prompt2_route/ENERGY008_Route_Comparison.xlsx": "717c458b9338d5ea88292cd4913f6414fbe886ae3fbdd7cb60f0cbb8046e1321",
+    "raw/prompt2_route/ENERGY008_Route_Decision_Report.md": "9e8b6c4fa5989cfb8f5f4bc35888f188ea0818edd3fa8a919d76e569fc438f86",
+    "raw/prompt3_design_basis/ENERGY008_Assumptions_Register.csv": "808f234a9cb1f41bbefecde8775ea7450dde6912e93645912f73e233664ade22",
+    "raw/prompt3_design_basis/ENERGY008_Design_Basis.xlsx": "43764f0c4cd584e8e8916354a530472260f8a923fcd3708efd6c6f687f5af69a",
+    "raw/prompt3_design_basis/ENERGY008_KPI_Definitions.xlsx": "a2bc9a1827bd92ad78dce6c96aa6e2cfede7be6d30a97f12e8c96c079f73ff52",
+    "raw/prompt3_design_basis/ENERGY008_Operating_Envelope.csv": "b5dfd119bab3d235a22a6d656e370d98e10171b7fed035fbdf65026be8d17c00",
+    "raw/prompt3_design_basis/ENERGY008_Scenario_Definitions.xlsx": "ba72156ab432fbf66222fd306b1e6a17cadd015f314a3ff601182cd1926d319a",
+    "raw/prompt4_research/ENERGY008_Bibliography.bib": "f9f6a30d034442c8dd5c34f2f1ad020fd464f620c7da8597328eeedd39840c59",
+    "raw/prompt4_research/ENERGY008_Data_Gap_Register.csv": "d2356e252df33e1e9a71239fb980849e335446ccb9625d426e012a4a210851f6",
+    "raw/prompt4_research/ENERGY008_Literature_Review.md": "0f0793df7680efafa1b0d8a3c4a7218df2bdaa097e07975955507b0becdcd7bb",
+    "raw/prompt4_research/ENERGY008_Source_Register.xlsx": "aef52e6b973ecbdbc404c105c502765c36a057b3bbde20d18025e835e3a0c13e",
+    "raw/prompt4_research/ENERGY008_Standards_Regulatory_Register.xlsx": "cb2c91239be238d2f4dc25a8a5cafb4445c3b8ba2c1380fa3271c55c837651c1",
+    "raw/source_retrieval_log.csv": "8692f0c4a5ee474d3341bc814c05f1d7c2fc5a271e58dd8805cc5060aa84a6e9",
+    "raw/supplied_inputs/PSLassignment2(1).pdf": "70944b824443aaf8158a19962283777e24bdea23a39d04cef831561ad4ef9211",
+    "scripts/extract_curated_reference_data.py": "41e1df67ac5c1748f9c4e579d8a6696965cfc8d967ad4d8f7b578e20f5b8ced3",
+    "scripts/property_correlations.py": "3e9a237a58e21da3497e7cf65f134a2b23f26f492f78896b9a8e171d4fb6be85",
+    "scripts/unit_conversions.py": "196ab9a82446eafd5db90c222138cc38b89cbcb453ebfbe5b0b34c7b4b5c2047",
+    "scripts/validate_data_layer.py": "50b56b099a6095178bfc488b9fa276ad7f271edc9d011946e6f3bd6d2bec1895",
+    "tests/fixtures/synthetic_composition_fixture.json": "16f3520d32468c6b51498026b756a604eeec44c95a0735465296b9108558eec8",
+    "tests/test_data_layer.py": "4a2932d18073b25041e854907eef295a228ecd6f7b10afc97b2dd2034b0b7d0d"
+  },
+  "change_control": "Any new source value, source correction, fitted parameter, EOS/VLE parameter, vendor data, schema change or revised validation requires a new data version and refreshed manifest."
+}

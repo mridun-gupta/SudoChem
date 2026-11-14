@@ -1,0 +1,25 @@
+digraph CPS22Top {
+  graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.45", fontname="Arial", label="CPS-22 Top-Level Workflow", labelloc=t, fontsize=18];
+  node [shape=box, style="rounded,filled", fillcolor="#eaf2f8", color="#2c3e50", fontname="Arial", fontsize=10, margin="0.15,0.10"];
+  edge [color="#34495e", arrowsize=0.75, fontname="Arial", fontsize=9];
+  A [label="Load JSON inputs + property/reference data"];
+  B [label="Validate dimensions, units, bounds, ranges"];
+  C [shape=diamond, fillcolor="#fcf3cf", label="Inputs valid?"];
+  D [label="NRTL liquid activity coefficients"];
+  E [label="SRK vapor properties + root diagnostics"];
+  F [label="Gamma-phi fugacity residuals"];
+  G [label="TP flash diagnostic solver"];
+  H [shape=diamond, fillcolor="#fcf3cf", label="Residuals and bounds pass?"];
+  I [label="Record target-model diagnostics only", fillcolor="#f5eef8"];
+  J [label="Experimental reference interpolation fixture", fillcolor="#e8f8f5"];
+  K [label="Material balance + closure diagnostics"];
+  L [label="Equipment hydraulic screening"];
+  M [label="Energy / utilities / economics status gates"];
+  N [label="Reference-based sensitivity and model residual diagnostics"];
+  O [label="Export CSV / MAT / plots / run diagnostics"];
+  X [shape=octagon, fillcolor="#fadbd8", label="Stop with explicit input error"];
+  Y [shape=note, fillcolor="#fadbd8", label="Predictive model NOT ACCEPTED; no target-model stream results released to equipment design"];
+  A->B->C; C->X [label="No"]; C->D [label="Yes / target-model diagnostic"]; C->J [label="Yes / reference path"];
+  D->E->F->G->H; H->I [label="Either outcome: retain diagnostics"];
+  I->Y; J->K->L->M->N->O; Y->O;
+}

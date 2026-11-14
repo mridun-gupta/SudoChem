@@ -1,0 +1,24 @@
+ENERGY-008 Prompt 21 - Initial static review defect record
+Date: 2026-11-02
+Execution layer: source/configuration review only (not MATLAB runtime)
+
+Observed before corrections:
+1. The GUI launcher expected MATLAB/gui, while project_config.json had no GUI path folder declaration.
+2. The config data_roots omitted MATLAB/data, and explicit engine-consumed data file paths were absent.
+3. The startup smoke test expected calculation completion even though main.m is a startup-only preflight and reports calculation_status=NOT_RUN.
+4. The legacy Prompt 19 static checker expected process calculation orchestration in main.m instead of gui_run_engine.m and conflicted with the intended startup-only run_control flag. It reported 11 assertion failures during the initial static review.
+5. README files still described an earlier Prompt 18/stub-only state.
+
+Correction record:
+- Added the GUI path and engine data paths/roots to project_config.json.
+- Aligned startup smoke-test expectations with startup-ready/not-run semantics.
+- Updated the static checker to validate the actual division between main.m startup preflight and gui_run_engine.m GUI calculation orchestration.
+- Updated project README documentation.
+
+Post-correction static evidence:
+- Prompt 19 source/config/data-manifest checker: PASS (100 checks; 55 hashed datasets).
+- Prompt 19 independent Python arithmetic audit: PASS (50 checks).
+- Prompt 20 GUI source-contract checker: PASS (80 checks).
+
+Limitations:
+This file is a concise reviewer record of the initial observed static defects, not a verbatim MATLAB console log. No MATLAB or GNU Octave executable was available. The corrected static checks do not establish MATLAB syntax, execution, GUI behavior, or physical-process validity.

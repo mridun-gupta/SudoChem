@@ -1,0 +1,22 @@
+flowchart TD
+  A[Run START_HERE.m] --> B[Resolve entry path with mfilename fullpath]
+  B --> C[Walk upward to marker and project_config.json]
+  C --> D[Validate project identity and declared path folders]
+  D --> E[Add only MATLAB source folder]
+  E --> F[Call main]
+  F --> G[Create/check project-contained output report and log roots]
+  G --> H[Reserve unique run folder and log names]
+  H --> I[Parse and validate config and data manifest]
+  I --> J[Resolve explicit manifest path]
+  J --> K{File found?}
+  K -- No --> L[Search exact filename in configured data roots]
+  L --> M{Unique exact match?}
+  M -- No match --> N[Optional documented regex rule]
+  M -- Multiple --> O[Stop and list candidate paths]
+  N --> P{Exactly one match?}
+  P -- No --> O
+  P -- Yes --> Q[Check format, root containment and SHA-256]
+  K -- Yes --> Q
+  Q --> R{Integrity passed?}
+  R -- No --> S[Write STARTUP_FAILED log and stop]
+  R -- Yes --> T[Write STARTUP_READY logs; calculations NOT_RUN]

@@ -1,0 +1,734 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-11-01T00:00:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram id="energy008-pfd-001" name="ENERGY008 PFD">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4000" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PFD-TITLE" value="&lt;b&gt;ENERGY-008 | PROCESS FLOW DIAGRAM (PFD)&lt;/b&gt;&lt;br&gt;Route C working configuration: biogenic CO2 + renewable electrolytic H2&lt;br&gt;ENERGY008-PFD-001 | Rev 0.1-DRAFT | CONCEPTUAL / NOT FOR CONSTRUCTION" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#17365D;strokeColor=#17365D;fontColor=#FFFFFF;fontSize=22;align=left;verticalAlign=middle;spacing=18;" vertex="1" parent="1">
+          <mxGeometry x="40" y="28" width="3920" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="CV-GROUP-1" value="CV-100 | CO₂ FEED RECEIPT &amp; CONDITIONING" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#A6B6C7;dashed=1;dashPattern=11 8;fontColor=#17365D;fontStyle=1;fontSize=15;verticalAlign=top;align=left;spacingLeft=12;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="245" y="205" width="1000" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="CV-GROUP-2" value="CV-300 | SYNTHESIS / HIGH-PRESSURE LOOP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#A6B6C7;dashed=1;dashPattern=11 8;fontColor=#17365D;fontStyle=1;fontSize=15;verticalAlign=top;align=left;spacingLeft=12;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="195" width="1400" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="CV-GROUP-3" value="CV-200 | WATER + ALK ELECTROLYSIS / H₂ CONDITIONING" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#A6B6C7;dashed=1;dashPattern=11 8;fontColor=#17365D;fontStyle=1;fontSize=15;verticalAlign=top;align=left;spacingLeft=12;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="245" y="735" width="1160" height="690" as="geometry" />
+        </mxCell>
+        <mxCell id="CV-GROUP-4" value="CV-400 | CRUDE METHANOL PURIFICATION / STORAGE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#A6B6C7;dashed=1;dashPattern=11 8;fontColor=#17365D;fontStyle=1;fontSize=15;verticalAlign=top;align=left;spacingLeft=12;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="2290" y="925" width="1450" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="CV-GROUP-5" value="CV-500 | OFF-GAS / WASTEWATER / SOLIDS INTERFACES" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#A6B6C7;dashed=1;dashPattern=11 8;fontColor=#17365D;fontStyle=1;fontSize=15;verticalAlign=top;align=left;spacingLeft=12;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="1740" y="570" width="1590" height="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="BL-C01" value="&lt;b&gt;BL-C01&lt;/b&gt;&lt;br&gt;&lt;b&gt;Biogenic CO₂&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Source off-gas receipt&lt;br&gt;Assay / origin TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#1F4E78;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="300" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="V-101" value="&lt;b&gt;V-101&lt;/b&gt;&lt;br&gt;&lt;b&gt;Inlet knockout&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Free-liquid removal&lt;br&gt;Condensate to W-501&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="280" y="285" width="190" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="F-101" value="&lt;b&gt;F-101&lt;/b&gt;&lt;br&gt;&lt;b&gt;Filter / guard train&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Coalescing + source-specific&lt;br&gt;contaminant protection&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="510" y="285" width="210" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="P-101" value="&lt;b&gt;P-101&lt;/b&gt;&lt;br&gt;&lt;b&gt;CO₂ purification&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Technology TBD after&lt;br&gt;source assay / vendor data&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="770" y="285" width="220" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="K-101" value="&lt;b&gt;K-101&lt;/b&gt;&lt;br&gt;&lt;b&gt;CO₂ compressor&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Intercooling / condensate&lt;br&gt;removal; pressure TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="285" width="195" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="M-301" value="&lt;b&gt;M-301&lt;/b&gt;&lt;br&gt;&lt;b&gt;Feed / recycle mixer&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;CO₂ + H₂ + recycle gas&lt;br&gt;composition TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="285" width="210" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="HX-301" value="&lt;b&gt;HX-301&lt;/b&gt;&lt;br&gt;&lt;b&gt;Effluent / feed HX&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Candidate recuperator&lt;br&gt;Q / approach TBD; no credit&lt;/font&gt;&lt;br&gt;&lt;font color='#7F6000'&gt;&lt;b&gt;OPTIONAL / NOT CREDITED&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#C58A00;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="265" width="225" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="R-301" value="&lt;b&gt;R-301&lt;/b&gt;&lt;br&gt;&lt;b&gt;Synthesis reactor&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Packed-bed PFR model basis&lt;br&gt;R-01 CO₂ hydrogenation&lt;br&gt;R-02 RWGS&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2F0D9;strokeColor=#548235;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1790" y="265" width="250" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="E-302" value="&lt;b&gt;E-302&lt;/b&gt;&lt;br&gt;&lt;b&gt;Trim cooler&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Synthesis effluent cooling&lt;br&gt;/ condensation&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="2120" y="285" width="190" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="V-301" value="&lt;b&gt;V-301&lt;/b&gt;&lt;br&gt;&lt;b&gt;HP separator&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Unreacted loop gas +&lt;br&gt;crude methanol/water&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="2350" y="270" width="210" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="SP-301" value="&lt;b&gt;SP-301&lt;/b&gt;&lt;br&gt;&lt;b&gt;Recycle / purge&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Split node&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="2610" y="320" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="K-301" value="&lt;b&gt;K-301&lt;/b&gt;&lt;br&gt;&lt;b&gt;Recycle compressor&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Loop gas return&lt;br&gt;map / duty TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="2510" y="610" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="PCV-301" value="&lt;b&gt;PCV-301&lt;/b&gt;&lt;br&gt;&lt;b&gt;Purge valve&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Inert / contaminant bleed&lt;br&gt;setpoint TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="2780" y="610" width="170" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="U-501" value="&lt;b&gt;U-501&lt;/b&gt;&lt;br&gt;&lt;b&gt;Off-gas management&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Collect / treat / recover&lt;br&gt;technology TBD; no flare&lt;br&gt;assumed&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#C65911;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="3020" y="580" width="250" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="BL-VENT01" value="&lt;b&gt;BL-VENT01&lt;/b&gt;&lt;br&gt;&lt;b&gt;Treated vent&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Permitted outlet only&lt;br&gt;composition TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#1F4E78;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="3340" y="610" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="V-302" value="&lt;b&gt;V-302&lt;/b&gt;&lt;br&gt;&lt;b&gt;Liquid letdown / flash&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Degas crude liquid before&lt;br&gt;distillation&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="2350" y="1020" width="205" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="T-401" value="&lt;b&gt;T-401&lt;/b&gt;&lt;br&gt;&lt;b&gt;Methanol purification&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;MeOH / H₂O distillation&lt;br&gt;VLE / pressure TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="2610" y="990" width="235" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="E-401" value="&lt;b&gt;E-401&lt;/b&gt;&lt;br&gt;&lt;b&gt;Overhead condenser&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Condense vapour for&lt;br&gt;reflux / product&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="2890" y="1005" width="185" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="V-401" value="&lt;b&gt;V-401&lt;/b&gt;&lt;br&gt;&lt;b&gt;Reflux drum&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Condensate / noncondensables&lt;br&gt;split&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="3120" y="1005" width="185" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="P-401" value="&lt;b&gt;P-401&lt;/b&gt;&lt;br&gt;&lt;b&gt;Product pump&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Net distillate transfer&lt;br&gt;duty TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="3350" y="1020" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="TK-401" value="&lt;b&gt;TK-401&lt;/b&gt;&lt;br&gt;&lt;b&gt;Product storage&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Inventory / loading&lt;br&gt;arrangement TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="3350" y="1230" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="BL-P01" value="&lt;b&gt;BL-P01&lt;/b&gt;&lt;br&gt;&lt;b&gt;Methanol dispatch&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Plant-gate product&lt;br&gt;export S-314&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#1F4E78;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="3550" y="1245" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="E-402" value="&lt;b&gt;E-402&lt;/b&gt;&lt;br&gt;&lt;b&gt;Column reboiler&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Steam / hot utility&lt;br&gt;source TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="2615" y="1240" width="210" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="W-501" value="&lt;b&gt;W-501&lt;/b&gt;&lt;br&gt;&lt;b&gt;Wastewater treatment&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Collect / characterise / treat&lt;br&gt;reuse vs discharge TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#C65911;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="1810" y="1470" width="260" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="SW-501" value="&lt;b&gt;SW-501&lt;/b&gt;&lt;br&gt;&lt;b&gt;Solid waste interface&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Spent media / sludge /&lt;br&gt;catalyst handling&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#C65911;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="2130" y="1470" width="220" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="BL-E01" value="&lt;b&gt;BL-E01&lt;/b&gt;&lt;br&gt;&lt;b&gt;Treated effluent&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Consent-controlled&lt;br&gt;discharge/export&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#1F4E78;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="1730" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="BL-SW01" value="&lt;b&gt;BL-SW01&lt;/b&gt;&lt;br&gt;&lt;b&gt;Spent media export&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Authorised recovery /&lt;br&gt;disposal route TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#1F4E78;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="2100" y="1750" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="BL-W01" value="&lt;b&gt;BL-W01&lt;/b&gt;&lt;br&gt;&lt;b&gt;Raw water&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Source / quality /&lt;br&gt;permission TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#1F4E78;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="790" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="W-201" value="&lt;b&gt;W-201&lt;/b&gt;&lt;br&gt;&lt;b&gt;Water treatment&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Pretreatment + DI polish&lt;br&gt;reject to W-501&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="270" y="790" width="210" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ELY-201" value="&lt;b&gt;ELY-201&lt;/b&gt;&lt;br&gt;&lt;b&gt;ALK electrolyser&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Net: 2 H₂O → 2 H₂ + O₂&lt;br&gt;OEM map / purity TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2F0D9;strokeColor=#548235;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="770" width="230" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="D-201" value="&lt;b&gt;D-201&lt;/b&gt;&lt;br&gt;&lt;b&gt;H₂ purification / dryer&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Remove moisture / crossover&lt;br&gt;limits TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="810" y="790" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="K-201" value="&lt;b&gt;K-201&lt;/b&gt;&lt;br&gt;&lt;b&gt;H₂ compressor / buffer&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Draft interface 20 bar(a)&lt;br&gt;ALK outlet; 7 MPa(a) target&lt;br&gt;not frozen&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="790" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="O-201" value="&lt;b&gt;O-201&lt;/b&gt;&lt;br&gt;&lt;b&gt;O₂ handling&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Quality / H₂ crossover /&lt;br&gt;disposition TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#C65911;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1080" width="210" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="BL-O01" value="&lt;b&gt;BL-O01&lt;/b&gt;&lt;br&gt;&lt;b&gt;O₂ coproduct&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;No sale-grade / vent&lt;br&gt;credit assumed&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#1F4E78;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1100" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BL-KOH01" value="&lt;b&gt;BL-KOH01&lt;/b&gt;&lt;br&gt;&lt;b&gt;KOH makeup&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;ALK electrolyte chemical&lt;br&gt;OEM specification TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F0FA;strokeColor=#8064A2;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="850" y="1080" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BL-CHEM01" value="&lt;b&gt;BL-CHEM01&lt;/b&gt;&lt;br&gt;&lt;b&gt;CO₂ media / solvent&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Purification chemicals /&lt;br&gt;adsorbent supply&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F0FA;strokeColor=#8064A2;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="780" y="500" width="190" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="BL-CAT01" value="&lt;b&gt;BL-CAT01&lt;/b&gt;&lt;br&gt;&lt;b&gt;Catalyst supply&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Grade / activation /&lt;br&gt;handling TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F0FA;strokeColor=#8064A2;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="1820" y="500" width="190" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="BL-CHEM02" value="&lt;b&gt;BL-CHEM02&lt;/b&gt;&lt;br&gt;&lt;b&gt;Water chemicals&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Treatment reagents to&lt;br&gt;W-201 / W-501&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F0FA;strokeColor=#8064A2;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1260" width="190" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="DR-501" value="&lt;b&gt;DR-501&lt;/b&gt;&lt;br&gt;&lt;b&gt;Process drains header&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Segregated sample / wash /&lt;br&gt;maintenance drains&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#C65911;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="1320" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BL-UTIL01" value="&lt;b&gt;BL-UTIL01&lt;/b&gt;&lt;br&gt;&lt;b&gt;Site utility interfaces&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;U-001 / U-009 electricity&lt;br&gt;U-002 / U-003 cooling water&lt;br&gt;U-004 / U-010 steam return&lt;br&gt;U-005 instrument air&lt;br&gt;U-006 nitrogen&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEAF5;strokeColor=#8064A2;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1490" width="410" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="PFD-NOTE" value="&lt;b&gt;DESIGN NOTE&lt;/b&gt;&lt;br&gt;&lt;b&gt;No stream state calculations&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;All flow/composition/T/P/h values are unset.&lt;br&gt;Draft-only anchors: 7 MPa(a), 250 °C synthesis;&lt;br&gt;H₂ ≥99.9% and CO₂ ≥99.5% are screening targets only.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#C58A00;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1800" width="610" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="BL-SW02" value="&lt;b&gt;BL-SW02&lt;/b&gt;&lt;br&gt;&lt;b&gt;Sludge export&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Authorised recovery /&lt;br&gt;disposal route TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#1F4E78;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="2340" y="1750" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="BL-SW03" value="&lt;b&gt;BL-SW03&lt;/b&gt;&lt;br&gt;&lt;b&gt;Spent catalyst export&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Supplier-approved recovery /&lt;br&gt;disposal route TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#1F4E78;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="2580" y="1750" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="BL-WW-CHEM01" value="&lt;b&gt;BL-WW-CHEM01&lt;/b&gt;&lt;br&gt;&lt;b&gt;Wastewater chemicals&lt;/b&gt;&lt;br&gt;&lt;font style='font-size:12px'&gt;Treatment reagents to W-501&lt;br&gt;Identity / dosing TBD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F0FA;strokeColor=#8064A2;strokeWidth=2;fontColor=#17365D;fontSize=14;align=center;verticalAlign=middle;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="1585" y="1165" width="215" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-001" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="BL-C01" target="V-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-002" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="V-101" target="W-501">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="375" y="465" />
+              <mxPoint x="375" y="1660" />
+              <mxPoint x="1810" y="1660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-003" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="V-101" target="F-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-004" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="F-101" target="P-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-005" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="F-101" target="SW-501">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="615" y="1680" />
+              <mxPoint x="2240" y="1680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-006" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="P-101" target="K-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-007" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="P-101" target="U-501">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="200" />
+              <mxPoint x="3145" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-008" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="K-101" target="M-301">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-009" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="K-101" target="W-501">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1125" y="1700" />
+              <mxPoint x="1860" y="1700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-010" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="BL-W01" target="W-201">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-011" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="W-201" target="ELY-201">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-012" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="W-201" target="W-501">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="375" y="1760" />
+              <mxPoint x="1790" y="1760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-013" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="ELY-201" target="D-201">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-014" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="D-201" target="W-501">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="905" y="1800" />
+              <mxPoint x="1850" y="1800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-015" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="D-201" target="K-201">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-016" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="K-201" target="M-301">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1140" y="520" />
+              <mxPoint x="1385" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-017" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="ELY-201" target="O-201">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-018" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="O-201" target="BL-O01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-019" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="O-201" target="W-501">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="665" y="1690" />
+              <mxPoint x="1810" y="1690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-020" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="BL-KOH01" target="ELY-201">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="1130" />
+              <mxPoint x="790" y="855" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-021" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="ELY-201" target="SW-501">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="645" y="1720" />
+              <mxPoint x="2240" y="1720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-022" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="M-301" target="HX-301">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-023" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="HX-301" target="R-301">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-024" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="R-301" target="HX-301">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1915" y="500" />
+              <mxPoint x="1652" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-025" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="HX-301" target="E-302">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1652" y="550" />
+              <mxPoint x="2215" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-026" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="E-302" target="V-301">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-027" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="V-301" target="SP-301">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-028" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="SP-301" target="PCV-301">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2865" y="365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-029" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="SP-301" target="K-301">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2675" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-030" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="K-301" target="M-301">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2440" y="675" />
+              <mxPoint x="2440" y="520" />
+              <mxPoint x="1385" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-031" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="V-301" target="V-302">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-032" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="V-302" target="U-501">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2900" y="1090" />
+              <mxPoint x="2900" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-033" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="V-302" target="T-401">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-034" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="T-401" target="E-401">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2727" y="950" />
+              <mxPoint x="2977" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-035" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="E-401" target="V-401">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-036" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="V-401" target="T-401">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3212" y="1195" />
+              <mxPoint x="2727" y="1195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-037" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="V-401" target="P-401">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-038" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="P-401" target="TK-401">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-039" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="V-401" target="U-501">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3212" y="850" />
+              <mxPoint x="3145" y="850" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-040" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="T-401" target="W-501">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2727" y="1420" />
+              <mxPoint x="2070" y="1420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-041" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="W-501" target="BL-E01">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1935" y="1885" />
+              <mxPoint x="1640" y="1885" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-042" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="W-501" target="W-201">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="1510" />
+              <mxPoint x="120" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-043" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="W-501" target="SW-501">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-044" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="U-501" target="BL-VENT01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-045" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="R-301" target="SW-501">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1915" y="1390" />
+              <mxPoint x="2240" y="1390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-046" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="DR-501" target="W-501">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1740" y="1365" />
+              <mxPoint x="1740" y="1510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-047" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#2F75B5;strokeWidth=2;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="TK-401" target="BL-P01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-048" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#8064A2;strokeWidth=2;dashed=1;dashPattern=12 8;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="BL-CHEM01" target="P-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-049" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#8064A2;strokeWidth=2;dashed=1;dashPattern=12 8;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="BL-CAT01" target="R-301">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EDGE-050" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#8064A2;strokeWidth=2;dashed=1;dashPattern=12 8;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="BL-CHEM02" target="W-201">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="1005" />
+              <mxPoint x="375" y="1005" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-051" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="SW-501" target="BL-SW01">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2240" y="1700" />
+              <mxPoint x="2200" y="1700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-052" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="SW-501" target="BL-SW02">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2260" y="1685" />
+              <mxPoint x="2440" y="1685" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-053" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#C65911;strokeWidth=2;dashed=1;dashPattern=9 6;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="SW-501" target="BL-SW03">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2680" y="1540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-054" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#8064A2;strokeWidth=2;dashed=1;dashPattern=12 8;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="BL-CHEM01" target="F-101">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="825" y="455" />
+              <mxPoint x="615" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-055" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#8064A2;strokeWidth=2;dashed=1;dashPattern=12 8;endArrow=block;endFill=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="BL-WW-CHEM01" target="W-501">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1692" y="1445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-056" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#8064A2;strokeWidth=2;dashed=1;dashPattern=12 8;endArrow=block;endFill=1;jettySize=auto;" edge="1" parent="1" source="BL-UTIL01" target="ELY-201">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="1575" />
+              <mxPoint x="490" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-057" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#8064A2;strokeWidth=2;dashed=1;dashPattern=12 8;endArrow=block;endFill=1;jettySize=auto;" edge="1" parent="1" source="BL-UTIL01" target="E-302">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2260" y="1600" />
+              <mxPoint x="2260" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-058" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#8064A2;strokeWidth=2;dashed=1;dashPattern=12 8;endArrow=block;endFill=1;jettySize=auto;" edge="1" parent="1" source="E-302" target="BL-UTIL01">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2265" y="435" />
+              <mxPoint x="2265" y="1640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-059" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#8064A2;strokeWidth=2;dashed=1;dashPattern=12 8;endArrow=block;endFill=1;jettySize=auto;" edge="1" parent="1" source="BL-UTIL01" target="E-402">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2600" y="1660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-060" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#8064A2;strokeWidth=2;dashed=1;dashPattern=12 8;endArrow=block;endFill=1;jettySize=auto;" edge="1" parent="1" source="BL-UTIL01" target="PCV-301">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2780" y="1525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-061" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#8064A2;strokeWidth=2;dashed=1;dashPattern=12 8;endArrow=block;endFill=1;jettySize=auto;" edge="1" parent="1" source="BL-UTIL01" target="R-301">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1770" y="1495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-062" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#8064A2;strokeWidth=2;dashed=1;dashPattern=12 8;endArrow=block;endFill=1;jettySize=auto;" edge="1" parent="1" source="BL-UTIL01" target="K-101">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000" y="1730" />
+              <mxPoint x="1000" y="250" />
+              <mxPoint x="1125" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EDGE-063" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#8064A2;strokeWidth=2;dashed=1;dashPattern=12 8;endArrow=block;endFill=1;jettySize=auto;" edge="1" parent="1" source="E-402" target="BL-UTIL01">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2720" y="1950" />
+              <mxPoint x="450" y="1950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="STREAM-LABEL-001" value="S-001" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="236" y="304" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-002" value="S-002" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1034" y="1638" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-003" value="S-003" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="466" y="304" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-004" value="S-004" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="716" y="304" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-005" value="S-005" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1164" y="1658" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-006" value="S-006" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="986" y="304" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-007" value="S-007" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2014" y="178" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-008" value="S-008" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1222" y="304" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-009" value="S-009" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1304" y="1678" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-010" value="S-101" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="215" y="795" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-011" value="S-102" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="477" y="803" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-012" value="S-103" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="994" y="1738" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-013" value="S-104" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="756" y="798" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-014" value="S-105" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1294" y="1778" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-015" value="S-106" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="996" y="803" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-016" value="S-107" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1154" y="498" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-017" value="S-108" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="651" y="978" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-018" value="S-109" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="499" y="1095" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-019" value="S-110" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1104" y="1668" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-020" value="S-111" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="794" y="1062" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-021" value="S-112" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1164" y="1698" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-022" value="S-201" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1489" y="304" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-023" value="S-202" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1760" y="298" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-024" value="S-203" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1774" y="478" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-025" value="S-204" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1894" y="528" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-026" value="S-205" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2308" y="304" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-027" value="S-206" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2556" y="304" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-028" value="S-207" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2774" y="363" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-029" value="S-208" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2634" y="478" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-030" value="S-209" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1844" y="498" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-031" value="S-210" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2464" y="708" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-032" value="S-211" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2774" y="1068" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-033" value="S-212" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2552" y="1053" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-034" value="S-301" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2834" y="928" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-035" value="S-302" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3071" y="1023" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-036" value="S-303" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2934" y="1173" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-037" value="S-304" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3300" y="1023" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-038" value="S-305" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3434" y="1158" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-039" value="S-306" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3199" y="828" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-040" value="S-307" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2374" y="1398" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-041" value="S-308" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1754" y="1863" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-042" value="S-309" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="954" y="1488" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-043" value="S-310" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2068" y="1458" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-044" value="S-311" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3265" y="603" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-045" value="S-312" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2074" y="1368" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-046" value="S-313" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1704" y="1343" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-047" value="S-314" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2F75B5;strokeWidth=1;fontColor=#2F75B5;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3506" y="1238" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-048" value="S-401" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8064A2;strokeWidth=1;fontColor=#8064A2;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="879" y="448" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-049" value="S-402" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8064A2;strokeWidth=1;fontColor=#8064A2;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1924" y="448" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-050" value="S-403" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8064A2;strokeWidth=1;fontColor=#8064A2;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="254" y="983" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-051" value="S-315" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2184" y="1678" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-052" value="S-316" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2354" y="1663" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-053" value="S-317" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C65911;strokeWidth=1;fontColor=#C65911;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2514" y="1518" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-054" value="S-404" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8064A2;strokeWidth=1;fontColor=#8064A2;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="694" y="433" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-055" value="S-405" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8064A2;strokeWidth=1;fontColor=#8064A2;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1704" y="1378" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-056" value="U-001" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8064A2;strokeWidth=1;fontColor=#8064A2;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="494" y="1178" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-057" value="U-002" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8064A2;strokeWidth=1;fontColor=#8064A2;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1414" y="1578" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-058" value="U-003" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8064A2;strokeWidth=1;fontColor=#8064A2;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1394" y="1618" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-059" value="U-004" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8064A2;strokeWidth=1;fontColor=#8064A2;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1424" y="1638" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-060" value="U-005" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8064A2;strokeWidth=1;fontColor=#8064A2;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1424" y="1503" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-061" value="U-006" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8064A2;strokeWidth=1;fontColor=#8064A2;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1104" y="1473" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-062" value="U-009" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8064A2;strokeWidth=1;fontColor=#8064A2;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="714" y="1708" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="STREAM-LABEL-063" value="U-010" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8064A2;strokeWidth=1;fontColor=#8064A2;fontStyle=1;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1614" y="1928" width="88" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="PFD-NOTE-BOX" value="&lt;b&gt;DESIGN NOTE / STATUS&lt;/b&gt;&lt;br&gt;All material flow, composition, T, P and enthalpy values are uncalculated and intentionally blank.&lt;br&gt;Draft-only anchors: 7 MPa(a) and 250 C synthesis; not approved design values.&lt;br&gt;CO2 &gt;=99.5 mol% dry and H2 &gt;=99.9 mol% dry are screening targets, not vendor guarantees." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#C58A00;fontColor=#3E3E3E;fontSize=14;align=center;verticalAlign=middle;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1800" width="610" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="PFD-LEGEND" value="&lt;b&gt;DRAWING NOTES / LEGEND&lt;/b&gt;&lt;br&gt;&lt;font color='#2F75B5'&gt;Blue solid:&lt;/font&gt; process / recycle&lt;br&gt;&lt;font color='#C65911'&gt;Orange dashed:&lt;/font&gt; waste / purge / effluent / off-gas&lt;br&gt;&lt;font color='#8064A2'&gt;Purple dashed:&lt;/font&gt; utility / chemical / catalyst interfaces&lt;br&gt;U-007 fuel gas and U-008 combustion air are not selected; no fired equipment or flare assumed." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#A6B6C7;fontColor=#344054;fontSize=14;align=left;verticalAlign=middle;spacing=14;" vertex="1" parent="1">
+          <mxGeometry x="2790" y="1690" width="1030" height="285" as="geometry" />
+        </mxCell>
+        <mxCell id="PFD-FOOTER" value="ENERGY008-PFD-001 | Rev 0.1-DRAFT | Conceptual academic configuration | Not for construction, procurement or operation | 01-Nov-2026" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#5B6573;fontSize=12;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2110" width="2500" height="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

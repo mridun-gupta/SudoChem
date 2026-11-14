@@ -1,0 +1,33 @@
+digraph ENERGY008_TOP_LEVEL {
+  graph [rankdir=TB, bgcolor="#ffffff", pad="0.28", nodesep="0.22", ranksep="0.32", splines=ortho, fontname="Helvetica", label="ENERGY-008 | TOP-LEVEL NUMERICAL PROCESS WORKFLOW\nRoute C working model | Rev 0.1-DRAFT | Design calculation flow, not a solved flowsheet", labelloc=t, fontsize=20];
+  node [shape=box, style="rounded,filled", fillcolor="#F3F6FA", color="#49627A", fontname="Helvetica", fontsize=10, margin="0.14,0.08"];
+  edge [color="#50677D", penwidth=1.2, arrowsize=0.7, fontname="Helvetica", fontsize=9];
+
+  IN [label="INPUT BUNDLE\nDesign basis + source assays + PFD/55 streams\nReaction network + property register + vendor maps\nUtilities + energy/exergy basis + sequence/C&E\nVersion, provenance and approval metadata", fillcolor="#E7F0FA"];
+  VAL [label="1. INPUT / SCHEMA VALIDATION\nUnits, dimensions, composition sums, ranges\nApproval state, source quality, design-case completeness\nReject nulls in required fields; retain non-required gaps", fillcolor="#E7F0FA"];
+  GATE [shape=diamond, label="All critical inputs\nfor requested case valid?", fillcolor="#FFF1CC", color="#A97918"];
+  BLOCK [label="BLOCKED OUTPUT + DATA ACTIONS\nReturn status, missing fields, source/owner and dependency\nDo not default, zero-fill or silently extrapolate", fillcolor="#FCE8E6", color="#B64A42"];
+  PROP [label="2. PROPERTY / THERMODYNAMIC LAYER\nPure-component data + Shomate / IAPWS where valid\nPR78 EOS + kij + phase stability + fugacity\nWilson/NRTL for MeOH-water only after regression\nStore property status, validity and residuals", fillcolor="#E9F6F2"];
+  RXN [label="3. REACTION / PACKAGE MODELS\nStoichiometric matrix + exact rank + A·nu checks\nALK Faraday + vendor map\nLHHW surface equations + non-isothermal PFR\nEquilibrium only as a bound / consistency check", fillcolor="#E9F6F2"];
+  SEP [label="4. UNIT / STREAM SOLVER\nCO2 conditioning + compressors + mixer/HX\nPFR → E-302/V-301 flash → purge/recycle\nV-302 + T-401 MESH + product / offsites\nTrack 55 streams and all utility interfaces", fillcolor="#E9F6F2"];
+  REC [shape=diamond, label="Recycle and unit residuals\nmeet bounds / tolerances?", fillcolor="#FFF1CC", color="#A97918"];
+  FAIL [label="NUMERICAL FAILURE / RECOVERY\nPreserve last admissible iterate and diagnostics\nReduce relaxation / continuation only by logged rule\nAfter limits: FAILED; suppress dependent exports", fillcolor="#FCE8E6", color="#B64A42"];
+  MB [label="5. STREAM / MATERIAL BALANCES\nComponent + total mass + C/H/O element closure\nNo balancing stream; report residuals and uncertainty\nAccept only after independent checks", fillcolor="#E9F6F2"];
+  EN [label="6. ENERGY / HEAT INTEGRATION\nConsistent enthalpy datum and sign convention\nUnit/plant energy closure; duties and utility loads\nComposite curves / pinch / HX-301 feasibility\nNo reaction-heat double count", fillcolor="#E9F6F2"];
+  EX [label="7. ENTROPY / EXERGY\nStream entropy + boundary heat + accumulation\nSgen diagnostic; physical exergy and Ed = T0 Sgen\nChemical exergy only with declared chemical dead state\nRetain closure residuals; negative Sgen is not clipped", fillcolor="#E9F6F2"];
+  EQ [label="8. EQUIPMENT / UTILITIES / ENVIRONMENT\nCompressor, exchanger, separator, column and storage checks\nElectrical, cooling, steam, water, N2, instrument air\nEmissions and wastewater boundary; sizing feasibility", fillcolor="#E9F6F2"];
+  ECON [label="9. ECONOMICS + CONTROLS + SENSITIVITY\nCost model only with sourced site/vendor inputs\nAutomation state machine + disturbance profiles\nConstrained optimisation only after feasible base case\nSensitivity / uncertainty / scenario analysis", fillcolor="#E9F6F2"];
+  KPI [label="10. KPI AGGREGATION\nYield, conversion, utilisation, product quality\nSpecific electricity/water, energy/exergy efficiency\nGHG, economics and availability with correct boundary\nEach KPI carries source, unit, status and uncertainty", fillcolor="#E7F0FA"];
+  OUT [label="OUTPUT / AUDIT PACKAGE\nStream + equipment + utility tables\nSolver logs, residual and closure reports\nKPI dashboard, assumptions, blocked actions\nCSV / XLSX / JSON / Markdown / plots", fillcolor="#E7F0FA"];
+
+  IN -> VAL -> GATE;
+  GATE -> PROP [label="YES"];
+  GATE -> BLOCK [label="NO"];
+  PROP -> RXN -> SEP -> REC;
+  REC -> MB [label="YES"];
+  REC -> FAIL [label="NO"];
+  FAIL -> SEP [label="bounded retry", style=dashed];
+  FAIL -> BLOCK [label="retry exhausted", style=dashed];
+  MB -> EN -> EX -> EQ -> ECON -> KPI -> OUT;
+  BLOCK -> OUT [label="status + action log", style=dashed];
+}

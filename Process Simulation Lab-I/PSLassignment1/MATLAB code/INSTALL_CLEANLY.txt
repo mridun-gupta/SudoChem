@@ -1,0 +1,17 @@
+CPS-22 R4: CLEAN INSTALL INSTRUCTIONS
+
+1. Close all MATLAB windows/sessions.
+2. Extract this ZIP into a NEW folder called CPS-22_Industrial_MATLAB_R4. Do not extract/merge over CPS-22_Industrial_MATLAB, CPS-22_Industrial_MATLAB - Copy, or a previous recovery build.
+3. Open START_HERE.m from the newly extracted R4 folder and press Run.
+4. Verify the banner says:
+   CPS-22 R4 project activated:
+   ...\CPS-22_Industrial_MATLAB_R4
+   CSV schema check: PASS | rows=207 | columns=10 | isobars=100, 101, 300, 500, 700, 1500, 2000 kPa
+5. Run tests from the launcher or in the Command Window: CPS22_Launcher('tests')
+6. Run main calculation: CPS22_Launcher('standard')
+
+If the banner prints an old folder, START_HERE.m was opened from the old folder. Do not continue with main from that old copy.
+
+The canonical runtime CSV is data/CPS22_reference_vle_expanded.csv. It is bundled with the source and the JSON config does not point to any absolute path.
+
+Runtime model note: the source code remains a research/assignment implementation; NRTL-SRK parameter acceptance is false, and energy/economics modules intentionally report blocked status until the required data/methods are validated.

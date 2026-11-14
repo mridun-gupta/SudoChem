@@ -1,0 +1,5 @@
+run_id=20261102T044218Z_d837f600
+case_id=B-BIOMASS-SYNGAS-50TPD
+overall_status=BLOCKED
+module_status={'input_validation': 'BLOCKED', 'material_balance': 'BLOCKED', 'property_models': 'BLOCKED', 'energy_balance': 'BLOCKED', 'equipment_sizing': 'BLOCKED', 'entropy_exergy': 'BLOCKED', 'utilities_model': 'BLOCKED', 'economics': 'BLOCKED', 'environmental_kpis': 'BLOCKED', 'reactor_calculation': 'BLOCKED', 'recycle_solver': 'BLOCKED', 'control_logic': 'BLOCKED', 'material_kpis': 'BLOCKED', 'sensitivity_optimisation': 'BLOCKED'}
+MATLAB comparison status=NOT_RUN (MATLAB runtime unavailable in migration environment)

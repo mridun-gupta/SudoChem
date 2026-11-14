@@ -1,0 +1,18 @@
+inventory_id,pressure_kPa,source,bundled_numeric_file,reported_dataset_scope,ingestion_status,source_url
+S01,100.0,Susial Badajoz et al. (2021),CPS22_reference_vle_expanded.csv,26 experimental T-x-y points,Exact tabulated data transcribed from Table 6,https://doi.org/10.1021/acs.jced.0c00686
+S05,101.0,Susial Badajoz et al. (2026),CPS22_reference_vle_expanded.csv,43 experimental T-x-y points,Exact tabulated data transcribed from Table 5; kept separate from the 100 kPa source,https://doi.org/10.1021/acsomega.6c04827
+S05,300.0,Susial Badajoz et al. (2026),CPS22_reference_vle_expanded.csv,21 experimental T-x-y points,Exact tabulated data transcribed from Table 5,https://doi.org/10.1021/acsomega.6c04827
+S05,500.0,Susial Badajoz et al. (2026),CPS22_reference_vle_expanded.csv,22 experimental T-x-y points,Exact tabulated data transcribed from Table 5,https://doi.org/10.1021/acsomega.6c04827
+S05,700.0,Susial Badajoz et al. (2026),CPS22_reference_vle_expanded.csv,22 experimental T-x-y points,Exact tabulated data transcribed from Table 5,https://doi.org/10.1021/acsomega.6c04827
+S01,1500.0,Susial Badajoz et al. (2021),CPS22_reference_vle_expanded.csv,32 experimental T-x-y points,Exact tabulated data transcribed from Table 6,https://doi.org/10.1021/acs.jced.0c00686
+S01,2000.0,Susial Badajoz et al. (2021),CPS22_reference_vle_expanded.csv,41 experimental T-x-y points,Exact tabulated data transcribed from Table 6,https://doi.org/10.1021/acs.jced.0c00686
+L01,33.3,Kirschbaum and Gerstner (bibliographic curve cited in 2021 paper),Not included,Legacy low-pressure VLE curve identified in comparison figure,Original numeric points not yet transcribed; not used in runtime calculation,https://doi.org/10.1021/acs.jced.0c00686
+L02,101.3,Kojima et al.; Stabnikov et al.; Otsuki and Williams,Not included,Additional legacy near-atmospheric-pressure datasets,Curve citations found; original raw source tables not yet transcribed,https://doi.org/10.1021/acs.jced.0c00686
+L03,287.4,Othmer et al. (bibliographic curve in 2026 paper),Not included,Moderate-pressure legacy VLE curve,Original numeric points not yet transcribed,https://doi.org/10.1021/acs.jced.0c00686
+L04,344.74,Otsuki and Williams (bibliographic curve in 2021 paper),Not included,Moderate-pressure legacy VLE curve,Original numeric points not yet transcribed,https://doi.org/10.1021/acs.jced.0c00686
+L05,515.0,Othmer et al. (bibliographic curve in 2021/2026 papers),Not included,Moderate-pressure legacy VLE curve,Original numeric points not yet transcribed,https://doi.org/10.1021/acs.jced.0c00686
+L06,689.48,Otsuki and Williams (bibliographic curve in 2021 paper),Not included,Moderate-pressure legacy VLE curve,Original numeric points not yet transcribed,https://doi.org/10.1021/acs.jced.0c00686
+L07,721.8,Othmer et al. (bibliographic curve in 2026 paper),Not included,Moderate-pressure legacy VLE curve,Original numeric points not yet transcribed,https://doi.org/10.1021/acs.jced.0c00686
+L08,1378.95,Otsuki and Williams (bibliographic curve in 2021 paper),Not included,High-pressure legacy VLE curve near 1.38 MPa,Original numeric points not yet transcribed,https://doi.org/10.1021/acs.jced.0c00686
+L09,2068.43,Otsuki and Williams (bibliographic curve in 2021 paper),Not included,High-pressure legacy VLE curve near 2.07 MPa,Original numeric points not yet transcribed,https://doi.org/10.1021/acs.jced.0c00686
+S06,varies / low pressure,"Voutsas et al. (2011), NIST ThermoML",NIST ThermoML dataset listing,45 bubble-temperature and 45 vapor-composition points listed by index,Source identified; raw rows not yet ingested into this canonical table,https://trc.nist.gov/ThermoML/10.1016/j.fluid.2011.06.009.html

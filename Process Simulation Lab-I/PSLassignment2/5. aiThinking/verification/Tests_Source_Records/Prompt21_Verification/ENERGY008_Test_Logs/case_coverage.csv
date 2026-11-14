@@ -1,0 +1,6 @@
+﻿Case_ID,Case_Type,Case_Status,Independent_Status,Independent_Result_or_Limitation,MATLAB_Status
+C-BIOCO2-REH2-ALK-REF-50TPD,BASE,REFERENCE_ONLY,PASS / SCREENING ONLY,50 t/day ideal stoichiometric rates independently recomputed,MATLAB NOT RUN
+A-INDCO2-REH2-ALK-REF-50TPD,ALTERNATIVE_1,REFERENCE_ONLY,PASS / SCREENING ONLY,Common downstream core recomputed; industrial CO2 upstream is not modelled,MATLAB NOT RUN
+B-BIOMASS-SYNGAS-50TPD,ALTERNATIVE_2,BLOCKED,PASS (fail-closed gate),"No rates computed; biomass assay, syngas and kinetics absent",MATLAB NOT RUN
+C-BIOCO2-REH2-ALK-TURNDOWN-25TPD,TURNDOWN,SCREENING_ONLY,PASS / SCREENING ONLY,25 t/day linear stoichiometric scaling only,MATLAB NOT RUN
+DB-059-POWER-SHORTFALL-50PCT-2H,DISTURBANCE,SCREENING_ONLY,PASS / SCREENING ONLY,Two-hour linear H2 deficit only; no dynamic response/buffer sizing,MATLAB NOT RUN

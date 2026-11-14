@@ -1,0 +1,76 @@
+﻿ID,Calculation / equipment / study,Status / case levels,Evidence path
+HC-001,Methanol molar rate,CALCULATED REFERENCE,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-002,Theoretical CO2 consumption,CALCULATED REFERENCE,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-003,Theoretical hydrogen consumption,CALCULATED REFERENCE,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-004,Electrolyser water demand,CALCULATED REFERENCE,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-005,Theoretical oxygen coproduct,CALCULATED REFERENCE,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-006,Reaction and net chemical water,CALCULATED REFERENCE,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-007,Integrated reaction elemental balance,VERIFIED STOICHIOMETRIC IDENTITY,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-008,Integrated mass closure / MW residual,VERIFIED WITH ROUNDING RESIDUAL,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-009,R-01 standard reaction enthalpy rate,CALCULATED STANDARD-STATE REFERENCE,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-010,E-01 thermoneutral enthalpy rate,CALCULATED STANDARD-STATE REFERENCE,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-011,Integrated net reaction enthalpy identity,VERIFIED THERMOCHEMICAL IDENTITY,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-012,CO2 ideal-gas sensible heat,SCREENING EXAMPLE,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-013,Pure methanol latent-heat example,SCREENING EXAMPLE,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-014,Illustrative heat-exchanger area,SCREENING ONLY,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-015,W-201 DI-water pump hydraulic example,SCREENING ONLY,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-016,Stoichiometric intensity KPIs,CALCULATED REFERENCE,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-017,Physical recycle and purge,BLOCKED,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+HC-018,Plant entropy and exergy closure,BLOCKED,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+CAL-001,Annual production and calendar capacity factor,CALCULATED FROM ASSUMPTIONS,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+CAL-002,Capacity ladder and design capacity,SCREENING ONLY,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+CAL-003,Gross conditioned CO2 dry-gas flow,SCREENING ONLY,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+CAL-004,Gross conditioned H2 dry-gas flow,SCREENING ONLY,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+CAL-005,Route B clean-CO synthesis stoichiometry,REACTION-BLOCK REFERENCE ONLY,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+CAL-006,R-03 standard reaction enthalpy,REFERENCE ONLY,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+CAL-007,Water-demand boundary comparison,SCREENING / SOURCE-GUIDANCE COMPARISON,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+CAL-008,ELY-201 design flow anchor,SCREENING FLOW ANCHOR,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+CAL-009,ELY-201 Faraday current equivalent,THEORETICAL ELECTROCHEMICAL EQUIVALENT,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+CAL-010,ELY-201 electricity scenario,SCREENING ONLY,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+CAL-011,K-201 two-stage compression method / cases,SCREENING CALCULATION ONLY,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+CAL-012,K-201 normal-case numerical reconstruction,SCREENING ONLY,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+CAL-013,TK-401 product inventory scenarios,SCREENING INVENTORY ONLY,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+CAL-014,Electrolyser electricity-only cost and emissions,SCREENING ONLY,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+CAL-015,K-201 annual electricity / emissions comparator,SCREENING COMPARATOR,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+CAL-016,Green methanol / hydrogen threshold arithmetic,REFERENCE THRESHOLD ARITHMETIC,ENERGY008_Detailed_Calculation_Book_Rev0.2.docx; ENERGY008_Detailed_Calculation_Register_Rev0.2.xlsx
+EQ-001,DR-501: Segregated process drain header,BLOCKED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/DR_501_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-002,D-201: Hydrogen gas purification and drying,BLOCKED - flow lower-bound only,Equipment_Datasheets/Prompt11_Detailed_Datasheets/D_201_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-003,ELY-201: Pressurised alkaline electrolyser package,CAPACITY FLOW ANCHOR ONLY,Equipment_Datasheets/Prompt11_Detailed_Datasheets/ELY_201_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-004,E-302: Synthesis effluent trim cooler/condenser,BLOCKED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/E_302_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-005,E-401: Distillation overhead condenser,BLOCKED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/E_401_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-006,E-402: Distillation reboiler,BLOCKED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/E_402_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-007,F-101: Coalescing filter and contaminant guard train,BLOCKED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/F_101_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-008,HX-301: Synthesis feed/effluent recuperator,BLOCKED - candidate only,Equipment_Datasheets/Prompt11_Detailed_Datasheets/HX_301_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-009,K-101: CO2 compression train,BLOCKED - flow lower-bound only,Equipment_Datasheets/Prompt11_Detailed_Datasheets/K_101_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-010,K-201: Hydrogen compression and buffer package,SCREENING CALCULATION ONLY - NOT RATING,Equipment_Datasheets/Prompt11_Detailed_Datasheets/K_201_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-011,K-301: Synthesis-gas recycle compressor,BLOCKED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/K_301_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-012,M-301: Fresh/recycle gas mixer,FLOW ANCHOR ONLY,Equipment_Datasheets/Prompt11_Detailed_Datasheets/M_301_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-013,O-201: Oxygen coproduct conditioning/interface,FLOW ANCHOR ONLY,Equipment_Datasheets/Prompt11_Detailed_Datasheets/O_201_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-014,PCV-301: Purge flow-control valve,BLOCKED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/PCV_301_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-015,P-101: CO2 recovery and purification package,BLOCKED - throughput lower-bound only,Equipment_Datasheets/Prompt11_Detailed_Datasheets/P_101_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-016,P-401: Distillate/product transfer pump,FLOW ANCHOR ONLY,Equipment_Datasheets/Prompt11_Detailed_Datasheets/P_401_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-017,R-301: Methanol synthesis packed-bed reactor,BLOCKED - REACTOR SIZE NOT CALCULATED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/R_301_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-018,SP-301: Recycle/purge split node,BLOCKED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/SP_301_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-019,SW-501: Solid/hazardous waste collection interface,BLOCKED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/SW_501_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-020,TK-401: Methanol product storage and dispatch,SCREENING INVENTORY SCENARIOS ONLY,Equipment_Datasheets/Prompt11_Detailed_Datasheets/TK_401_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-021,T-401: Methanol-water purification column,BLOCKED - COLUMN NOT SIZED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/T_401_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-022,U-501: Off-gas collection/treatment interface,BLOCKED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/U_501_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-023,V-101: Raw CO2 inlet knockout drum,BLOCKED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/V_101_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-024,V-301: High-pressure gas/liquid separator,BLOCKED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/V_301_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-025,V-302: Crude liquid letdown/degassing drum,BLOCKED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/V_302_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-026,V-401: Distillation reflux drum,BLOCKED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/V_401_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-027,W-201: Water pretreatment and DI polishing package,SCREENING OUTPUT CAPACITY ONLY,Equipment_Datasheets/Prompt11_Detailed_Datasheets/W_201_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+EQ-028,W-501: Wastewater collection and treatment/reuse interface,BLOCKED,Equipment_Datasheets/Prompt11_Detailed_Datasheets/W_501_Datasheet.md; ENERGY008_Detailed_Calculation_Book_Rev0.2.docx
+OAT-S01,Throughput,45/50/55 t/day | SCREENING ONLY,thinking/calculations/ENERGY008_OAT_Results_Rev0.2.csv; 156-row source result table; 3-level OAT study; 156-row source result table; 3-level OAT study
+OAT-S02,ALK SEC,48/52/55 kWh/kg H2 | SCREENING ONLY,thinking/calculations/ENERGY008_OAT_Results_Rev0.2.csv; 156-row source result table; 3-level OAT study; 156-row source result table; 3-level OAT study
+OAT-S03,Electricity tariff,3/5/8 INR/kWh | SCREENING ONLY,thinking/calculations/ENERGY008_OAT_Results_Rev0.2.csv; 156-row source result table; 3-level OAT study; 156-row source result table; 3-level OAT study
+OAT-S04,Electricity carbon intensity,0.05/0.40/0.80 kgCO2e/kWh | SCREENING ONLY,thinking/calculations/ENERGY008_OAT_Results_Rev0.2.csv; 156-row source result table; 3-level OAT study; 156-row source result table; 3-level OAT study
+OAT-S05,Annual uptime fraction,0.80/0.821918/0.95 | SCREENING ONLY,thinking/calculations/ENERGY008_OAT_Results_Rev0.2.csv; 156-row source result table; 3-level OAT study; 156-row source result table; 3-level OAT study
+OAT-S06,Fresh H2/CO2 ratio,3.00/3.15/3.30 | SCREENING ONLY,thinking/calculations/ENERGY008_OAT_Results_Rev0.2.csv; 156-row source result table; 3-level OAT study; 156-row source result table; 3-level OAT study
+OAT-S07,CO2 dry purity,0.990/0.995/1.000 | SCREENING ONLY,thinking/calculations/ENERGY008_OAT_Results_Rev0.2.csv; 156-row source result table; 3-level OAT study; 156-row source result table; 3-level OAT study
+OAT-S08,Total water intensity,30/50/70 L/kg H2 | SCREENING ONLY,thinking/calculations/ENERGY008_OAT_Results_Rev0.2.csv; 156-row source result table; 3-level OAT study; 156-row source result table; 3-level OAT study
+OAT-S09,Heat-transfer U,75/100/125 W/m2/K | SCREENING ONLY,thinking/calculations/ENERGY008_OAT_Results_Rev0.2.csv; 156-row source result table; 3-level OAT study; 156-row source result table; 3-level OAT study
+OAT-S10,LMTD,20/30/40 K | SCREENING ONLY,thinking/calculations/ENERGY008_OAT_Results_Rev0.2.csv; 156-row source result table; 3-level OAT study; 156-row source result table; 3-level OAT study
+OAT-S11,Pump flow margin,0/10/20% | SCREENING ONLY,thinking/calculations/ENERGY008_OAT_Results_Rev0.2.csv; 156-row source result table; 3-level OAT study; 156-row source result table; 3-level OAT study
+OAT-S12,Reference heat recovery,0/25/50% | SCREENING ONLY,thinking/calculations/ENERGY008_OAT_Results_Rev0.2.csv; 156-row source result table; 3-level OAT study; 156-row source result table; 3-level OAT study
+LHS-0001 to LHS-1000,8-dimensional deterministic Latin-hypercube sample population,SCREENING ONLY,"thinking/calculations/ENERGY008_LHS_Samples_Rev0.2.csv; 1,000 rows; eight dimensions"

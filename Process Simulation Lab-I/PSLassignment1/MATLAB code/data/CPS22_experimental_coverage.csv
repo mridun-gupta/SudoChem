@@ -1,0 +1,8 @@
+pressure_kPa,n_points,T_min_K,T_max_K,x_ethanol_min,x_ethanol_max,y_ethanol_min,y_ethanol_max,source_id,interpretation
+100.0,26,351.4,372.3,0.001,0.963,0.014,0.961,S01,Measured isobar only; do not interpolate or represent other pressures as experimental coverage
+101.0,43,351.3,370.6,0.011,0.986,0.097,0.984,S05,Measured isobar only; do not interpolate or represent other pressures as experimental coverage
+300.0,21,382.1,399.0,0.032,0.944,0.228,0.942,S05,Measured isobar only; do not interpolate or represent other pressures as experimental coverage
+500.0,22,398.6,423.5,0.008,0.947,0.066,0.944,S05,Measured isobar only; do not interpolate or represent other pressures as experimental coverage
+700.0,22,410.2,435.6,0.012,0.957,0.074,0.953,S05,Measured isobar only; do not interpolate or represent other pressures as experimental coverage
+1500.0,32,440.7,468.9,0.007,0.966,0.055,0.964,S01,Measured isobar only; do not interpolate or represent other pressures as experimental coverage
+2000.0,41,453.8,484.0,0.005,0.985,0.036,0.983,S01,Measured isobar only; do not interpolate or represent other pressures as experimental coverage

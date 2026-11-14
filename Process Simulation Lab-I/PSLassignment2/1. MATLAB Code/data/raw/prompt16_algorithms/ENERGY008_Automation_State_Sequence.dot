@@ -1,0 +1,58 @@
+digraph ENERGY008_AUTOMATION {
+  graph [rankdir=TB, bgcolor="#ffffff", pad="0.30", nodesep="0.20", ranksep="0.32", splines=ortho, fontname="Helvetica", label="ENERGY-008 | NORMALISED AUTOMATION STATE / SEQUENCE\nPrompt 14 C&E + Prompt 15 sequence | Conceptual state logic only", labelloc=t, fontsize=19];
+  node [shape=box, style="rounded,filled", fillcolor="#EAF1FA", color="#49627A", fontname="Helvetica", fontsize=9, margin="0.14,0.08"];
+  edge [color="#50677D", penwidth=1.15, arrowsize=0.7, fontname="Helvetica", fontsize=8];
+
+  OFF [label="ST-000 | OFF\nNo start demand", fillcolor="#EEF1F4"];
+  PRE [label="ST-010 | PRE-START REVIEW\nPermits, work scope, handback, revision check"];
+  UTIL [label="ST-020 | UTILITIES & PROTECTION READY\nRequired utilities, DCS/UPS, FGS, ESD, U-501/W-501"];
+  INERT [label="ST-030 | ISOLATION / INERTING / INTEGRITY HOLD\nApproved test package, segregated H2/O2 paths, gas tests"];
+  PACK [label="ST-040 | PACKAGE READY\nW-201 / ELY-201 / CO2 / H2 packages healthy"];
+  CAT [label="ST-050 | CATALYST / REACTOR CONDITIONING HOLD\nOEM catalyst procedure + heat-removal / protection release"];
+  GAS [label="ST-060 | CONDITIONED H2 / CO2 AVAILABLE\nComposition, purity, moisture, pressure and maps valid"];
+  RECYCLE [label="ST-070 | RECYCLE / PRESSURE ESTABLISHED\nK-301 OEM sequence, anti-surge, V-301 and U-501 ready"];
+  ADMIT [label="ST-080 | CONTROLLED REACTANT ADMISSION\nRatio permissive; R-301 temperature / pressure / cooling healthy"];
+  SEP [label="ST-090 | SEPARATION / CRUDE HANDLING\nE-302 / V-301 / V-302 stable; liquid handling available"];
+  DIST [label="ST-100 | DISTILLATION / QUALITY STABILISE\nT-401 / E-401 / E-402 / V-401 ready; sample/lab basis valid"];
+  NORMAL [label="ST-110 | NORMAL OPERATION\nBPCS auto / package controls / monitoring", fillcolor="#DDEFE4", color="#4D805C"];
+  TURN [label="ST-111 | TURNDOWN\nCoordinated H2/CO2 demand; stay inside validated maps", fillcolor="#FFF1CC", color="#A97918"];
+  SHUT [label="ST-120 | CONTROLLED SHUTDOWN\nValidated stop-feed / energy / inventory sequence"];
+  VERIFIED [label="ST-130 | SHUTDOWN VERIFIED\nNo automatic restart; maintenance needs LOTO boundary"];
+  ESD [label="ST-900 | ESD LATCHED / SAFE-STATE DEMAND\nTrip/isolate per approved C&E; retain essential functions", fillcolor="#FCE8E6", color="#B64A42"];
+  HOLD [label="ST-910 | TRIP INVESTIGATION / RESTART HOLD\nFirst-out, cause removal, tests, inspection, restart review", fillcolor="#FCE8E6", color="#B64A42"];
+  QHOLD [label="ST-920 | PRODUCT QUALITY HOLD\nStop transfer; segregate/hold product pending authority release", fillcolor="#FFF1CC", color="#A97918"];
+  MODE [label="MODE / AUTHORITY OVERLAY\nOFF • MAINTENANCE • MANUAL • AUTOMATIC\nManual cannot bypass ESD, FGS, OEM protection or safety permissives", shape=note, fillcolor="#E8EAF6", color="#6D66A8"];
+  GUARD [label="GLOBAL GUARDS / FIRST-OUT\nAlarm + interlock health • PV quality • package ready\nESD / confirmed FGS / safety-package demand has highest priority", shape=note, fillcolor="#F3F6FA"];
+
+  OFF -> PRE [label="authorised start request"];
+  PRE -> UTIL [label="review signed / no open work"];
+  UTIL -> INERT [label="utilities stable for T_UTIL_STABLE (TBD)"];
+  INERT -> PACK [label="approved inert / leak-test certificates"];
+  PACK -> CAT [label="package permissives true"];
+  CAT -> GAS [label="vendor / owner release"];
+  GAS -> RECYCLE [label="H2 + CO2 quality valid"];
+  RECYCLE -> ADMIT [label="recycle stable for T_RECYCLE_STABLE (TBD)"];
+  ADMIT -> SEP [label="reactor stable / permissives true"];
+  SEP -> DIST [label="crude transfer and separation stable"];
+  DIST -> NORMAL [label="product quality released"];
+  NORMAL -> TURN [label="power / feed / utility constraint"];
+  TURN -> NORMAL [label="constraint cleared + stable validation"];
+  TURN -> SHUT [label="no feasible minimum-load point"];
+  NORMAL -> SHUT [label="normal stop request"];
+  SHUT -> VERIFIED [label="unit checklists complete"];
+  VERIFIED -> PRE [label="new authorised start request"];
+  DIST -> QHOLD [label="analyser/lab invalid or off-spec"];
+  NORMAL -> QHOLD [label="off-spec product"];
+  QHOLD -> DIST [label="quality authority release + stable process"];
+  QHOLD -> SHUT [label="rework / disposal path not approved"];
+  ESD -> HOLD [label="cause cleared + authorised reset only"];
+  HOLD -> PRE [label="restart review complete; new start request"];
+
+  {rank=same; NORMAL; TURN; QHOLD;}
+  {rank=same; ESD; HOLD;}
+  MODE -> PRE [style=dashed, arrowhead=none, label="mode authority"];
+  GUARD -> ESD [style=dashed, label="qualified trip demand"];
+  GUARD -> QHOLD [style=dashed, label="quality demand"];
+  GUARD -> NORMAL [style=dashed, arrowhead=none, label="monitoring / permissives"];
+  ESD -> OFF [style=dashed, color="#B64A42", label="not permitted: no auto restart", arrowhead=tee];
+}

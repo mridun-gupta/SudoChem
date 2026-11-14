@@ -1,0 +1,100 @@
+{
+  "result_version": "ENERGY008-REPORT-1.0",
+  "project_id": "ENERGY-008",
+  "project_title": "Green methanol synthesis – Utility integration and energy KPIs",
+  "report_id": "ENERGY008-REP-001",
+  "report_revision": "1.0",
+  "issue_date": "2026-11-02",
+  "design_model_version": "ENERGY008-MODEL-0.1.0",
+  "data_version": "ENERGY008-DATA-0.1.0",
+  "design_basis_revision": "0.1-DRAFT",
+  "gate_3_design_basis_frozen": false,
+  "evidence_cutoff": "2026-11-02",
+  "governing_assignment": "Original PSLassignment2.pdf; topics 1–27 retained in order",
+  "core_deliverables": {
+    "docx": {
+      "path": "Report/ENERGY008_Technical_Report.docx",
+      "bytes": 5417146,
+      "sha256": "38e1e25bce88607fc6613267185e4129f5653bbbe62b9ae1068a2f3404c768bd"
+    },
+    "pdf": {
+      "path": "Report/ENERGY008_Technical_Report.pdf",
+      "bytes": 6505593,
+      "sha256": "8dcab1a518a6f51aba16b52f783480124f187a9357a811a3b25bc86c95aec851"
+    },
+    "pptx": {
+      "path": "Presentation/ENERGY008_Short_Presentation.pptx",
+      "bytes": 1493248,
+      "sha256": "3e67496947ae2ea21f1cfbb5e9f1d2f751e77d11e421f519e5f698eb9387e44b"
+    },
+    "figure_register": {
+      "path": "Report/Figure_Register.csv",
+      "bytes": 5269,
+      "sha256": "4c2d28b20889e3d31cdae4cf79144727bda8f1603564ff5a36be6a26f2a9f417"
+    },
+    "table_register": {
+      "path": "Report/Table_Register.csv",
+      "bytes": 3444,
+      "sha256": "d21f25e8fd2b8bfd984dd99a06440087f5648bbe4f61a51fba51969be5625815"
+    },
+    "source_register": {
+      "path": "Registers/Core/ENERGY008_Source_Register.xlsx",
+      "bytes": 36507,
+      "sha256": "aef52e6b973ecbdbc404c105c502765c36a057b3bbde20d18025e835e3a0c13e"
+    },
+    "assignment": {
+      "path": "Original_Assignment/PSLassignment2.pdf",
+      "bytes": 518464,
+      "sha256": "70944b824443aaf8158a19962283777e24bdea23a39d04cef831561ad4ef9211"
+    }
+  },
+  "report_render": {
+    "pages": 121,
+    "page_size": "A4",
+    "encrypted": false,
+    "outline_entries": 382,
+    "annotations": 133,
+    "figure_register_entries": 33,
+    "table_register_entries": 30,
+    "references": 74
+  },
+  "presentation": {
+    "slides": 16,
+    "overflow_test": "PASS"
+  },
+  "engineering_status": "Final consolidated academic report; plant design remains preliminary, with explicit BLOCKED, NOT RUN, FAIL, SCREENING ONLY and TBD items retained. Cover declaration/sign-off fields added; candidate signature and faculty review remain pending.",
+  "supporting_deliverables": {
+    "reference_list_csv": {
+      "path": "Bibliography/ENERGY008_Reference_List.csv",
+      "bytes": 39971,
+      "sha256": "c94ed51221c3c608538501ef4005fd317e9942e912b7bc91787370f5f2ad0665"
+    },
+    "bibliography_bibtex": {
+      "path": "Bibliography/ENERGY008_Bibliography.bib",
+      "bytes": 63041,
+      "sha256": "46cebb7af1f8eb72ef701ae3fb5bac4c6b81c86ba1ebbdaf4a1cc30a58684e07"
+    }
+  },
+  "bibliography_audit": {
+    "source_register_records": 74,
+    "report_citation_ids_found": 74,
+    "missing_citation_ids": [],
+    "unknown_citation_ids": [],
+    "bibtex_records": 74,
+    "bibtex_record_ids_match_csv": true,
+    "bibtex_validation": "PASS; Biber 2.20 data-model validation completed without warnings or errors"
+  },
+  "local_reconciliation": {
+    "canonical_docx_path": "Report/ENERGY008_Technical_Report.docx",
+    "canonical_pdf_path": "Report/ENERGY008_Technical_Report.pdf",
+    "word_render_pages": 121,
+    "pdf_pages": 121,
+    "word_render_pdf_text_page_differences": 0,
+    "word_render_pdf_page_size": "A4",
+    "slide_render": "PASS; all 16 slides rendered and montage visually reviewed",
+    "slide_overflow_test": "PASS; no overflow detected",
+    "release_hashes_reconciled": true,
+    "engineering_design_freeze": false
+  },
+  "manifest_path": "QA/Manifest.csv (all package files except the manifest itself)"
+}

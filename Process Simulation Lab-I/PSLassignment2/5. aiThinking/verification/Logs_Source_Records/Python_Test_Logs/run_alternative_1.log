@@ -1,0 +1,26 @@
+{
+  "case": {
+    "case_id": "A-INDCO2-REH2-ALK-REF-50TPD",
+    "route_id": "Route A",
+    "case_status": "REFERENCE_ONLY",
+    "methanol_component_equivalent_kg_day": 50000.0
+  },
+  "overall_status": "SCREENING_ONLY",
+  "module_status": {
+    "input_validation": "CALCULATED",
+    "material_balance": "REFERENCE_ONLY",
+    "property_models": "SCREENING_ONLY",
+    "energy_balance": "SCREENING_ONLY",
+    "equipment_sizing": "SCREENING_ONLY",
+    "entropy_exergy": "BLOCKED",
+    "utilities_model": "BLOCKED",
+    "economics": "BLOCKED",
+    "environmental_kpis": "BLOCKED",
+    "reactor_calculation": "BLOCKED",
+    "recycle_solver": "BLOCKED",
+    "control_logic": "BLOCKED",
+    "material_kpis": "REFERENCE_ONLY",
+    "sensitivity_optimisation": "SCREENING_ONLY"
+  },
+  "export_directory": "/mnt/data/ENERGY008_MATLAB/Python/results/20261102T044216Z_e06f39f8"
+}

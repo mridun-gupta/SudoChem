@@ -1,0 +1,31 @@
+Table_No,Caption,Units_Status,Page
+1,Table 1. Document control and issue record,Units: identifier/date/status as shown.,2
+2,Table 2. Result-status vocabulary,Units: not applicable.,2
+3,Table 3. Consolidated numerical reference results,Units shown in result labels; values are not plant guarantees.,3
+4,Table 4. Design-basis inputs and assumption status,Units are shown alongside each parameter.,4
+5,Table 5. Nomenclature and reporting units,Units are specified in the third column.,8
+6,Table 6. Scope-to-model mapping,Units in the text/column labels; status describes evidence maturity.,9
+7,Table 7. Route and alternative-case comparison,Units: not applicable; route evidence status shown.,9
+8,Table 8. Operating and disturbance case register,Units embedded in case definitions; timings are qualitative unless specified.,10
+9,Table 9. Critical data gaps and effects,Units and ranges are given in the evidence column; status is qualitative.,11
+10,Table 10. Ideal Route C reaction-block material ledger,Molar rate: kmol/day; mass rate: kg/day.,14
+11,Table 11. Stream register status by process train,"Units: stream IDs; physical flow units are kg/h, kmol/h, m3/h where populated.",14
+12,Table 12. Energy and heat-transfer reference quantities,Units are included in the quantity/result columns.,15
+13,Table 13. Equipment sizing and datasheet status,Units: duty/power units given where a numerical screen is available.,18
+14,Table 14. Representative control-loop register extract,Sensor spans and setpoints are TBD; tag-specific engineering units are controlled in source workbook.,25
+15,Table 15. Conceptual start-up state sequence,Times: qualitative; timers and setpoints remain TBD.,26
+16,Table 16. Representative alarm and candidate interlock matrix,"Alarm priorities are proposed; numeric limits, deadbands and delays remain TBD.",26
+17,Table 17. Utility and environmental screening summary,Units are included in the first two columns; total-water scenario includes feedwater.,28
+18,Table 18. Environmental and waste stream register extract,Units: stream identifiers; quantities are not available.,28
+19,Table 19. CAPEX estimate completeness register,Units: currency and year are TBD; no total is estimated.,29
+20,Table 20. Electricity-only cost and emissions scenario,Units are shown in each row; not full plant OPEX/GHG.,29
+21,Table 21. One-at-a-time sensitivity programme,Ranges and engineering units shown by parameter.,30
+22,Table 22. Conditional LHS output intervals,Units shown in output label; independent uniform sampling.,30
+23,Table 23. MATLAB module architecture and execution status,Units: file/module names; status distinguishes static source from runtime evidence.,37
+24,Table 24. Variable dictionary and unit contract,Units shown in canonical-unit column.,38
+25,Table 25. Verification population summary,"Counts are records/assertions, not plant operating events.",39
+26,Table 26. MATLAB-to-Python migration status,Units: versions and test counts as shown.,40
+27,Table 27. Final submission folder manifest,Units: not applicable; file formats are specified.,41
+28,Table 28. Assignment Topic 27 acceptance checklist,Units: not applicable; disposition is evidence status.,41
+29,Table 29. Automation and safety register coverage,Counts from source package; all entries conceptual unless explicitly verified.,117
+30,Table 30. Material limitations and downstream consequence,Units: not applicable.,118

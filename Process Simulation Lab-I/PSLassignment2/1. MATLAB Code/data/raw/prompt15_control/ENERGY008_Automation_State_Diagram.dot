@@ -1,0 +1,69 @@
+digraph ENERGY008_StateMachine {
+  graph [
+    rankdir=TB, bgcolor="white", pad="0.35", nodesep="0.42", ranksep="0.55",
+    splines=ortho, fontname="Arial", fontsize=20,
+    labelloc="t", label="ENERGY-008 | AUTOMATION STATE / SEQUENCE LOGIC\nRoute C working basis | Rev 0.1-DRAFT | 01-Nov-2026\nConceptual state model for Prompt 16 - not executable PLC/DCS logic",
+    size="15,18!", ratio=fill
+  ];
+  node [shape=box, style="rounded,filled", fillcolor="#EAF2F8", color="#1F4E79", penwidth=1.8,
+        fontname="Arial", fontsize=12, margin="0.18,0.12"];
+  edge [color="#334155", penwidth=1.6, arrowsize=0.8, fontname="Arial", fontsize=10];
+
+  OFF [label="ST-00  OFF / STANDBY\nNo automatic restart", fillcolor="#E5E7EB", color="#64748B"];
+  PRE [label="ST-10  PRE-START REVIEW\nPermit / maintenance / revision check"];
+  UTIL [label="ST-20  UTILITIES & PROTECTION READY\nPower, IA, cooling, N2, ESD/FGS, U-501/W-501"];
+  INERT [label="ST-30  ISOLATION / INERT / INTEGRITY HOLD\nApproved N2 / leak-test / O2 acceptance evidence"];
+  PKG [label="ST-40  PACKAGE READY\nW-201, ELY-201, CO2 and H2 package status"];
+  CAT [label="ST-50  CATALYST / REACTOR CONDITIONING\nVendor-controlled catalyst sequence and thermal checks"];
+  FEEDS [label="ST-60  CONDITIONED H2 / CO2 AVAILABLE\nPurity, moisture, pressure and package maps valid"];
+  REC [label="ST-70  RECYCLE / PRESSURE ESTABLISHED\nK-301 ready, anti-surge healthy, U-501 ready"];
+  ADMIT [label="ST-80  CONTROLLED REACTANT ADMISSION\nRatio / composition / cooling / reactor protections valid"];
+  SEP [label="ST-90A  SEPARATION / CRUDE HANDLING\nE-302, V-301, V-302 and downstream capacity ready"];
+  DIST [label="ST-100  DISTILLATION / QUALITY STABILISE\nCondenser, reflux, reboiler and QA readiness"];
+  NORMAL [label="ST-110  NORMAL OPERATION\nAutomatic control / supervisory throughput", fillcolor="#E2F0D9", color="#548235"];
+  TURNDOWN [label="ST-110A  TURNDOWN / CONSTRAINED\nCoordinated H2 + CO2 reduction; validated minimum loads", fillcolor="#FFF2CC", color="#BF9000"];
+  SHDN [label="ST-120  CONTROLLED SHUTDOWN\nCoordinated feed / heat reduction; approved package sequence", fillcolor="#FCE4D6", color="#C65911"];
+  VERIFIED [label="ST-130  SHUTDOWN VERIFIED\nInventory / energy status checklist complete", fillcolor="#E5E7EB", color="#64748B"];
+  QHOLD [label="ST-120Q  PRODUCT QUALITY HOLD\nStop transfer / dispatch; no unapproved diversion", fillcolor="#FFF2CC", color="#BF9000"];
+  ESD [label="ST-90  EMERGENCY SHUTDOWN LATCHED\nProtective action; preserve essential utilities / relief / FGS", fillcolor="#F4CCCC", color="#B91C1C", penwidth=2.6];
+  TRIP [label="ST-95  TRIP INVESTIGATION / RESTART HOLD\nFirst-out / inspection / gas test / authorised reset", fillcolor="#FCE4D6", color="#C65911"];
+  FAULT [shape=diamond, label="QUALIFIED ESD /\nFGS / PACKAGE\nPROTECTIVE DEMAND", fillcolor="#F4CCCC", color="#B91C1C", width=1.9, height=0.9];
+  HOLD [shape=note, label="HOLD / ABORT GUARDS\nBad PV or analyser; loss of utility; timeout; valve feedback mismatch; U-501 unavailable; unsafe atmosphere.\nNo permissive is forced. Return only to a validated state boundary.", fillcolor="#F3F4F6", color="#64748B"];
+  POWER [shape=note, label="DB-059 ASSUMED DISTURBANCE\n50% nominal available power for 2 h. Controller follows OEM map, coordinates H2/CO2 turndown, preserves ratio.\nDynamic ride-through is not proven.", fillcolor="#FFF2CC", color="#BF9000"];
+  LEGEND [shape=note, label="ALL TIMER / LIMIT PARAMETERS ARE TBD\nNo numeric ramp, timer, trip limit, relief setting or buffer capacity is defined here. Reset never starts equipment.\nDepressurisation, purge and vent actions require separate approved engineering procedures.", fillcolor="#EAF2F8", color="#1F4E79"];
+
+  OFF -> PRE [label="authorised start request"];
+  PRE -> UTIL [label="checklist signed"];
+  UTIL -> INERT [label="utilities + protection stable\nT_UTIL_STABLE = TBD"];
+  INERT -> PKG [label="integrity / inert acceptance\nT_LEAK_TEST = TBD"];
+  PKG -> CAT [label="packages READY"];
+  CAT -> FEEDS [label="vendor catalyst release"];
+  FEEDS -> REC [label="H2 / CO2 quality valid"];
+  REC -> ADMIT [label="recycle stable\nT_RECYCLE_STABLE = TBD"];
+  ADMIT -> SEP [label="reactor feed / profile stable"];
+  SEP -> DIST [label="crude and downstream ready"];
+  DIST -> NORMAL [label="product QA release"];
+  NORMAL -> TURNDOWN [label="power / feed / utility constraint"];
+  TURNDOWN -> NORMAL [label="constraint cleared + stable"];
+  TURNDOWN -> SHDN [label="no feasible stable operating point"];
+  NORMAL -> SHDN [label="operator request / sustained constraint"];
+  SHDN -> VERIFIED [label="unit checklist complete"];
+  VERIFIED -> OFF [label="new standby state"];
+  DIST -> QHOLD [label="off-spec / analyser invalid"];
+  QHOLD -> DIST [label="quality authority release"];
+
+  { rank=same; NORMAL; POWER; }
+  POWER -> TURNDOWN [style=dashed, color="#BF9000", label="power shortfall case"];
+  { rank=same; ESD; FAULT; }
+  NORMAL -> FAULT [style=dashed, color="#B91C1C", arrowhead=none, label="protective demand may occur in any active state"];
+  FAULT -> ESD [color="#B91C1C", penwidth=2.4];
+  UTIL -> FAULT [style=dashed, color="#B91C1C", arrowhead=none];
+  PKG -> FAULT [style=dashed, color="#B91C1C", arrowhead=none];
+  ADMIT -> FAULT [style=dashed, color="#B91C1C", arrowhead=none];
+  DIST -> FAULT [style=dashed, color="#B91C1C", arrowhead=none];
+  ESD -> TRIP [label="cause removed + field verification"];
+  TRIP -> PRE [label="authorised reset; new sequence only"];
+
+  { rank=same; HOLD; LEGEND; }
+  HOLD -> PRE [style=dotted, arrowhead=none, label="clear and revalidate"];
+}

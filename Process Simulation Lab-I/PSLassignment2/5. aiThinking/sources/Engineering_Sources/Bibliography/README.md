@@ -1,0 +1,1 @@
+The report bibliography contains 74 source-register items. In-text citations use the same `[SRC-###]` identifiers. `ENERGY008_Reference_List.csv` is the tabular export; `ENERGY008_Bibliography.bib` is the BibTeX source. Source type, quality score, access status, retrieval date, scope and limitations remain recorded in `Registers/Core/ENERGY008_Source_Register.xlsx`.

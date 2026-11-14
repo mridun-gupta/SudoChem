@@ -1,0 +1,25 @@
+ENERGY-008 phase evidence archive integrity tests
+--- Archive/Phase_Evidence/ENERGY008_Equipment_Datasheets_v0.1.0.zip
+    testing: Datasheets/W_501_Datasheet.md   OK
+No errors detected in compressed data of Archive/Phase_Evidence/ENERGY008_Equipment_Datasheets_v0.1.0.zip.
+--- Archive/Phase_Evidence/ENERGY008_MATLAB_Prompt19.zip
+    testing: ENERGY008_MATLAB/tests/README.md   OK
+No errors detected in compressed data of Archive/Phase_Evidence/ENERGY008_MATLAB_Prompt19.zip.
+--- Archive/Phase_Evidence/ENERGY008_MATLAB_Prompt20_GUI.zip
+    testing: ENERGY008_MATLAB/tests/README.md   OK
+No errors detected in compressed data of Archive/Phase_Evidence/ENERGY008_MATLAB_Prompt20_GUI.zip.
+--- Archive/Phase_Evidence/ENERGY008_Prompt21_Verification_Package.zip
+    testing: 21_Verification/ENERGY008_Unit_Integration_Test_Report.md   OK
+No errors detected in compressed data of Archive/Phase_Evidence/ENERGY008_Prompt21_Verification_Package.zip.
+--- Archive/Phase_Evidence/ENERGY008_Prompt22_Plots.zip
+    testing: Plots/S04_Electricity_Carbon_Intensity.png   OK
+No errors detected in compressed data of Archive/Phase_Evidence/ENERGY008_Prompt22_Plots.zip.
+--- Archive/Phase_Evidence/ENERGY008_Prompt22_Sensitivity_Optimisation.zip
+    testing: 22_Sensitivity_Optimisation/ENERGY008_Sensitivity_Plan.xlsx   OK
+No errors detected in compressed data of Archive/Phase_Evidence/ENERGY008_Prompt22_Sensitivity_Optimisation.zip.
+--- Archive/Phase_Evidence/ENERGY008_Prompt23_Migration_Full_Project.zip
+    testing: ENERGY008_MATLAB/tests/README.md   OK
+No errors detected in compressed data of Archive/Phase_Evidence/ENERGY008_Prompt23_Migration_Full_Project.zip.
+--- Archive/Phase_Evidence/ENERGY008_Utility_Environmental_Balance_v0.1.0.zip
+    testing: manifest.json            OK
+No errors detected in compressed data of Archive/Phase_Evidence/ENERGY008_Utility_Environmental_Balance_v0.1.0.zip.

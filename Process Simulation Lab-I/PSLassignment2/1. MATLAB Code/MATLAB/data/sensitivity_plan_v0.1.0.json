@@ -1,0 +1,21 @@
+{
+  "schema_id": "ENERGY008-SENSITIVITY-PLAN-0.1.0",
+  "plan_id": "ENERGY008-SENS-BASE-THROUGHPUT-01",
+  "plan_version": "0.1.0",
+  "created_date": "2026-11-02",
+  "status": "REFERENCE_ONLY_LINEAR_STOICHIOMETRIC_SCREENING",
+  "reference_case_id": "C-BIOCO2-REH2-ALK-REF-50TPD",
+  "throughputs_t_day": [
+    45.0,
+    50.0,
+    55.0
+  ],
+  "units": {
+    "throughputs_t_day": "t/day"
+  },
+  "source_id": "ENERGY008-HAND-BASE-C-01 / Prompt 17 throughput sensitivity scenarios",
+  "provenance_class": "BENCHMARK_REFERENCE_SCENARIO",
+  "interpretation": "Prompt 17 illustrative 45/50/55 t/day throughput points are linear stoichiometric reference scenarios around the illustrative 50 t/day case; they are not probabilistic uncertainty bounds, approved capacity range, equipment feasibility cases or plant performance predictions.",
+  "method": "Each throughput point is recalculated through the material-balance engine using the versioned reaction network. R-02 extent is scaled in proportion to the base-case R-02 extent relative to the methanol component-equivalent basis.",
+  "physical_model_status": "BLOCKED"
+}

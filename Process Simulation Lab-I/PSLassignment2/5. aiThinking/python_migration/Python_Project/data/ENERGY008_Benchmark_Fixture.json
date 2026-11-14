@@ -1,0 +1,331 @@
+{
+  "fixture_id": "ENERGY008-HAND-BASE-C-01",
+  "revision": "0.1-DRAFT",
+  "created_date": "2026-11-01",
+  "route": "Route C: biogenic CO2 + renewable electrolytic H2; ALK reference",
+  "status": "FROZEN_HAND_CALCULATION_FIXTURE_FOR_CODE_REGRESSION",
+  "design_basis_status": "Working academic basis only; G3 is not frozen and route gate approval not evidenced.",
+  "basis": {
+    "methanol_component_equivalent_kg_day": 50000.0,
+    "interpretation": "Illustrative 50 t/day on-stream component-equivalent; not a real plant capacity or solved product balance.",
+    "hours_per_day": 24.0,
+    "molecular_weights_kg_per_kmol": {
+      "CH3OH": 32.0419,
+      "CO2": 44.0095,
+      "H2": 2.01588,
+      "H2O": 18.01528,
+      "O2": 31.9988,
+      "CO": 28.0101
+    },
+    "source_ids": {
+      "MW_CH3OH": "PROP-0003 / DB-016",
+      "MW_CO2": "PROP-0001 / DB-017",
+      "MW_H2": "PROP-0002 / DB-018",
+      "MW_H2O": "DB-019 (40 CFR 1065.1005 reference)",
+      "MW_O2": "PROP-0006 / DB-020"
+    },
+    "reaction_enthalpy_reference": {
+      "R01_kJ_mol": -131.82,
+      "R01_uncertainty_kJ_mol": 0.24186773244895649,
+      "E01_kJ_mol_reaction": 571.66,
+      "E01_uncertainty_kJ_mol_reaction": 0.08,
+      "net_kJ_mol_MeOH": 725.67,
+      "net_uncertainty_kJ_mol_MeOH": 0.2515949125081825,
+      "reference_state_T_K": 298.15,
+      "reference_state_P_MPa_abs": 0.1,
+      "source": "ENERGY008-DATA-0.1.0; RXN-001, PROP-0064..PROP-0071; ENERGY008_Energy_Balance.xlsx"
+    }
+  },
+  "reaction_network": {
+    "R01": "CO2 + 3 H2 -> CH3OH(l) + H2O(l)",
+    "R02": "CO2 + H2 -> CO + H2O(g)",
+    "E01": "2 H2O(l) -> 2 H2(g) + O2(g)",
+    "integrated_net": "CO2 + 2 H2O(l) -> CH3OH(l) + 1.5 O2(g)",
+    "ideal_reference_extents_kmol_day": {
+      "R01": 1560.4567769077364,
+      "R02": 0.0,
+      "E01": 2340.6851653616045
+    },
+    "R02_zero_extent_status": "REFERENCE_BLOCK_ASSUMPTION_ONLY; not evidence of zero RWGS in the real reactor."
+  },
+  "expected_outputs": {
+    "methanol_kmol_day": 1560.4567769077364,
+    "co2_kmol_day": 1560.4567769077364,
+    "h2_kmol_day": 4681.370330723209,
+    "reaction_water_kmol_day": 1560.4567769077364,
+    "electrolyser_water_kmol_day": 4681.370330723209,
+    "net_water_kmol_day": 3120.9135538154724,
+    "oxygen_kmol_day": 2340.6851653616045,
+    "methanol_kg_day": 50000.0,
+    "co2_kg_day": 68674.92252332103,
+    "h2_kg_day": 9437.080822298303,
+    "reaction_water_kg_day": 28112.065763890405,
+    "electrolyser_water_kg_day": 84336.19729167121,
+    "net_water_kg_day": 56224.1315277808,
+    "oxygen_kg_day": 74899.11646937291,
+    "ideal_product_methanol_mass_fraction": 1.0,
+    "ideal_product_methanol_mole_fraction": 1.0,
+    "co2_conversion_fraction": 1.0,
+    "h2_conversion_fraction": 1.0,
+    "carbon_selectivity_to_methanol_fraction": 1.0,
+    "methanol_yield_mol_per_mol_CO2": 1.0,
+    "mass_balance_residual_kg_day": -0.06241827107442077,
+    "mass_in_kg_day": 124899.05405110183,
+    "mass_out_kg_day": 124899.11646937291,
+    "element_residual_kmol_atoms_day": {
+      "C": 0.0,
+      "H": 0.0,
+      "O": 0.0
+    },
+    "R01_reference_heat_GJ_day": -205.6994123319778,
+    "E01_thermoneutral_enthalpy_GJ_day": 1338.0760816306147,
+    "net_reaction_enthalpy_GJ_day": 1132.376669298637,
+    "co2_ideal_gas_sensible_duty_kW": 168.8542898861549,
+    "methanol_latent_reference_duty_kW": 677.0827824210255,
+    "illustrative_exchanger_area_m2": 56.28476329538497,
+    "W201_water_pump_flow_m3_h_with_margin": 3.8770401630240023,
+    "W201_water_pump_shaft_power_kW": 0.6837430300680949,
+    "W201_water_pump_shaft_power_with_margin_kW": 0.7521173330749045,
+    "methanol_HHV_MJ_kg": 22.647533385972743,
+    "methanol_HHV_kWh_kg": 6.29098149610354,
+    "hydrogen_thermoneutral_enthalpy_kWh_kg": 39.38588716700509
+  },
+  "blocked_values": {
+    "physical_recycle_S209": null,
+    "purge_fraction_S207": null,
+    "separator_flash_split_V301": null,
+    "actual_meoh_product_composition_S314": null,
+    "reactor_kinetic_conversion": null,
+    "reactor_volume_or_catalyst_mass": null,
+    "plant_energy_closure": null,
+    "plant_entropy_generation": null,
+    "plant_exergy_destruction": null,
+    "compressor_power_K101_K201_K301": null,
+    "actual_HX301_duty_and_area": null
+  },
+  "acceptance_tolerances": {
+    "molar_flow_abs_kmol_day": 1e-06,
+    "mass_flow_abs_kg_day": 0.001,
+    "element_balance_abs_kmol_atoms_day": 1e-08,
+    "mass_residual_abs_kg_day": 1e-05,
+    "reaction_enthalpy_identity_abs_kJ_mol": 1e-09,
+    "CO2_sensible_duty_abs_kW": 0.02,
+    "methanol_latent_duty_abs_kW": 0.02,
+    "HX_area_abs_m2": 0.02,
+    "pump_power_abs_kW": 0.002,
+    "formula_rounding": "Numeric comparisons use unrounded fixture values; display rounding is not a test input."
+  },
+  "independent_test_cases": [
+    {
+      "id": "TC-01",
+      "name": "Methanol molar rate",
+      "expected_value": 1560.4567769077364,
+      "units": "kmol/day",
+      "tolerance": "±1e-6",
+      "acceptance_rule": "Absolute difference <= tolerance",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-02",
+      "name": "CO2 mass flow",
+      "expected_value": 68674.92252332103,
+      "units": "kg/day",
+      "tolerance": "±1e-3",
+      "acceptance_rule": "Absolute difference <= tolerance",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-03",
+      "name": "H2 mass flow",
+      "expected_value": 9437.080822298303,
+      "units": "kg/day",
+      "tolerance": "±1e-3",
+      "acceptance_rule": "Absolute difference <= tolerance",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-04",
+      "name": "DI water stoichiometric mass",
+      "expected_value": 84336.19729167121,
+      "units": "kg/day",
+      "tolerance": "±1e-3",
+      "acceptance_rule": "Absolute difference <= tolerance",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-05",
+      "name": "O2 mass coproduct",
+      "expected_value": 74899.11646937291,
+      "units": "kg/day",
+      "tolerance": "±1e-3",
+      "acceptance_rule": "Absolute difference <= tolerance",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-06",
+      "name": "C/H/O elemental residual",
+      "expected_value": 0.0,
+      "units": "kmol-atoms/day",
+      "tolerance": "≤1e-8",
+      "acceptance_rule": "All three element residuals within tolerance",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-07",
+      "name": "Mass residual with rounded MW",
+      "expected_value": -0.06241827107442077,
+      "units": "kg/day",
+      "tolerance": "±1e-5",
+      "acceptance_rule": "Must reproduce residual; do not force to zero",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-08",
+      "name": "Reaction enthalpy identity",
+      "expected_value": 725.67,
+      "units": "kJ/mol MeOH",
+      "tolerance": "±1e-9",
+      "acceptance_rule": "R01 + 1.5 E01 equals direct net value",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-09",
+      "name": "CO2 sensible duty",
+      "expected_value": 168.8542898861549,
+      "units": "kW",
+      "tolerance": "±0.02",
+      "acceptance_rule": "Shomate ideal-gas example only",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-10",
+      "name": "Methanol latent reference duty",
+      "expected_value": 677.0827824210255,
+      "units": "kW",
+      "tolerance": "±0.02",
+      "acceptance_rule": "Pure methanol correlation at 298.15 K",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-11",
+      "name": "Illustrative exchanger area",
+      "expected_value": 56.28476329538497,
+      "units": "m2",
+      "tolerance": "±0.02",
+      "acceptance_rule": "Q/(U F LMTD), U and LMTD explicit assumptions",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-12",
+      "name": "W-201 pump hydraulic power",
+      "expected_value": 0.6837430300680949,
+      "units": "kW",
+      "tolerance": "±0.002",
+      "acceptance_rule": "rho*g*Qv*H/eta; assumed rho/H/eta",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-13",
+      "name": "Negative physical flow input",
+      "expected_value": "REJECT",
+      "units": "N/A",
+      "tolerance": "Exact",
+      "acceptance_rule": "No silent clipping to zero",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-14",
+      "name": "Missing active EOS kij",
+      "expected_value": "BLOCK",
+      "units": "N/A",
+      "tolerance": "Exact",
+      "acceptance_rule": "Stop dependent calculations; retain null",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-15",
+      "name": "Physical recycle S-209",
+      "expected_value": "BLOCKED_NOT_COMPUTED",
+      "units": "N/A",
+      "tolerance": "Exact",
+      "acceptance_rule": "Do not set physical recycle to zero",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-16",
+      "name": "Purge fraction S-207",
+      "expected_value": "BLOCKED_NOT_COMPUTED",
+      "units": "N/A",
+      "tolerance": "Exact",
+      "acceptance_rule": "Do not invent a purge fraction",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-17",
+      "name": "Negative entropy generation",
+      "expected_value": "DIAGNOSTIC_FAILURE",
+      "units": "N/A",
+      "tolerance": "Exact",
+      "acceptance_rule": "Investigate sign/data/model; never clip to zero",
+      "status": "FROZEN_EXPECTED"
+    },
+    {
+      "id": "TC-18",
+      "name": "Plant energy/exergy closure",
+      "expected_value": "BLOCK",
+      "units": "N/A",
+      "tolerance": "Exact",
+      "acceptance_rule": "No full closure claim while streams/utility states unavailable",
+      "status": "FROZEN_EXPECTED"
+    }
+  ],
+  "sensitivity_and_uncertainty": {
+    "source_enthalpy_uncertainty": {
+      "R01_reference_rate_GJ_day": {
+        "nominal": -205.6994123319778,
+        "uncertainty_plus_minus": 0.37742414221528137,
+        "status": "SOURCE_PROPAGATED_ONLY"
+      },
+      "net_integrated_reaction_enthalpy_GJ_day": {
+        "nominal": 1132.376669298637,
+        "uncertainty_plus_minus": 0.3926029862589024,
+        "status": "SOURCE_PROPAGATED_ONLY"
+      }
+    },
+    "throughput_sensitivity_t_day": {
+      "scenario_values": [
+        45.0,
+        50.0,
+        55.0
+      ],
+      "basis": "±10% scenario around 50 t/day; not a probability interval or approved capacity range",
+      "linear_scaling_applies_to": "Ideal stoichiometric reference component flows only"
+    },
+    "illustrative_exchanger_area_m2": {
+      "low": 28.142381647692485,
+      "nominal": 56.28476329538497,
+      "high": 112.56952659076994,
+      "assumptions": {
+        "U_W_m2_K": [
+          75,
+          100,
+          150
+        ],
+        "LMTD_K": [
+          20,
+          30,
+          40
+        ],
+        "F": 1.0
+      },
+      "status": "SCREENING_SENSITIVITY_NOT_HX301_RATING"
+    }
+  },
+  "calculation_id_conventions": {
+    "master_calculation_register": "HC-001 through HC-018",
+    "reactor_thermochemistry_sheet": "RT-001 through RT-021 (RT-020A is the molar-flow conversion substep)",
+    "heat_hydraulics_sheet": "HH-001 through HH-014",
+    "fixture_tests": "TC-01 through TC-18",
+    "independent_checks_csv": "CHK-001 onward; Fixture_Test_ID column links applicable checks to TC identifiers"
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "schema_id": "ENERGY008-PROPERTY-MODEL-DATA-0.1.0",
+  "property_data_version": "ENERGY008-DATA-0.1.0",
+  "status": "CURATED_REFERENCE_SUBSET_FOR_PROMPT17_BENCHMARK; NOT_A_COMPLETE_PROCESS_PROPERTY_PACKAGE",
+  "reference_state": {
+    "temperature_K": 298.15,
+    "pressure_MPa_abs": 0.1
+  },
+  "unit_system": "SI_INTERNAL",
+  "components": [
+    {
+      "component_id": "CMP-CO2",
+      "name": "Carbon dioxide",
+      "formula": "CO2",
+      "molecular_weight_kg_kmol": 44.0095,
+      "source_id": "PROP-0001 / DB-017",
+      "provenance_class": "EVALUATED_REFERENCE",
+      "data_status": "AVAILABLE_REFERENCE",
+      "source_note": "Prompt 17 stoichiometric anchor; 40 CFR 1065.1005 / NIST WebBook reference value.",
+      "elements": {
+        "C": 1,
+        "H": 0,
+        "O": 2
+      }
+    },
+    {
+      "component_id": "CMP-H2",
+      "name": "Hydrogen",
+      "formula": "H2",
+      "molecular_weight_kg_kmol": 2.01588,
+      "source_id": "PROP-0002 / DB-018",
+      "provenance_class": "EVALUATED_REFERENCE",
+      "data_status": "AVAILABLE_REFERENCE",
+      "source_note": "Prompt 17 stoichiometric anchor; 40 CFR 1065.1005 reference value.",
+      "elements": {
+        "C": 0,
+        "H": 2,
+        "O": 0
+      }
+    },
+    {
+      "component_id": "CMP-CO",
+      "name": "Carbon monoxide",
+      "formula": "CO",
+      "molecular_weight_kg_kmol": 28.0101,
+      "source_id": "MW-CO-REFERENCE",
+      "provenance_class": "EVALUATED_REFERENCE",
+      "data_status": "AVAILABLE_REFERENCE",
+      "source_note": "Prompt 17 benchmark fixture; only used for species identity and reaction accounting.",
+      "elements": {
+        "C": 1,
+        "H": 0,
+        "O": 1
+      }
+    },
+    {
+      "component_id": "CMP-MEOH",
+      "name": "Methanol",
+      "formula": "CH3OH",
+      "molecular_weight_kg_kmol": 32.0419,
+      "source_id": "PROP-0003 / DB-016",
+      "provenance_class": "EVALUATED_REFERENCE",
+      "data_status": "AVAILABLE_REFERENCE",
+      "source_note": "Prompt 17 stoichiometric anchor; NIST Chemistry WebBook reference value.",
+      "elements": {
+        "C": 1,
+        "H": 4,
+        "O": 1
+      }
+    },
+    {
+      "component_id": "CMP-H2O",
+      "name": "Water",
+      "formula": "H2O",
+      "molecular_weight_kg_kmol": 18.01528,
+      "source_id": "DB-019",
+      "provenance_class": "EVALUATED_REFERENCE",
+      "data_status": "AVAILABLE_REFERENCE",
+      "source_note": "Prompt 17 stoichiometric anchor from 40 CFR 1065.1005. Property register also records 18.0153; source values intentionally not averaged.",
+      "elements": {
+        "C": 0,
+        "H": 2,
+        "O": 1
+      }
+    },
+    {
+      "component_id": "CMP-O2",
+      "name": "Oxygen",
+      "formula": "O2",
+      "molecular_weight_kg_kmol": 31.9988,
+      "source_id": "PROP-0006 / DB-020",
+      "provenance_class": "EVALUATED_REFERENCE",
+      "data_status": "AVAILABLE_REFERENCE",
+      "source_note": "Prompt 17 stoichiometric anchor; NIST WebBook reference value.",
+      "elements": {
+        "C": 0,
+        "H": 0,
+        "O": 2
+      }
+    }
+  ],
+  "reaction_thermochemistry": [
+    {
+      "reaction_id": "R-01",
+      "delta_h_kJ_mol_reaction": -131.82,
+      "uncertainty_kJ_mol_reaction": 0.24186773244895649,
+      "temperature_K": 298.15,
+      "pressure_MPa_abs": 0.1,
+      "source_id": "RXN-001 / PROP-0064..PROP-0071",
+      "provenance_class": "EVALUATED_REFERENCE",
+      "data_status": "REFERENCE_ONLY",
+      "phase_note": "Liquid methanol and liquid water products at standard reference state. Not the gas-phase reactor heat release or cooling duty."
+    },
+    {
+      "reaction_id": "E-01",
+      "delta_h_kJ_mol_reaction": 571.66,
+      "uncertainty_kJ_mol_reaction": 0.08,
+      "temperature_K": 298.15,
+      "pressure_MPa_abs": 0.1,
+      "source_id": "PROP-0067 / ENERGY008 Energy Balance reference",
+      "provenance_class": "EVALUATED_REFERENCE",
+      "data_status": "REFERENCE_ONLY",
+      "phase_note": "Thermoneutral enthalpy of 2 H2O(l) -> 2 H2(g) + O2(g). Not actual electrolyser electricity."
+    },
+    {
+      "reaction_id": "NET-01",
+      "delta_h_kJ_mol_reaction": 725.67,
+      "uncertainty_kJ_mol_reaction": 0.2515949125081825,
+      "temperature_K": 298.15,
+      "pressure_MPa_abs": 0.1,
+      "source_id": "NET-RXN / Prompt 17 hand-calculation report",
+      "provenance_class": "CALCULATED",
+      "data_status": "REFERENCE_ONLY",
+      "phase_note": "Integrated net reaction CO2 + 2 H2O(l) -> CH3OH(l) + 1.5 O2(g)."
+    }
+  ],
+  "correlations": {
+    "shomate_CO2_ideal_gas": {
+      "correlation_id": "SHOMATE-04",
+      "component_id": "CMP-CO2",
+      "A": 24.99735,
+      "B": 55.18696,
+      "C": -33.69137,
+      "D": 7.948387,
+      "E": -0.136638,
+      "F": -403.6075,
+      "G": 228.2431,
+      "H": -393.5224,
+      "temperature_min_K": 298.0,
+      "temperature_max_K": 1200.0,
+      "cp_units": "J/mol/K",
+      "enthalpy_increment_units": "kJ/mol",
+      "source_id": "NIST/JANAF; Prompt 17 report SHOMATE-04",
+      "provenance_class": "EVALUATED_CORRELATION",
+      "data_status": "AVAILABLE_REFERENCE",
+      "use_limit": "Pure ideal-gas CO2 only. Not a high-pressure mixture enthalpy model."
+    },
+    "methanol_latent_heat": {
+      "correlation_id": "DHVAP-MEOH-01",
+      "component_id": "CMP-MEOH",
+      "equation": "A*exp(-alpha*Tr)*(1-Tr)^beta",
+      "A_kJ_mol": 45.3,
+      "alpha": -0.31,
+      "beta": 0.4241,
+      "critical_temperature_K": 512.6,
+      "temperature_min_K": 298.0,
+      "temperature_max_K": 477.0,
+      "source_id": "NIST Chemistry WebBook; Prompt 17 report DHVAP-MEOH-01",
+      "provenance_class": "EVALUATED_CORRELATION",
+      "data_status": "AVAILABLE_REFERENCE",
+      "use_limit": "Pure methanol saturation latent heat only. Not MeOH-water column/reboiler/condenser duty."
+    }
+  },
+  "screening_assumptions": {
+    "heat_exchanger": {
+      "overall_U_W_m2_K": 100.0,
+      "correction_factor": 1.0,
+      "lmtd_K": 30.0,
+      "source_id": "HX-A01 / HX-A02; Prompt 17 hand-calculation report",
+      "provenance_class": "ASSUMED",
+      "data_status": "SCREENING_ONLY",
+      "note": "Illustrative area equation check, not HX-301 thermal rating."
+    },
+    "water_pump": {
+      "density_kg_m3": 997.0,
+      "head_m": 50.0,
+      "efficiency": 0.7,
+      "gravity_m_s2": 9.80665,
+      "flow_margin_fraction": 0.1,
+      "source_id": "P-A01..P-A03 / DB-011; Prompt 17 hand-calculation report",
+      "provenance_class": "ASSUMED",
+      "data_status": "SCREENING_ONLY",
+      "note": "Illustrative W-201 hydraulic check, not a hydraulic network or vendor pump selection."
+    }
+  },
+  "blocked_property_domains": [
+    {
+      "domain": "PR78_FULL_SYNTHESIS_MIXTURE",
+      "status": "BLOCKED",
+      "reason": "Full active binary interaction matrix, including source-supported or regressed kij for all active pairs, is not available; no zero-filling permitted."
+    },
+    {
+      "domain": "METHANOL_WATER_VLE",
+      "status": "BLOCKED",
+      "reason": "Wilson/NRTL parameters have not been extracted/regressed and independently validated at an approved column pressure."
+    },
+    {
+      "domain": "ALK_ELECTROLYSER_PERFORMANCE",
+      "status": "BLOCKED",
+      "reason": "OEM voltage/performance map, Faradaic efficiency, purity, turndown, ramp and BOP loads are unavailable."
+    },
+    {
+      "domain": "PROCESS_STATE_TRANSPORT_PROPERTIES",
+      "status": "BLOCKED",
+      "reason": "Validated process-state density, viscosity and thermal-conductivity values are unavailable."
+    }
+  ],
+  "benchmark_conditions": {
+    "co2_shomate_temperature_start_K": 298.15,
+    "co2_shomate_temperature_end_K": 523.15,
+    "methanol_latent_temperature_K": 298.15,
+    "source_id": "ENERGY008-MAN-001 / Prompt 17 independent hand-calculation reference",
+    "provenance_class": "BENCHMARK_REFERENCE_CONDITIONS",
+    "status": "REFERENCE_ONLY_NOT_PROCESS_STREAM_STATES"
+  }
+}

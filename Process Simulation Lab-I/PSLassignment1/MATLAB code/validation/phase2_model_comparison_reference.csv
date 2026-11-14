@@ -1,0 +1,6 @@
+model,model_type,pressure_kPa,azeotrope_x_ethanol,azeotrope_y_ethanol,azeotrope_T_K,delta_x_vs_exp,relative_x_error_pct,delta_T_K,relative_T_error_pct,status,source
+Experimental reference,experimental,1500,0.857,0.857,440.7,0.0,0.0,0.0,0.0,REFERENCE_MEASUREMENT,S01 Table 10 / abstract: experimental azeotrope at 1500 kPa.
+PRSV (quadratic mixing),literature EOS alternative,1500,0.883,0.883,441.09,0.026000000000000023,3.0338389731621964,0.38999999999998636,0.08849557522123584,LITERATURE_REPORTED_COMPARISON,"S01 Table 10; publication-reported calculation, not recomputed here."
+PRSV-Wong-Sandler,literature EOS alternative,1500,0.864,0.864,440.83,0.007000000000000006,0.8168028004667451,0.12999999999999545,0.029498525073745282,LITERATURE_REPORTED_COMPARISON,"S01 Table 10; publication-reported calculation, not recomputed here."
+"NRTL-SRK candidate, published low-pressure NRTL set extrapolated",target model diagnostic,1500,,,,,,,,NOT_ACCEPTED,This Phase 2 diagnostic: candidate NRTL parameters are out of range and measured tie-line residuals fail.
+"NRTL-SRK trial, regressed to 1500 kPa Table 6",target model fit attempt,1500,,,,,,,,NOT_ACCEPTED_PARAMETER_BOUND_AND_HOLDOUT_FAILURE,Fitted k_ij=0.2; training RMS log-fugacity=0.0408577; 2 MPa holdout RMS=0.143435.

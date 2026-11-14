@@ -1,0 +1,124 @@
+{
+  "manifest_id": "ENERGY008-PYTHON-SOURCE-MANIFEST-0.1.0",
+  "generated_utc": "2026-11-02T04:44:47.736260+00:00",
+  "project_root_reference": "../",
+  "records": [
+    {
+      "relative_path": "ENERGY008_Benchmark_Fixture.json",
+      "copied_path": "Python/data/ENERGY008_Benchmark_Fixture.json",
+      "original_source_path": "data/reference/ENERGY008_Benchmark_Fixture.json",
+      "sha256_copied": "bce1f877388cfaee3ca8701bafcc56de8aaf80ec80f8ccff7ce89f0710751153",
+      "sha256_source": "bce1f877388cfaee3ca8701bafcc56de8aaf80ec80f8ccff7ce89f0710751153",
+      "hash_match": true,
+      "provenance": "copied controlled ENERGY-008 JSON data; source provenance IDs retained inside JSON"
+    },
+    {
+      "relative_path": "cases/a-indco2-reh2-alk-ref-50tpd.json",
+      "copied_path": "Python/data/cases/a-indco2-reh2-alk-ref-50tpd.json",
+      "original_source_path": "MATLAB/data/cases/a-indco2-reh2-alk-ref-50tpd.json",
+      "sha256_copied": "98fe76cc33f86e36a4359a351b5c471c2a479b6cb5a58cfbbb01fa09cf80f368",
+      "sha256_source": "98fe76cc33f86e36a4359a351b5c471c2a479b6cb5a58cfbbb01fa09cf80f368",
+      "hash_match": true,
+      "provenance": "copied controlled ENERGY-008 JSON data; source provenance IDs retained inside JSON"
+    },
+    {
+      "relative_path": "cases/b-biomass-syngas-50tpd.json",
+      "copied_path": "Python/data/cases/b-biomass-syngas-50tpd.json",
+      "original_source_path": "MATLAB/data/cases/b-biomass-syngas-50tpd.json",
+      "sha256_copied": "da591d20375f9bec2686364cb729a95f6bf3c010cea8a403f0b8f0296361285e",
+      "sha256_source": "da591d20375f9bec2686364cb729a95f6bf3c010cea8a403f0b8f0296361285e",
+      "hash_match": true,
+      "provenance": "copied controlled ENERGY-008 JSON data; source provenance IDs retained inside JSON"
+    },
+    {
+      "relative_path": "cases/c-bioco2-reh2-alk-turndown-25tpd.json",
+      "copied_path": "Python/data/cases/c-bioco2-reh2-alk-turndown-25tpd.json",
+      "original_source_path": "MATLAB/data/cases/c-bioco2-reh2-alk-turndown-25tpd.json",
+      "sha256_copied": "51fa6623fb6330fff7c66bf213068ad106acb735ce05fa4eb75dd84e93bc3897",
+      "sha256_source": "51fa6623fb6330fff7c66bf213068ad106acb735ce05fa4eb75dd84e93bc3897",
+      "hash_match": true,
+      "provenance": "copied controlled ENERGY-008 JSON data; source provenance IDs retained inside JSON"
+    },
+    {
+      "relative_path": "cases/db-059-power-shortfall-50pct-2h.json",
+      "copied_path": "Python/data/cases/db-059-power-shortfall-50pct-2h.json",
+      "original_source_path": "MATLAB/data/cases/db-059-power-shortfall-50pct-2h.json",
+      "sha256_copied": "057981906843b0bf8655f2e8c907999ebecfc621a31821174e8887c6ff6a38ac",
+      "sha256_source": "057981906843b0bf8655f2e8c907999ebecfc621a31821174e8887c6ff6a38ac",
+      "hash_match": true,
+      "provenance": "copied controlled ENERGY-008 JSON data; source provenance IDs retained inside JSON"
+    },
+    {
+      "relative_path": "cost_basis_template.json",
+      "copied_path": "Python/data/cost_basis_template.json",
+      "original_source_path": "MATLAB/data/cost_basis_template.json",
+      "sha256_copied": "f2601f85d9a3316d525576f4f47d9fd7a25417fccad4f66906f908cae0b5f2ca",
+      "sha256_source": "f2601f85d9a3316d525576f4f47d9fd7a25417fccad4f66906f908cae0b5f2ca",
+      "hash_match": true,
+      "provenance": "copied controlled ENERGY-008 JSON data; source provenance IDs retained inside JSON"
+    },
+    {
+      "relative_path": "default_case.json",
+      "copied_path": "Python/data/default_case.json",
+      "original_source_path": "MATLAB/data/default_case.json",
+      "sha256_copied": "85a6a4e3d5bdd5a6cabeddb482aef811ba44a6256fc68bc92c499f97d8a78217",
+      "sha256_source": "85a6a4e3d5bdd5a6cabeddb482aef811ba44a6256fc68bc92c499f97d8a78217",
+      "hash_match": true,
+      "provenance": "copied controlled ENERGY-008 JSON data; source provenance IDs retained inside JSON"
+    },
+    {
+      "relative_path": "environmental_basis_template.json",
+      "copied_path": "Python/data/environmental_basis_template.json",
+      "original_source_path": "MATLAB/data/environmental_basis_template.json",
+      "sha256_copied": "336e087400f39b9a396c573dddcfd19200bc3d8f8e98be612c692035c3f05f34",
+      "sha256_source": "336e087400f39b9a396c573dddcfd19200bc3d8f8e98be612c692035c3f05f34",
+      "hash_match": true,
+      "provenance": "copied controlled ENERGY-008 JSON data; source provenance IDs retained inside JSON"
+    },
+    {
+      "relative_path": "equipment_register_v0.1.0.json",
+      "copied_path": "Python/data/equipment_register_v0.1.0.json",
+      "original_source_path": "MATLAB/data/equipment_register_v0.1.0.json",
+      "sha256_copied": "a767dadc05310579a8dfb037064f11fdd4fbcfc6efa29f88879c1adde22b22e0",
+      "sha256_source": "a767dadc05310579a8dfb037064f11fdd4fbcfc6efa29f88879c1adde22b22e0",
+      "hash_match": true,
+      "provenance": "copied controlled ENERGY-008 JSON data; source provenance IDs retained inside JSON"
+    },
+    {
+      "relative_path": "property_data_v0.1.0.json",
+      "copied_path": "Python/data/property_data_v0.1.0.json",
+      "original_source_path": "MATLAB/data/property_data_v0.1.0.json",
+      "sha256_copied": "350a575df8e794094dc8e1a5775f297202c80c7423008aecac5b3afb7c1c54a8",
+      "sha256_source": "350a575df8e794094dc8e1a5775f297202c80c7423008aecac5b3afb7c1c54a8",
+      "hash_match": true,
+      "provenance": "copied controlled ENERGY-008 JSON data; source provenance IDs retained inside JSON"
+    },
+    {
+      "relative_path": "reaction_network_v0.1.0.json",
+      "copied_path": "Python/data/reaction_network_v0.1.0.json",
+      "original_source_path": "MATLAB/data/reaction_network_v0.1.0.json",
+      "sha256_copied": "e43e46dc273a55259929f715a0f131e4e47fa10cf20d20532d1de921c04c7eb8",
+      "sha256_source": "e43e46dc273a55259929f715a0f131e4e47fa10cf20d20532d1de921c04c7eb8",
+      "hash_match": true,
+      "provenance": "copied controlled ENERGY-008 JSON data; source provenance IDs retained inside JSON"
+    },
+    {
+      "relative_path": "sensitivity_plan_v0.1.0.json",
+      "copied_path": "Python/data/sensitivity_plan_v0.1.0.json",
+      "original_source_path": "MATLAB/data/sensitivity_plan_v0.1.0.json",
+      "sha256_copied": "f213c4f2f3e235d9724b31c0b0fd894ef7c079cbbf09ca6d6f2da623a7512622",
+      "sha256_source": "f213c4f2f3e235d9724b31c0b0fd894ef7c079cbbf09ca6d6f2da623a7512622",
+      "hash_match": true,
+      "provenance": "copied controlled ENERGY-008 JSON data; source provenance IDs retained inside JSON"
+    },
+    {
+      "relative_path": "utility_register_v0.1.0.json",
+      "copied_path": "Python/data/utility_register_v0.1.0.json",
+      "original_source_path": "MATLAB/data/utility_register_v0.1.0.json",
+      "sha256_copied": "0753ee3b410f8a5cd52522d3b14be68f66586eb14545630ba08a53dc4f2156fb",
+      "sha256_source": "0753ee3b410f8a5cd52522d3b14be68f66586eb14545630ba08a53dc4f2156fb",
+      "hash_match": true,
+      "provenance": "copied controlled ENERGY-008 JSON data; source provenance IDs retained inside JSON"
+    }
+  ]
+}

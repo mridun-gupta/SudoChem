@@ -1,0 +1,268 @@
+{
+  "project_id": "ENERGY-008",
+  "project_version": "0.3.0-prompt19-engine-prompt20-gui",
+  "model_version": "ENERGY008-MODEL-0.1.0",
+  "property_data_version": "ENERGY008-DATA-0.1.0",
+  "reaction_network_version": "ENERGY008-RXN-0.1.0",
+  "case": {
+    "case_id": "B-BIOMASS-SYNGAS-50TPD",
+    "route_id": "Route B",
+    "case_status": "BLOCKED",
+    "methanol_component_equivalent_kg_day": 50000.0
+  },
+  "overall_status": "BLOCKED",
+  "module_status": {
+    "input_validation": "BLOCKED",
+    "material_balance": "BLOCKED",
+    "property_models": "BLOCKED",
+    "energy_balance": "BLOCKED",
+    "equipment_sizing": "BLOCKED",
+    "entropy_exergy": "BLOCKED",
+    "utilities_model": "BLOCKED",
+    "economics": "BLOCKED",
+    "environmental_kpis": "BLOCKED",
+    "reactor_calculation": "BLOCKED",
+    "recycle_solver": "BLOCKED",
+    "control_logic": "BLOCKED",
+    "material_kpis": "BLOCKED",
+    "sensitivity_optimisation": "BLOCKED"
+  },
+  "interpretation": "Prompt 19 reference/screening migration only. This is not a validated physical plant model or operating recommendation.",
+  "provenance": {
+    "case_source_ids": [
+      "ENERGY008_Base_and_Alternative_Cases.csv row 2"
+    ],
+    "fixture_id": "ENERGY008-HAND-BASE-C-01",
+    "data_root": "/mnt/data/ENERGY008_MATLAB/Python/data"
+  },
+  "run_metadata": {
+    "run_id": "20261102T044218Z_d837f600",
+    "timestamp_utc": "2026-11-02T04:42:18.395777+00:00",
+    "case_id": "B-BIOMASS-SYNGAS-50TPD",
+    "model_version": "ENERGY008-MODEL-0.1.0",
+    "data_version": "ENERGY008-DATA-0.1.0",
+    "python_version": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "package_version": "0.1.0",
+    "assumptions": "See copied versioned case/property/reaction JSON; unknown process data remain null/blocked."
+  },
+  "modules": {
+    "input_validation": {
+      "module_id": "input_validation",
+      "status": "BLOCKED",
+      "value": {
+        "case_id": "B-BIOMASS-SYNGAS-50TPD",
+        "blockers": [
+          "No validated biomass ultimate/proximate analysis or feed rate.",
+          "No source-supported gasification product composition, tar/char yields or cleanup performance.",
+          "No validated biomass syngas-to-methanol reaction extent model or catalyst-grade syngas specification.",
+          "GH2/Green Methanol certification boundary for mixed syngas is unresolved."
+        ]
+      },
+      "units": {},
+      "warnings": [
+        "Case is marked BLOCKED in the versioned source case; no physical calculation is attempted."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {
+        "source_ids": [
+          "ENERGY008_Base_and_Alternative_Cases.csv row 2"
+        ]
+      }
+    },
+    "material_balance": {
+      "module_id": "material_balance",
+      "status": "BLOCKED",
+      "value": null,
+      "units": {},
+      "warnings": [
+        "Upstream case/input gate is not open; no calculation attempted."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "property_models": {
+      "module_id": "property_models",
+      "status": "BLOCKED",
+      "value": null,
+      "units": {},
+      "warnings": [
+        "Upstream case/input gate is not open; no calculation attempted."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "energy_balance": {
+      "module_id": "energy_balance",
+      "status": "BLOCKED",
+      "value": null,
+      "units": {},
+      "warnings": [
+        "Upstream case/input gate is not open; no calculation attempted."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "equipment_sizing": {
+      "module_id": "equipment_sizing",
+      "status": "BLOCKED",
+      "value": null,
+      "units": {},
+      "warnings": [
+        "Upstream case/input gate is not open; no calculation attempted."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "entropy_exergy": {
+      "module_id": "entropy_exergy",
+      "status": "BLOCKED",
+      "value": {
+        "plant_entropy_generation": {
+          "status": "BLOCKED",
+          "value": null,
+          "units": "kW/K"
+        },
+        "plant_exergy_destruction": {
+          "status": "BLOCKED",
+          "value": null,
+          "units": "kW"
+        }
+      },
+      "units": {},
+      "warnings": [
+        "Validated stream entropies, heat/work boundaries and approved dead-state environment are missing."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "utilities_model": {
+      "module_id": "utilities_model",
+      "status": "BLOCKED",
+      "value": {
+        "electricity": null,
+        "cooling_and_steam": null,
+        "emissions": null
+      },
+      "units": {},
+      "warnings": [
+        "ALK vendor polarization/performance map, rectifier/BOP loads, compressor maps, site utilities and tariffs are unavailable."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "economics": {
+      "module_id": "economics",
+      "status": "BLOCKED",
+      "value": {
+        "CAPEX_INR_2026": null,
+        "OPEX_INR_year": null,
+        "LCOM_INR_per_t": null
+      },
+      "units": {},
+      "warnings": [
+        "Dated vendor quotations, cost factors, tariffs, production basis and finance inputs remain null in the versioned cost template."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "environmental_kpis": {
+      "module_id": "environmental_kpis",
+      "status": "BLOCKED",
+      "value": {
+        "GHG_intensity_kgCO2e_per_kg_MeOH": null,
+        "net_water_intensity_m3_per_t_MeOH": null,
+        "solid_waste_intensity_kg_per_t_MeOH": null
+      },
+      "units": {},
+      "warnings": [
+        "Metered electricity, source-specific emission factor, carbon chain-of-custody, measured water/waste and MRV method are unavailable."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "reactor_calculation": {
+      "module_id": "reactor_calculation",
+      "status": "BLOCKED",
+      "value": {
+        "conversion": null,
+        "catalyst_mass_kg": null,
+        "reactor_volume_m3": null
+      },
+      "units": {},
+      "warnings": [
+        "Catalyst-matched kinetic expression/parameters, validity range, geometry and heat-transfer boundary are absent."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "recycle_solver": {
+      "module_id": "recycle_solver",
+      "status": "BLOCKED",
+      "value": {
+        "physical_recycle_status": "BLOCKED_NOT_COMPUTED",
+        "stream_id": "S-209",
+        "flow": null,
+        "purge_status": "BLOCKED_NOT_COMPUTED",
+        "purge_fraction": null
+      },
+      "units": {},
+      "warnings": [
+        "Physical recycle requires validated PR EOS/flash, stream composition/inerts, purge criterion and compressor performance."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "control_logic": {
+      "module_id": "control_logic",
+      "status": "BLOCKED",
+      "value": {
+        "mode": "OFFLINE / NOT CONNECTED",
+        "BPCS": "NOT_CONNECTED",
+        "SIS_ESD_FGS": "INDICATION_ONLY_NOT_CONNECTED"
+      },
+      "units": {},
+      "warnings": [
+        "No live instrumentation or control system is connected. No commands or setpoints are issued."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "material_kpis": {
+      "module_id": "material_kpis",
+      "status": "BLOCKED",
+      "value": null,
+      "units": {},
+      "warnings": [
+        "Material KPI calculation requires material-balance result."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "sensitivity_optimisation": {
+      "module_id": "sensitivity_optimisation",
+      "status": "BLOCKED",
+      "value": null,
+      "units": {},
+      "warnings": [
+        "Input/case gate blocks sensitivity."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    }
+  }
+}

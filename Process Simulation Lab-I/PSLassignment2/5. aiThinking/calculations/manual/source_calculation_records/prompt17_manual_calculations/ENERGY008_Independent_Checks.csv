@@ -1,0 +1,24 @@
+﻿Check_ID,Calculation,Independent_Hand_Result,Equation_or_Check,Units,Status,Reviewer_Note,Fixture_Test_ID
+CHK-001,Stoichiometric methanol kmol rate,1560.4567769077364,50000 / 32.0419,kmol/day,PASS,Independent arithmetic using stated MW; not a solver output.,TC-01
+CHK-002,CO2 theoretical consumption,68674.92252332103,nMeOH × 1 × 44.0095,kg/day,PASS,Reaction R-01; lower bound only.,TC-02
+CHK-003,H2 theoretical consumption,9437.080822298303,nMeOH × 3 × 2.01588,kg/day,PASS,Reaction R-01; lower bound only.,TC-03
+CHK-004,Electrolyser water demand,84336.19729167121,nH2 × 1 × 18.01528,kg/day,PASS,E-01: 1 mol H2O per mol H2.,TC-04
+CHK-005,O2 theoretical coproduct,74899.11646937291,nH2 / 2 × 31.9988,kg/day,PASS,E-01 stoichiometric coproduct.,TC-05
+CHK-006,Reaction water generation,28112.065763890405,nMeOH × 1 × 18.01528,kg/day,PASS,R-01; physical phase split not calculated.,
+CHK-007,Integrated C/H/O closure,0.0,CO2 + 2 H2O -> CH3OH + 1.5 O2,kmol-atoms/day,PASS,Exact stoichiometric matrix; roundoff below 1e-8.,TC-06
+CHK-008,Mass balance residual,-0.06241827107442077,m_in - m_out using declared rounded molecular weights,kg/day,PASS_WITH_ROUNDING_RESIDUAL,Do not force to zero; residual is disclosed.,TC-07
+CHK-009,R-01 reference heat,-205.6994123319778,xi_R01 × 1000 × (-131.82) / 1e6,GJ/day,PASS_REFERENCE_ONLY,Not reactor cooling duty.,
+CHK-010,E-01 thermoneutral enthalpy,1338.0760816306147,xi_E01 × 1000 × 571.66 / 1e6,GJ/day,PASS_REFERENCE_ONLY,Not actual ALK electric demand.,
+CHK-011,Net reaction-enthalpy identity,1132.376669298637,R-01 + 1.5 E-01 = direct net ΔH,GJ/day,PASS_REFERENCE_IDENTITY,Not plant energy closure.,
+CHK-012,CO2 sensible duty,168.8542898861549,nCO2 × Shomate enthalpy increment 298.15 to 523.15 K,kW,SCREENING_PASS,Ideal-gas pure CO2 only; high-pressure process enthalpy blocked.,TC-09
+CHK-013,MeOH latent duty,677.0827824210255,nMeOH × ΔHvap(298.15 K),kW,SCREENING_PASS,Pure MeOH saturation correlation; not column/reflux duty.,TC-10
+CHK-014,Exchanger area equation,56.28476329538497,Q/(U × F × ΔTLM) using labelled assumed U and LMTD,m2,SCREENING_PASS,Not HX-301 rating or mechanical design.,TC-11
+CHK-015,W-201 water pump power,0.6837430300680949,rho g Qv H / eta_p,kW,SCREENING_PASS,Hydraulic screening with assumed density/head/efficiency.,TC-12
+CHK-016,Pump preliminary capacity,3.8770401630240023,1.10 × theoretical DI water volume flow,m3/h,SCREENING_PASS,10% design allowance from DB-011; not approved vendor margin.,
+CHK-017,Physical S-209 recycle unavailable,BLOCKED_NOT_COMPUTED,"Requires validated V-301 flash, component composition, K-301 map and recycle tear model",N/A,BLOCKED_NOT_COMPUTED,TC-15: physical recycle cannot be assumed zero; no physical iteration was executed.,TC-15
+CHK-018,Plant energy / entropy / exergy closure unavailable,,Requires all stream state/entropy/exergy and utility work/heat terms,N/A,BLOCKED_NOT_COMPUTED,Only standard-state reference work is available.,TC-18
+CHK-019,Negative physical flow validation,REJECT,Input domain: all physical component flows >= 0,N/A,TEST_EXPECTED_FAILURE,"TC-13: reject negative flow; never clamp, abs() or silently set to zero.",TC-13
+CHK-020,Missing active PR78 binary interaction parameter,BLOCK,Property completeness gate before EOS fugacity/flash evaluation,N/A,BLOCKED_BY_DESIGN,TC-14: active missing kij remains null; dependent flash/recycle calculations must stop.,TC-14
+CHK-021,Purge fraction S-207 unavailable,BLOCKED_NOT_COMPUTED,"Requires inert input, loop concentration limit, flash split and off-gas capacity",N/A,BLOCKED_NOT_COMPUTED,TC-16: no fixed purge fraction or zero purge assumption permitted.,TC-16
+CHK-022,Negative entropy-generation diagnostic,DIAGNOSTIC_FAILURE,S_gen >= 0 for a correctly defined physical control volume,N/A,TEST_EXPECTED_FAILURE,"TC-17: investigate sign convention, property states, omitted transfer terms or data; do not clip to zero.",TC-17
+CHK-023,Direct net reaction enthalpy identity,725.67,-131.82 + 1.5 × 571.66 = 725.67,kJ/mol MeOH,PASS_REFERENCE_IDENTITY,TC-08: compare the reaction-enthalpy identity on a per-mole-MeOH basis; separate from daily GJ/day enthalpy rate.,TC-08

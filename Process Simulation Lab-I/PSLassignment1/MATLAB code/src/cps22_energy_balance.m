@@ -1,0 +1,9 @@
+function out = cps22_energy_balance(ref, cfg)
+% Energy calculation deliberately blocked until a consistent enthalpy method is accepted.
+% Required components: ideal-gas enthalpy, SRK residual enthalpy, liquid reference,
+% NRTL excess enthalpy using temperature-dependent parameters and aligned datum.
+out=struct('status','BLOCKED_MISSING_VALIDATED_ENTHALPY_MODEL','Qdot_W',NaN, ...
+    'Win_W',cfg.conditions.external_work_W,'Hin_W',NaN,'Hout_W',NaN,'closure_W',NaN, ...
+    'reason','Phase 2 did not accept a consistent mixture enthalpy method or reference-state alignment. No duty is fabricated.', ...
+    'source_phase_status',ref.status,'model_enthalpy_accepted',cfg.engineering.enthalpy_model_accepted);
+end

@@ -1,0 +1,8 @@
+ENERGY-008 Prompt 21 independent verification run
+Root: /mnt/data/ENERGY008_MATLAB
+Execution layer: independent Python / source-data contract only
+Records: 115
+Status counts: BLOCKED=1, FAIL=2, NOT RUN=5, PASS=80, SCREENING ONLY=27
+MATLAB executable: NOT FOUND
+GNU Octave executable: NOT FOUND
+Interpretation: independent arithmetic/static evidence only; no MATLAB engine or GUI runtime was executed.

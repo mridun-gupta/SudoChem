@@ -1,0 +1,17 @@
+component,property,correlation,Tmin_K,Tmax_K,A,B,C,pressure_output_unit,source,source_url,notes
+ethanol,saturation_pressure,Antoine,273,351.7,5.37229,1670.409,-40.191,bar,NIST Chemistry WebBook SRD 69,https://webbook.nist.gov/cgi/cbook.cgi?ID=C64175&Type=ANTOINE,Use only within listed range; log10(P/bar)=A-B/(T/K+C)
+ethanol,saturation_pressure,Antoine,292.77,366.63,5.24677,1598.673,-46.424,bar,NIST Chemistry WebBook SRD 69,https://webbook.nist.gov/cgi/cbook.cgi?ID=C64175&Type=ANTOINE,Overlaps adjacent segment; narrowest valid segment selected
+ethanol,saturation_pressure,Antoine,364.8,513.91,4.92531,1432.526,-61.819,bar,NIST Chemistry WebBook SRD 69,https://webbook.nist.gov/cgi/cbook.cgi?ID=C64175&Type=ANTOINE,No use above stated upper temperature
+water,saturation_pressure,Antoine,273,303,5.40221,1838.675,-31.737,bar,NIST Chemistry WebBook SRD 69,https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Type=ANTOINE,Use only within listed range
+water,saturation_pressure,Antoine,304,333,5.20389,1733.926,-39.485,bar,NIST Chemistry WebBook SRD 69,https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Type=ANTOINE,Use only within listed range
+water,saturation_pressure,Antoine,334,363,5.0768,1659.793,-45.854,bar,NIST Chemistry WebBook SRD 69,https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Type=ANTOINE,Use only within listed range
+water,saturation_pressure,Antoine,344,373,5.08354,1663.125,-45.622,bar,NIST Chemistry WebBook SRD 69,https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Type=ANTOINE,Overlapping segment; narrowest valid segment selected
+water,saturation_pressure,Antoine,379,573,3.55959,643.748,-198.043,bar,NIST Chemistry WebBook SRD 69,https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Type=ANTOINE,Published gap from 373 to 379 K is not silently extrapolated
+ethanol,molecular_weight,constant,0,0,46.06844,,,g/mol,NIST Chemistry WebBook SRD 69,https://webbook.nist.gov/cgi/cbook.cgi?ID=C64175,NIST reported molecular weight; not a fitted parameter
+water,molecular_weight,constant,0,0,18.0153,,,g/mol,NIST Chemistry WebBook SRD 69,https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185,NIST reported molecular weight
+ethanol,critical_temperature,constant,0,0,514.7092848812961,,,K,CoolProp fluid data used in project configuration,https://coolprop.org/fluid_properties/fluids/Ethanol.html,Project-configured value; source method differs from NIST vaporization correlation Tc=513.9 K
+ethanol,critical_pressure,constant,0,0,6267914.582702095,,,Pa,CoolProp fluid data used in project configuration,https://coolprop.org/fluid_properties/fluids/Ethanol.html,Project-configured value
+ethanol,acentric_factor,constant,0,0,0.644,,,dimensionless,CoolProp fluid data used in project configuration,https://coolprop.org/fluid_properties/fluids/Ethanol.html,Project-configured value; verify against selected EOS source before final parameterization
+water,critical_temperature,constant,0,0,647.096,,,K,IAPWS water formulation / CoolProp,https://www.iapws.org/relguide/IF97-Rev.html,IAPWS critical temperature
+water,critical_pressure,constant,0,0,22064000,,,Pa,IAPWS water formulation / CoolProp,https://www.iapws.org/relguide/IF97-Rev.html,IAPWS critical pressure
+water,acentric_factor,constant,0,0,0.3442920843,,,dimensionless,CoolProp fluid data used in project configuration,https://coolprop.org/fluid_properties/fluids/Water.html,Project-configured value

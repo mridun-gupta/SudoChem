@@ -1,0 +1,97 @@
+relative_path,bytes,purpose
+CPS22_Launcher.m,2292,"Project entry point, configuration guide, or release metadata"
+CPS22_PROJECT_VERSION.txt,438,"Project entry point, configuration guide, or release metadata"
+CPS22_R4_Preflight_Report.md,1635,"Project entry point, configuration guide, or release metadata"
+INSTALL_CLEANLY.txt,1183,"Project entry point, configuration guide, or release metadata"
+README.md,3213,"Project entry point, configuration guide, or release metadata"
+README_Industrial.md,2155,"Project entry point, configuration guide, or release metadata"
+README_WIDE_RANGE.md,2136,"Project entry point, configuration guide, or release metadata"
+START_HERE.m,271,"Project entry point, configuration guide, or release metadata"
+data/CPS-22_NIST_and_Property_Register.csv,6673,"Data, property records, source register, or validation data"
+data/CPS22_experimental_coverage.csv,1137,"Data, property records, source register, or validation data"
+data/CPS22_literature_pressure_inventory.csv,3694,"Data, property records, source register, or validation data"
+data/CPS22_property_database.csv,3381,"Data, property records, source register, or validation data"
+data/CPS22_pure_component_vapor_pressure_experimental.csv,72766,"Data, property records, source register, or validation data"
+data/CPS22_reference_vle_2021.csv,49880,"Data, property records, source register, or validation data"
+data/CPS22_reference_vle_expanded.csv,115375,"Data, property records, source register, or validation data"
+data/CPS22_source_register.csv,3159,"Data, property records, source register, or validation data"
+data/default_case.json,3984,"Data, property records, source register, or validation data"
+data/validation_reference_data.csv,115375,"Data, property records, source register, or validation data"
+docs/LITERATURE_DATA_EXPANSION_SUMMARY.md,1248,Technical documentation or data limitations
+docs/WIDE_RANGE_GUI_AND_DATA_POLICY.md,4955,Technical documentation or data limitations
+docs/architecture.md,3484,Technical documentation or data limitations
+docs/equations.md,3327,Technical documentation or data limitations
+docs/known_limitations.md,1627,Technical documentation or data limitations
+docs/phase1_CPS-22_Design_Basis.md,11544,Technical documentation or data limitations
+docs/phase1_CPS-22_Open_Issues.md,5579,Technical documentation or data limitations
+docs/phase1_CPS-22_Phase1_Handoff.md,6736,Technical documentation or data limitations
+docs/phase2_CPS-22_Base_Case_Results.csv,5393,Technical documentation or data limitations
+docs/phase2_CPS-22_Core_Calculations.md,9275,Technical documentation or data limitations
+docs/phase2_CPS-22_Phase2_Handoff.md,5323,Technical documentation or data limitations
+docs/phase2_CPS-22_Sensitivity_Results.csv,10599,Technical documentation or data limitations
+docs/phase2_calculation_diagnostics.md,4357,Technical documentation or data limitations
+docs/phase2_equation_and_method_details.md,7310,Technical documentation or data limitations
+docs/python_migration.md,1082,Technical documentation or data limitations
+docs/source_assignment_as_supplied.pdf,567125,Technical documentation or data limitations
+flowcharts/README.md,204,Project flow diagram
+flowcharts/nonlinear_solver.dot,1735,Project flow diagram
+flowcharts/nonlinear_solver.png,290855,Project flow diagram
+flowcharts/nonlinear_solver.svg,15399,Project flow diagram
+flowcharts/top_level_workflow.dot,1714,Project flow diagram
+flowcharts/top_level_workflow.png,297534,Project flow diagram
+flowcharts/top_level_workflow.svg,15183,Project flow diagram
+gui/cps22_gui.m,10226,Interactive MATLAB GUI
+main.m,255,"Project entry point, configuration guide, or release metadata"
+main_industrial.m,2749,"Project entry point, configuration guide, or release metadata"
+results/README.md,301,"Data, property records, source register, or validation data"
+run_gui.m,357,"Project entry point, configuration guide, or release metadata"
+src/cps22_activate_project.m,2373,MATLAB solver or project utility
+src/cps22_antoine_psat.m,1632,MATLAB solver or project utility
+src/cps22_base_results_table.m,2236,MATLAB solver or project utility
+src/cps22_economics.m,645,MATLAB solver or project utility
+src/cps22_energy_balance.m,713,MATLAB solver or project utility
+src/cps22_equipment_screen.m,1990,MATLAB solver or project utility
+src/cps22_export_struct_csv.m,1122,MATLAB solver or project utility
+src/cps22_find_project_files.m,2280,MATLAB solver or project utility
+src/cps22_flash_tp.m,4444,MATLAB solver or project utility
+src/cps22_gamma_phi.m,2107,MATLAB solver or project utility
+src/cps22_load_config.m,1902,MATLAB solver or project utility
+src/cps22_make_plots.m,3252,MATLAB solver or project utility
+src/cps22_manual_calculation_book.m,3226,MATLAB solver or project utility
+src/cps22_material_balance.m,1635,MATLAB solver or project utility
+src/cps22_model_comparison.m,742,MATLAB solver or project utility
+src/cps22_nrtl_candidate.m,905,MATLAB solver or project utility
+src/cps22_nrtl_gamma.m,1458,MATLAB solver or project utility
+src/cps22_psat_nist.m,508,MATLAB solver or project utility
+src/cps22_rackett_volume.m,710,MATLAB solver or project utility
+src/cps22_read_reference_data.m,10069,MATLAB solver or project utility
+src/cps22_reference_flash.m,4616,MATLAB solver or project utility
+src/cps22_run_sensitivities.m,5050,MATLAB solver or project utility
+src/cps22_srk_industrial.m,1337,MATLAB solver or project utility
+src/cps22_srk_phi.m,2530,MATLAB solver or project utility
+src/cps22_thermodynamic_summary.m,1792,MATLAB solver or project utility
+src/cps22_utilities.m,533,MATLAB solver or project utility
+src/cps22_validate_config.m,4652,MATLAB solver or project utility
+src/cps22_write_diagnostics.m,2698,MATLAB solver or project utility
+tests/run_tests.m,2846,MATLAB regression or integrity test
+tests/test_configuration_integrity.m,1327,MATLAB regression or integrity test
+tests/test_failure_handling.m,607,MATLAB regression or integrity test
+tests/test_gamma_phi_input_validation.m,1301,MATLAB regression or integrity test
+tests/test_industrial_properties.m,925,MATLAB regression or integrity test
+tests/test_package_integrity.m,874,MATLAB regression or integrity test
+tests/test_reference_data_header_variants.m,2068,MATLAB regression or integrity test
+tests/test_wide_range_property_and_dataset.m,889,MATLAB regression or integrity test
+validation/CPS-22_Energy_Screen_Sensitivity.csv,664,"Data, property records, source register, or validation data"
+validation/CPS-22_Fugacity_Residuals.csv,578,"Data, property records, source register, or validation data"
+validation/CPS-22_Industrial_Base_Case_Results.csv,2590,"Data, property records, source register, or validation data"
+validation/CPS-22_Industrial_Sensitivity_Results.csv,9892,"Data, property records, source register, or validation data"
+validation/CPS-22_Literature_Model_Comparison.csv,460,"Data, property records, source register, or validation data"
+validation/CPS-22_Manual_Material_Balance.csv,540,"Data, property records, source register, or validation data"
+validation/CPS-22_Model_Fit_Diagnostics.csv,264,"Data, property records, source register, or validation data"
+validation/CPS-22_Utility_Cost_Scenarios.csv,295,"Data, property records, source register, or validation data"
+validation/README.md,342,"Data, property records, source register, or validation data"
+validation/phase2_base_case_inputs_fixture.csv,4257,"Data, property records, source register, or validation data"
+validation/phase2_base_case_results_fixture.csv,5393,"Data, property records, source register, or validation data"
+validation/phase2_model_comparison_reference.csv,1270,"Data, property records, source register, or validation data"
+validation/phase2_sensitivity_reference.csv,10599,"Data, property records, source register, or validation data"
+validation/phase2_source_register.csv,3822,"Data, property records, source register, or validation data"

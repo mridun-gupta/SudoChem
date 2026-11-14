@@ -1,0 +1,61 @@
+{
+  "schema_id": "ENERGY008-CASE-0.1.0",
+  "case_id": "C-BIOCO2-REH2-ALK-REF-50TPD",
+  "case_version": "0.1.0",
+  "scenario_name": "Route C ideal stoichiometric hand-check reference",
+  "scenario_type": "STOICHIOMETRIC_REFERENCE",
+  "route_id": "Route C",
+  "case_status": "REFERENCE_ONLY",
+  "design_basis_version": "ENERGY008-DB Rev 0.1-DRAFT",
+  "model_version": "ENERGY008-MODEL-0.1.0",
+  "reaction_network_version": "ENERGY008-RXN-0.1.0",
+  "property_data_version": "ENERGY008-DATA-0.1.0",
+  "methanol_component_equivalent_kg_day": 50000.0,
+  "operating_hours_per_day": 24.0,
+  "source_ids": [
+    "DB-004",
+    "DB-016",
+    "DB-017",
+    "DB-018",
+    "DB-019",
+    "DB-020",
+    "RXN-001",
+    "E-01"
+  ],
+  "provenance_class": "BENCHMARK_ALIGNED_SELECTION_WITH_SOURCED_MW_INPUTS",
+  "assumptions": {
+    "R02_extent_kmol_day": 0.0,
+    "R02_extent_status": "REFERENCE_BLOCK_ASSUMPTION_ONLY",
+    "R02_extent_reason": "Ideal stoichiometric limiting reference; not evidence of zero RWGS in a real reactor.",
+    "R01_conversion_fraction": 1.0,
+    "R01_conversion_status": "IDEAL_REFERENCE_ONLY",
+    "R01_conversion_reason": "Chosen to reproduce stoichiometric lower-bound benchmark, not an expected process conversion.",
+    "fresh_CO2_to_MeOH_molar_ratio": 1.0,
+    "fresh_H2_to_MeOH_molar_ratio": 3.0,
+    "electrolysis_H2_to_H2O_molar_ratio": 1.0,
+    "electrolysis_O2_to_H2_molar_ratio": 0.5
+  },
+  "operating_state": {
+    "temperature_K": null,
+    "pressure_MPa_abs": null,
+    "data_status": "BLOCKED",
+    "reason": "Physical synthesis stream conditions remain blank pending G3 and property/model validation."
+  },
+  "blockers": [
+    "Route gate approval not evidenced; G3 not frozen.",
+    "This is an ideal reaction-block reference, not a solved 55-stream plant balance.",
+    "Physical recycle S-209, purge S-207, V-301 flash, R-301 kinetics, product purity, compressor duties and utility performance are not computed."
+  ],
+  "units": {
+    "methanol_component_equivalent_kg_day": "kg/day",
+    "operating_hours_per_day": "h/day",
+    "assumptions_R02_extent_kmol_day": "kmol/day",
+    "assumptions_R01_conversion_fraction": "fraction",
+    "assumptions_fresh_CO2_to_MeOH_molar_ratio": "mol/mol",
+    "assumptions_fresh_H2_to_MeOH_molar_ratio": "mol/mol",
+    "assumptions_electrolysis_H2_to_H2O_molar_ratio": "mol/mol",
+    "assumptions_electrolysis_O2_to_H2_molar_ratio": "mol/mol",
+    "operating_state_temperature_K": "K",
+    "operating_state_pressure_MPa_abs": "MPa(a)"
+  }
+}

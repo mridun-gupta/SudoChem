@@ -1,0 +1,11 @@
+{
+  "base_meoh_kmol_day": 1560.4567769077364,
+  "base_co2_kg_day": 68674.92252332103,
+  "base_h2_kg_day": 9437.080822298303,
+  "base_specific_electricity_kWh_kgMeOH": 10.380788904528133,
+  "lhs_sample_count": 1000,
+  "lhs_dimension_count": 8,
+  "pareto_sampled_nondominated_count": 11,
+  "seed": 20261102,
+  "status": "SCREENING ONLY; no physical solver or MATLAB runtime"
+}

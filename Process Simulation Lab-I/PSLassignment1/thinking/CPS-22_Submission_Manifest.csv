@@ -1,0 +1,121 @@
+relative_path,bytes,purpose,verification_status
+CPS-22_Audit_Status.md,335,CPS-22_Audit_Status.md,Included
+CPS-22_Final_Compliance_Matrix.csv,13342,CPS-22_Final_Compliance_Matrix.csv,Included
+CPS-22_Final_Readme.md,3485,CPS-22_Final_Readme.md,Included
+CPS-22_Open_Issues.md,2845,CPS-22_Open_Issues.md,Included
+CPS-22_Submission_Manifest.csv,12859,CPS-22_Submission_Manifest.csv,Included
+MATLAB/CPS-22_Industrial_MATLAB.zip,1187078,CPS-22_Industrial_MATLAB.zip,Source artifact; MATLAB runtime not run
+MATLAB/README.md,4755,README.md,Source artifact; MATLAB runtime not run
+MATLAB/README_Industrial.md,2155,README_Industrial.md,Source artifact; MATLAB runtime not run
+MATLAB/data/CPS-22_NIST_and_Property_Register.csv,6673,CPS-22_NIST_and_Property_Register.csv,Source artifact; MATLAB runtime not run
+MATLAB/data/default_case.json,3976,default_case.json,Source artifact; MATLAB runtime not run
+MATLAB/data/validation_reference_data.csv,49880,validation_reference_data.csv,Source artifact; MATLAB runtime not run
+MATLAB/docs/architecture.md,3484,architecture.md,Source artifact; MATLAB runtime not run
+MATLAB/docs/equations.md,3327,equations.md,Source artifact; MATLAB runtime not run
+MATLAB/docs/known_limitations.md,1627,known_limitations.md,Source artifact; MATLAB runtime not run
+MATLAB/docs/phase1_CPS-22_Design_Basis.md,11544,phase1_CPS-22_Design_Basis.md,Source artifact; MATLAB runtime not run
+MATLAB/docs/phase1_CPS-22_Open_Issues.md,5579,phase1_CPS-22_Open_Issues.md,Source artifact; MATLAB runtime not run
+MATLAB/docs/phase1_CPS-22_Phase1_Handoff.md,6736,phase1_CPS-22_Phase1_Handoff.md,Source artifact; MATLAB runtime not run
+MATLAB/docs/phase2_CPS-22_Base_Case_Results.csv,5393,phase2_CPS-22_Base_Case_Results.csv,Source artifact; MATLAB runtime not run
+MATLAB/docs/phase2_CPS-22_Core_Calculations.md,9275,phase2_CPS-22_Core_Calculations.md,Source artifact; MATLAB runtime not run
+MATLAB/docs/phase2_CPS-22_Phase2_Handoff.md,5323,phase2_CPS-22_Phase2_Handoff.md,Source artifact; MATLAB runtime not run
+MATLAB/docs/phase2_CPS-22_Sensitivity_Results.csv,10599,phase2_CPS-22_Sensitivity_Results.csv,Source artifact; MATLAB runtime not run
+MATLAB/docs/phase2_calculation_diagnostics.md,4357,phase2_calculation_diagnostics.md,Source artifact; MATLAB runtime not run
+MATLAB/docs/phase2_equation_and_method_details.md,7310,phase2_equation_and_method_details.md,Source artifact; MATLAB runtime not run
+MATLAB/docs/python_migration.md,1082,python_migration.md,Source artifact; MATLAB runtime not run
+MATLAB/docs/source_assignment_as_supplied.pdf,567125,source_assignment_as_supplied.pdf,Rendered from DOCX; visual QA performed
+MATLAB/flowcharts/README.md,204,README.md,Source artifact; MATLAB runtime not run
+MATLAB/flowcharts/nonlinear_solver.dot,1735,nonlinear_solver.dot,Source artifact; MATLAB runtime not run
+MATLAB/flowcharts/nonlinear_solver.png,290855,nonlinear_solver.png,Source artifact; MATLAB runtime not run
+MATLAB/flowcharts/nonlinear_solver.svg,15399,nonlinear_solver.svg,Source artifact; MATLAB runtime not run
+MATLAB/flowcharts/top_level_workflow.dot,1714,top_level_workflow.dot,Source artifact; MATLAB runtime not run
+MATLAB/flowcharts/top_level_workflow.png,297534,top_level_workflow.png,Source artifact; MATLAB runtime not run
+MATLAB/flowcharts/top_level_workflow.svg,15183,top_level_workflow.svg,Source artifact; MATLAB runtime not run
+MATLAB/gui/cps22_gui.m,9138,cps22_gui.m,Source artifact; MATLAB runtime not run
+MATLAB/main.m,3616,main.m,Source artifact; MATLAB runtime not run
+MATLAB/main_industrial.m,2888,main_industrial.m,Source artifact; MATLAB runtime not run
+MATLAB/results/README.md,301,README.md,Source artifact; MATLAB runtime not run
+MATLAB/run_gui.m,173,run_gui.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_antoine_psat.m,860,cps22_antoine_psat.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_base_results_table.m,2236,cps22_base_results_table.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_economics.m,645,cps22_economics.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_energy_balance.m,713,cps22_energy_balance.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_equipment_screen.m,1990,cps22_equipment_screen.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_export_struct_csv.m,1122,cps22_export_struct_csv.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_flash_tp.m,4444,cps22_flash_tp.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_gamma_phi.m,2107,cps22_gamma_phi.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_load_config.m,1011,cps22_load_config.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_make_plots.m,3236,cps22_make_plots.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_manual_calculation_book.m,3226,cps22_manual_calculation_book.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_material_balance.m,1635,cps22_material_balance.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_model_comparison.m,742,cps22_model_comparison.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_nrtl_candidate.m,905,cps22_nrtl_candidate.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_nrtl_gamma.m,1458,cps22_nrtl_gamma.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_psat_nist.m,508,cps22_psat_nist.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_rackett_volume.m,710,cps22_rackett_volume.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_reference_flash.m,4835,cps22_reference_flash.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_run_sensitivities.m,5050,cps22_run_sensitivities.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_srk_industrial.m,1337,cps22_srk_industrial.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_srk_phi.m,2530,cps22_srk_phi.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_thermodynamic_summary.m,1792,cps22_thermodynamic_summary.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_utilities.m,533,cps22_utilities.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_validate_config.m,4756,cps22_validate_config.m,Source artifact; MATLAB runtime not run
+MATLAB/src/cps22_write_diagnostics.m,2698,cps22_write_diagnostics.m,Source artifact; MATLAB runtime not run
+MATLAB/tests/run_tests.m,3026,run_tests.m,Source artifact; MATLAB runtime not run
+MATLAB/tests/test_configuration_integrity.m,1327,test_configuration_integrity.m,Source artifact; MATLAB runtime not run
+MATLAB/tests/test_failure_handling.m,607,test_failure_handling.m,Source artifact; MATLAB runtime not run
+MATLAB/tests/test_gamma_phi_input_validation.m,1301,test_gamma_phi_input_validation.m,Source artifact; MATLAB runtime not run
+MATLAB/tests/test_industrial_properties.m,925,test_industrial_properties.m,Source artifact; MATLAB runtime not run
+MATLAB/validation/CPS-22_Energy_Screen_Sensitivity.csv,664,CPS-22_Energy_Screen_Sensitivity.csv,Source artifact; MATLAB runtime not run
+MATLAB/validation/CPS-22_Fugacity_Residuals.csv,578,CPS-22_Fugacity_Residuals.csv,Source artifact; MATLAB runtime not run
+MATLAB/validation/CPS-22_Industrial_Base_Case_Results.csv,2590,CPS-22_Industrial_Base_Case_Results.csv,Source artifact; MATLAB runtime not run
+MATLAB/validation/CPS-22_Industrial_Sensitivity_Results.csv,9892,CPS-22_Industrial_Sensitivity_Results.csv,Source artifact; MATLAB runtime not run
+MATLAB/validation/CPS-22_Literature_Model_Comparison.csv,460,CPS-22_Literature_Model_Comparison.csv,Source artifact; MATLAB runtime not run
+MATLAB/validation/CPS-22_Manual_Material_Balance.csv,540,CPS-22_Manual_Material_Balance.csv,Source artifact; MATLAB runtime not run
+MATLAB/validation/CPS-22_Model_Fit_Diagnostics.csv,264,CPS-22_Model_Fit_Diagnostics.csv,Source artifact; MATLAB runtime not run
+MATLAB/validation/CPS-22_Utility_Cost_Scenarios.csv,295,CPS-22_Utility_Cost_Scenarios.csv,Source artifact; MATLAB runtime not run
+MATLAB/validation/README.md,342,README.md,Source artifact; MATLAB runtime not run
+MATLAB/validation/phase2_base_case_inputs_fixture.csv,4257,phase2_base_case_inputs_fixture.csv,Source artifact; MATLAB runtime not run
+MATLAB/validation/phase2_base_case_results_fixture.csv,5393,phase2_base_case_results_fixture.csv,Source artifact; MATLAB runtime not run
+MATLAB/validation/phase2_model_comparison_reference.csv,1270,phase2_model_comparison_reference.csv,Source artifact; MATLAB runtime not run
+MATLAB/validation/phase2_sensitivity_reference.csv,10599,phase2_sensitivity_reference.csv,Source artifact; MATLAB runtime not run
+MATLAB/validation/phase2_source_register.csv,3822,phase2_source_register.csv,Source artifact; MATLAB runtime not run
+data/CPS-22_Experimental_VLE_99_Points.csv,49880,CPS-22_Experimental_VLE_99_Points.csv,Included
+data/CPS-22_NIST_and_Property_Register.csv,6673,CPS-22_NIST_and_Property_Register.csv,Included
+data/CPS-22_Source_Register.csv,6787,CPS-22_Source_Register.csv,Included
+docs/CPS-22_Research_and_Data_Provenance.md,5824,CPS-22_Research_and_Data_Provenance.md,Included
+flowcharts/README.md,204,README.md,Included
+flowcharts/nonlinear_solver.dot,1735,nonlinear_solver.dot,Included
+flowcharts/nonlinear_solver.png,290855,nonlinear_solver.png,Included
+flowcharts/nonlinear_solver.svg,15399,nonlinear_solver.svg,Included
+flowcharts/top_level_workflow.dot,1714,top_level_workflow.dot,Included
+flowcharts/top_level_workflow.png,297534,top_level_workflow.png,Included
+flowcharts/top_level_workflow.svg,15183,top_level_workflow.svg,Included
+manual_calculations/CPS-22_Manual_Calculation_Register.csv,30029,CPS-22_Manual_Calculation_Register.csv,Calculated/reference data; see per-row method/status
+presentation/CPS-22_Short_Presentation.pptx,1032122,CPS-22_Short_Presentation.pptx,Generated; rendered and visually inspected using slide montage
+report/CPS-22_Industrial_Technical_Report.docx,1091685,CPS-22_Industrial_Technical_Report.docx,Generated; rendered to PDF; visual QA performed
+report/CPS-22_Industrial_Technical_Report.pdf,4390555,CPS-22_Industrial_Technical_Report.pdf,Rendered from DOCX; visual QA performed
+results/plots/Fig01_Experimental_Txy_All_Isobars.png,136961,Fig01_Experimental_Txy_All_Isobars.png,Included
+results/plots/Fig02_NIST_Saturation_Pressures.png,104321,Fig02_NIST_Saturation_Pressures.png,Included
+results/plots/Fig03_Temperature_Sensitivity.png,80057,Fig03_Temperature_Sensitivity.png,Included
+results/plots/Fig04_Pressure_Azeotrope_Trend.png,118709,Fig04_Pressure_Azeotrope_Trend.png,Included
+results/plots/Fig05_Fugacity_Residual_Failure.png,50302,Fig05_Fugacity_Residual_Failure.png,Included
+results/plots/Fig06_Throughput_Sensitivity.png,79202,Fig06_Throughput_Sensitivity.png,Included
+results/plots/Fig07_Kij_Diagnostic.png,77296,Fig07_Kij_Diagnostic.png,Included
+results/plots/Fig08_Diameter_Hydraulic_Screen.png,102449,Fig08_Diameter_Hydraulic_Screen.png,Included
+results/plots/Fig09_Energy_Cp_Sensitivity.png,85842,Fig09_Energy_Cp_Sensitivity.png,Included
+results/plots/Fig10_NRTL_Gamma_Diagnostic.png,87075,Fig10_NRTL_Gamma_Diagnostic.png,Included
+results/plots/Fig11_Water_Cp_NIST.png,80987,Fig11_Water_Cp_NIST.png,Included
+results/plots/Fig12_Literature_Azeotrope_Comparison.png,50373,Fig12_Literature_Azeotrope_Comparison.png,Included
+results/plots/Fig13_Reference_Point_Count.png,47691,Fig13_Reference_Point_Count.png,Included
+validation/CPS-22_Energy_Screen_Sensitivity.csv,664,CPS-22_Energy_Screen_Sensitivity.csv,Calculated/reference data; see per-row method/status
+validation/CPS-22_Fugacity_Residuals.csv,578,CPS-22_Fugacity_Residuals.csv,Calculated/reference data; see per-row method/status
+validation/CPS-22_Independent_Recalculation.csv,995,CPS-22_Independent_Recalculation.csv,Calculated/reference data; see per-row method/status
+validation/CPS-22_Independent_Recalculation.py,8647,CPS-22_Independent_Recalculation.py,Calculated/reference data; see per-row method/status
+validation/CPS-22_Independent_Recalculation_Details.json,2165,CPS-22_Independent_Recalculation_Details.json,Calculated/reference data; see per-row method/status
+validation/CPS-22_Industrial_Base_Case_Results.csv,2590,CPS-22_Industrial_Base_Case_Results.csv,Calculated/reference data; see per-row method/status
+validation/CPS-22_Industrial_Sensitivity_Results.csv,9892,CPS-22_Industrial_Sensitivity_Results.csv,Calculated/reference data; see per-row method/status
+validation/CPS-22_Literature_Model_Comparison.csv,460,CPS-22_Literature_Model_Comparison.csv,Calculated/reference data; see per-row method/status
+validation/CPS-22_Manual_Material_Balance.csv,540,CPS-22_Manual_Material_Balance.csv,Calculated/reference data; see per-row method/status
+validation/CPS-22_Model_Fit_Diagnostics.csv,264,CPS-22_Model_Fit_Diagnostics.csv,Calculated/reference data; see per-row method/status
+validation/CPS-22_Utility_Cost_Scenarios.csv,295,CPS-22_Utility_Cost_Scenarios.csv,Calculated/reference data; see per-row method/status

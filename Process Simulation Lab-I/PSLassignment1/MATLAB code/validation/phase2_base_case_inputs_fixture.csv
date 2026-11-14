@@ -1,0 +1,35 @@
+parameter,value,unit,source_or_basis,status,notes
+component_1,Ethanol,name,S01 Table 6 component order; NIST SRD 69,specified by reference data,"Component order is ethanol (1), water (2)."
+component_2,Water,name,S01 Table 6 component order; IAPWS/NIST,specified by reference data,
+feed_flow_kmol_h,100.0,kmol/h,Phase 1 design basis,assumed,Process scale is not an experimental value.
+z_ethanol,0.5,mol/mol,Phase 1 design basis,assumed,
+z_water,0.5,mol/mol,Phase 1 design basis,assumed,
+separator_pressure,1500000.0,Pa,S01 Table 6 at 1500 kPa,proposed/reference-matched,P=1.5 MPa chosen to match an experimental isobar.
+separator_temperature,445.1253289473684,K,Calculated from S01 Table 6 bubble/dew interpolation,calculated-reference-basis,Midpoint of empirical bubble/dew T at z_ethanol=0.5.
+bubble_temperature_at_z,443.3875,K,S01 Table 6; x=z interpolation,calculated-reference-basis,"Interpolation points: (x=0.475,T=443.7 K), (x=0.515,T=443.2 K)."
+dew_temperature_at_z,446.86315789473684,K,S01 Table 6; y=z interpolation,calculated-reference-basis,"Interpolation points: (y=0.483,T=447.4 K), (y=0.502,T=446.8 K)."
+nrtl_a12,-0.8009,-,S02 Table 1 / Aspen Plus VLE-IG parameter set as reproduced in literature,candidate_only,Extrapolated outside cited low-pressure validation range; not accepted at 445 K.
+nrtl_b12,246.18,K,S02 Table 1 / Aspen Plus VLE-IG parameter set as reproduced in literature,candidate_only,Convention tau_ij=a_ij+b_ij/T.
+nrtl_a21,3.4578,-,S02 Table 1 / Aspen Plus VLE-IG parameter set as reproduced in literature,candidate_only,
+nrtl_b21,-586.0809,K,S02 Table 1 / Aspen Plus VLE-IG parameter set as reproduced in literature,candidate_only,
+nrtl_alpha12,0.3,-,S02 Table 1; Aspen Plus VLE-IG,candidate_only,Non-randomness parameter fixed at 0.3 for diagnostic.
+srk_kij,0.0,-,Phase 1 recommendation,diagnostic_initial_guess_only,"Zero is only a diagnostic initial guess, not a validated binary interaction parameter."
+ethanol_MW,46.06844,g/mol,NIST Chemistry WebBook SRD 69,sourced,
+water_MW,18.01528,g/mol,IAPWS-IF97 / NIST,sourced,
+ethanol_Tc,514.0,K,"NIST Chemistry WebBook SRD 69, Gude and Teja (1995) value",sourced_reference_value,NIST reports 514.0 +/- 0.2 K in a cited entry.
+ethanol_Pc,6140000.0,Pa,"NIST Chemistry WebBook SRD 69, Gude and Teja (1995) value",sourced_reference_value,61.4 +/- 0.2 bar converted to Pa.
+ethanol_omega,0.644,-,Standard corresponding-states property compilation; source to be frozen in Phase 3,provisional_source_check,Not directly surfaced in the NIST WebBook page used here.
+water_Tc,647.096,K,IAPWS-IF97 property implementation / water critical point,sourced_reference_value,
+water_Pc,22064000.0,Pa,IAPWS-IF97 property implementation / water critical point,sourced_reference_value,
+water_omega,0.3443,-,Standard corresponding-states property compilation; source to be frozen in Phase 3,provisional_source_check,
+antoine_ethanol_A,4.92531,log10(bar) basis,"NIST Chemistry WebBook / Ambrose, Sprake et al. (1975)",sourced_correlation,log10(P/bar)=A-B/(T+C); valid 364.8-513.91 K.
+antoine_ethanol_B,1432.526,K,"NIST Chemistry WebBook / Ambrose, Sprake et al. (1975)",sourced_correlation,
+antoine_ethanol_C,-61.819,K,"NIST Chemistry WebBook / Ambrose, Sprake et al. (1975)",sourced_correlation,
+antoine_water_A,3.55959,log10(bar) basis,NIST Chemistry WebBook / Liu and Lindsay (1970),sourced_correlation,log10(P/bar)=A-B/(T+C); valid 379-573 K.
+antoine_water_B,643.748,K,NIST Chemistry WebBook / Liu and Lindsay (1970),sourced_correlation,
+antoine_water_C,-198.043,K,NIST Chemistry WebBook / Liu and Lindsay (1970),sourced_correlation,
+feed_temperature,425.1253289473684,K,Phase 1 assumption,assumed_not_validated,Feed convention T_feed=T_separator-20 K; energy calculation blocked pending enthalpy model.
+feed_pressure,1500000.0,Pa,Phase 1 assumption,assumed,No pressure drop in baseline.
+external_work,0,W,Phase 1 control-volume convention,assumed,No compressor/pump in baseline; does not imply utility power is otherwise known.
+residence_time,180,s,Phase 1 preliminary sizing assumption,assumed,3 minutes liquid retention.
+Souders_Brown_K,0.11,m/s,GPSA typical vertical mesh-demister comparison value,screening_only,"K varies with service, geometry, pressure and demister; verify before design."

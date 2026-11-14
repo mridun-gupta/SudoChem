@@ -1,0 +1,985 @@
+{
+  "project_id": "ENERGY-008",
+  "project_version": "0.3.0-prompt19-engine-prompt20-gui",
+  "model_version": "ENERGY008-MODEL-0.1.0",
+  "property_data_version": "ENERGY008-DATA-0.1.0",
+  "reaction_network_version": "ENERGY008-RXN-0.1.0",
+  "case": {
+    "case_id": "C-BIOCO2-REH2-ALK-REF-50TPD",
+    "route_id": "Route C",
+    "case_status": "REFERENCE_ONLY",
+    "methanol_component_equivalent_kg_day": 50000.0
+  },
+  "overall_status": "SCREENING_ONLY",
+  "module_status": {
+    "input_validation": "CALCULATED",
+    "material_balance": "REFERENCE_ONLY",
+    "property_models": "SCREENING_ONLY",
+    "energy_balance": "SCREENING_ONLY",
+    "equipment_sizing": "SCREENING_ONLY",
+    "entropy_exergy": "BLOCKED",
+    "utilities_model": "BLOCKED",
+    "economics": "BLOCKED",
+    "environmental_kpis": "BLOCKED",
+    "reactor_calculation": "BLOCKED",
+    "recycle_solver": "BLOCKED",
+    "control_logic": "BLOCKED",
+    "material_kpis": "REFERENCE_ONLY",
+    "sensitivity_optimisation": "SCREENING_ONLY"
+  },
+  "interpretation": "Prompt 19 reference/screening migration only. This is not a validated physical plant model or operating recommendation.",
+  "provenance": {
+    "case_source_ids": [
+      "DB-004",
+      "DB-016",
+      "DB-017",
+      "DB-018",
+      "DB-019",
+      "DB-020",
+      "RXN-001",
+      "E-01"
+    ],
+    "fixture_id": "ENERGY008-HAND-BASE-C-01",
+    "data_root": "/mnt/data/ENERGY008_MATLAB/Python/data"
+  },
+  "run_metadata": {
+    "run_id": "20261102T044214Z_e2e24c8e",
+    "timestamp_utc": "2026-11-02T04:42:14.556833+00:00",
+    "case_id": "C-BIOCO2-REH2-ALK-REF-50TPD",
+    "model_version": "ENERGY008-MODEL-0.1.0",
+    "data_version": "ENERGY008-DATA-0.1.0",
+    "python_version": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "package_version": "0.1.0",
+    "assumptions": "See copied versioned case/property/reaction JSON; unknown process data remain null/blocked."
+  },
+  "modules": {
+    "input_validation": {
+      "module_id": "input_validation",
+      "status": "CALCULATED",
+      "value": {
+        "case_id": "C-BIOCO2-REH2-ALK-REF-50TPD",
+        "schema_id": "ENERGY008-CASE-0.1.0"
+      },
+      "units": {},
+      "warnings": [],
+      "errors": [],
+      "residuals": {},
+      "provenance": {
+        "source_ids": [
+          "DB-004",
+          "DB-016",
+          "DB-017",
+          "DB-018",
+          "DB-019",
+          "DB-020",
+          "RXN-001",
+          "E-01"
+        ],
+        "provenance_class": "BENCHMARK_ALIGNED_SELECTION_WITH_SOURCED_MW_INPUTS"
+      }
+    },
+    "material_balance": {
+      "module_id": "material_balance",
+      "status": "REFERENCE_ONLY",
+      "value": {
+        "case_id": "C-BIOCO2-REH2-ALK-REF-50TPD",
+        "route_id": "Route C",
+        "case_status": "REFERENCE_ONLY",
+        "basis": {
+          "methanol_component_equivalent_kg_day": 50000.0,
+          "hours_per_day": 24.0
+        },
+        "reaction_extents_mol_s": {
+          "R-01": 18.060842325321026,
+          "R-02": 0.0,
+          "E-01": 27.09126348798154
+        },
+        "reaction_extents_kmol_day": {
+          "R-01": 1560.4567769077366,
+          "R-02": 0.0,
+          "E-01": 2340.685165361605
+        },
+        "reaction_contribution_mol_s": [
+          [
+            -18.060842325321026,
+            -0.0,
+            0.0
+          ],
+          [
+            -54.18252697596308,
+            -0.0,
+            54.18252697596308
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            18.060842325321026,
+            0.0,
+            0.0
+          ],
+          [
+            18.060842325321026,
+            0.0,
+            -54.18252697596308
+          ],
+          [
+            0.0,
+            0.0,
+            27.09126348798154
+          ]
+        ],
+        "species_order": [
+          "CO2",
+          "H2",
+          "CO",
+          "CH3OH",
+          "H2O",
+          "O2"
+        ],
+        "reaction_order": [
+          "R-01",
+          "R-02",
+          "E-01"
+        ],
+        "molar_flows_mol_s": {
+          "CH3OH": 18.060842325321026,
+          "CO2": 18.060842325321026,
+          "H2": 54.18252697596308,
+          "CO": 0.0,
+          "H2O_reaction": 18.060842325321026,
+          "H2O_electrolyser": 54.18252697596308,
+          "H2O_net": 36.12168465064205,
+          "O2": 27.09126348798154,
+          "H2_from_electrolyser": 54.18252697596308
+        },
+        "molar_flows_kmol_day": {
+          "CH3OH": 1560.4567769077366,
+          "CO2": 1560.4567769077366,
+          "H2": 4681.37033072321,
+          "CO": 0.0,
+          "H2O_reaction": 1560.4567769077366,
+          "H2O_electrolyser": 4681.37033072321,
+          "H2O_net": 3120.9135538154733,
+          "O2": 2340.685165361605
+        },
+        "mass_flows_kg_s": {
+          "CH3OH": 0.5787037037037037,
+          "CO2": 0.7948486403162157,
+          "H2": 0.10922547248030447,
+          "CO": 0.0,
+          "reaction_water": 0.3253711315265094,
+          "electrolyser_water": 0.9761133945795282,
+          "net_water": 0.6507422630530189,
+          "O2": 0.8668879220992237
+        },
+        "mass_flows_kg_day": {
+          "CH3OH_kg_day": 50000.0,
+          "CO2_kg_day": 68674.92252332103,
+          "H2_kg_day": 9437.080822298305,
+          "CO_kg_day": 0.0,
+          "reaction_water_kg_day": 28112.065763890416,
+          "electrolyser_water_kg_day": 84336.19729167124,
+          "net_water_kg_day": 56224.13152778083,
+          "O2_kg_day": 74899.11646937292
+        },
+        "mass_balance": {
+          "input_kg_day": 124899.05405110188,
+          "output_kg_day": 124899.11646937294,
+          "residual_input_minus_output_kg_day": -0.06241827106379105
+        },
+        "element_residual_kmol_atoms_day": {
+          "C": 0.0,
+          "H": 0.0,
+          "O": 0.0
+        },
+        "ideal_reference_kpis": {
+          "co2_conversion_fraction": 1.0,
+          "h2_conversion_fraction": 1.0,
+          "carbon_selectivity_to_methanol_fraction": 1.0,
+          "methanol_yield_mol_per_mol_CO2": 1.0,
+          "methanol_mass_fraction_in_ideal_product": 1.0,
+          "methanol_mole_fraction_in_ideal_product": 1.0
+        },
+        "tables": {
+          "component_flows": [
+            {
+              "ComponentOrLedger": "CH3OH",
+              "Flow_kmol_day": 1560.4567769077366,
+              "Flow_kg_day": 50000.0,
+              "Status": "REFERENCE_ONLY"
+            },
+            {
+              "ComponentOrLedger": "CO2",
+              "Flow_kmol_day": 1560.4567769077366,
+              "Flow_kg_day": 68674.92252332103,
+              "Status": "REFERENCE_ONLY"
+            },
+            {
+              "ComponentOrLedger": "H2",
+              "Flow_kmol_day": 4681.37033072321,
+              "Flow_kg_day": 9437.080822298305,
+              "Status": "REFERENCE_ONLY"
+            },
+            {
+              "ComponentOrLedger": "CO",
+              "Flow_kmol_day": 0.0,
+              "Flow_kg_day": 0.0,
+              "Status": "REFERENCE_ONLY"
+            },
+            {
+              "ComponentOrLedger": "H2O_reaction",
+              "Flow_kmol_day": 1560.4567769077366,
+              "Flow_kg_day": 28112.065763890416,
+              "Status": "REFERENCE_ONLY"
+            },
+            {
+              "ComponentOrLedger": "H2O_electrolyser",
+              "Flow_kmol_day": 4681.37033072321,
+              "Flow_kg_day": 84336.19729167124,
+              "Status": "REFERENCE_ONLY"
+            },
+            {
+              "ComponentOrLedger": "H2O_net",
+              "Flow_kmol_day": 3120.9135538154733,
+              "Flow_kg_day": 56224.13152778083,
+              "Status": "REFERENCE_ONLY"
+            },
+            {
+              "ComponentOrLedger": "O2",
+              "Flow_kmol_day": 2340.685165361605,
+              "Flow_kg_day": 74899.11646937292,
+              "Status": "REFERENCE_ONLY"
+            }
+          ],
+          "element_closure": [
+            {
+              "Element": "C",
+              "Residual_kmol_atoms_day": 0.0
+            },
+            {
+              "Element": "H",
+              "Residual_kmol_atoms_day": 0.0
+            },
+            {
+              "Element": "O",
+              "Residual_kmol_atoms_day": 0.0
+            }
+          ],
+          "net_species_stoichiometry": [
+            {
+              "Species": "CO2",
+              "Net_Species_Rate_kmol_day": -1560.4567769077366
+            },
+            {
+              "Species": "H2",
+              "Net_Species_Rate_kmol_day": 0.0
+            },
+            {
+              "Species": "CO",
+              "Net_Species_Rate_kmol_day": 0.0
+            },
+            {
+              "Species": "CH3OH",
+              "Net_Species_Rate_kmol_day": 1560.4567769077366
+            },
+            {
+              "Species": "H2O",
+              "Net_Species_Rate_kmol_day": -3120.9135538154733
+            },
+            {
+              "Species": "O2",
+              "Net_Species_Rate_kmol_day": 2340.685165361605
+            }
+          ]
+        },
+        "physical_recycle": {
+          "stream_id": "S-209",
+          "status": "BLOCKED_NOT_COMPUTED",
+          "value": null
+        },
+        "physical_purge": {
+          "stream_id": "S-207",
+          "status": "BLOCKED_NOT_COMPUTED",
+          "value": null
+        }
+      },
+      "units": {},
+      "warnings": [
+        "This is a reaction-block ledger, not the complete 55-stream physical flowsheet.",
+        "Physical S-209 recycle and S-207 purge remain BLOCKED, not zero."
+      ],
+      "errors": [],
+      "residuals": {
+        "mass_balance_residual_kg_day": -0.06241827106379105,
+        "element_C_kmol_atoms_day": 0.0,
+        "element_H_kmol_atoms_day": 0.0,
+        "element_O_kmol_atoms_day": 0.0
+      },
+      "provenance": {
+        "source_ids": [
+          "DB-004",
+          "DB-016",
+          "DB-017",
+          "DB-018",
+          "DB-019",
+          "DB-020",
+          "RXN-001",
+          "E-01"
+        ],
+        "reaction_network_version": "ENERGY008-RXN-0.1.0"
+      }
+    },
+    "property_models": {
+      "module_id": "property_models",
+      "status": "SCREENING_ONLY",
+      "value": {
+        "molecular_weights_kg_kmol": {
+          "CO2": 44.0095,
+          "H2": 2.01588,
+          "CO": 28.0101,
+          "CH3OH": 32.0419,
+          "H2O": 18.01528,
+          "O2": 31.9988
+        },
+        "blocked_property_domains": [
+          {
+            "domain": "PR78_FULL_SYNTHESIS_MIXTURE",
+            "status": "BLOCKED",
+            "reason": "Full active binary interaction matrix, including source-supported or regressed kij for all active pairs, is not available; no zero-filling permitted."
+          },
+          {
+            "domain": "METHANOL_WATER_VLE",
+            "status": "BLOCKED",
+            "reason": "Wilson/NRTL parameters have not been extracted/regressed and independently validated at an approved column pressure."
+          },
+          {
+            "domain": "ALK_ELECTROLYSER_PERFORMANCE",
+            "status": "BLOCKED",
+            "reason": "OEM voltage/performance map, Faradaic efficiency, purity, turndown, ramp and BOP loads are unavailable."
+          },
+          {
+            "domain": "PROCESS_STATE_TRANSPORT_PROPERTIES",
+            "status": "BLOCKED",
+            "reason": "Validated process-state density, viscosity and thermal-conductivity values are unavailable."
+          }
+        ],
+        "co2_sensible": {
+          "correlation_id": "SHOMATE-04",
+          "T1_K": 298.15,
+          "T2_K": 523.15,
+          "delta_h_kJ_mol": 9.349192404466308,
+          "molar_flow_mol_s": 18.060842325321023,
+          "duty_kW": 168.8542898861549,
+          "validity_K": [
+            298.0,
+            1200.0
+          ],
+          "status": "SCREENING_ONLY",
+          "source_id": "NIST/JANAF; Prompt 17 report SHOMATE-04",
+          "provenance_class": "EVALUATED_CORRELATION"
+        },
+        "methanol_latent": {
+          "correlation_id": "DHVAP-MEOH-01",
+          "T_K": 298.15,
+          "Tr": 0.5816426063207178,
+          "delta_hvap_kJ_mol": 37.488992496865215,
+          "molar_flow_mol_s": 18.060842325321023,
+          "duty_kW": 677.0827824210255,
+          "validity_K": [
+            298.0,
+            477.0
+          ],
+          "status": "SCREENING_ONLY",
+          "source_id": "NIST Chemistry WebBook; Prompt 17 report DHVAP-MEOH-01",
+          "provenance_class": "EVALUATED_CORRELATION"
+        }
+      },
+      "units": {},
+      "warnings": [
+        "Pure-fluid reference correlations are not a complete high-pressure mixture property model.",
+        "Pure methanol latent heat is not a methanol-water column duty."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {
+        "property_data_version": "ENERGY008-DATA-0.1.0",
+        "source_ids": [
+          "SHOMATE-04",
+          "DHVAP-MEOH-01",
+          "PROP-0001",
+          "PROP-0002",
+          "PROP-0003"
+        ]
+      }
+    },
+    "energy_balance": {
+      "module_id": "energy_balance",
+      "status": "SCREENING_ONLY",
+      "value": {
+        "reaction_reference": {
+          "R01_delta_h_kJ_mol": -131.82,
+          "R01_rate_kW": -2380.7802353238176,
+          "R01_rate_GJ_day": -205.69941233197784,
+          "E01_delta_h_kJ_mol_reaction": 571.66,
+          "E01_rate_kW": 15486.991685539526,
+          "E01_rate_GJ_day": 1338.0760816306151,
+          "net_delta_h_kJ_mol_MeOH": 725.67,
+          "net_rate_kW": 13106.21145021571,
+          "net_rate_GJ_day": 1132.3766692986374,
+          "R01_plus_electrolysis_kJ_mol": 725.6700000000001,
+          "E01_extent_per_R01_extent": 1.5,
+          "identity_residual_kJ_mol": 1.1368683772161603e-13,
+          "reference_state_T_K": 298.15,
+          "reference_state_P_Pa_abs": 100000.0,
+          "status": "REFERENCE_ONLY"
+        },
+        "reaction_reference_uncertainty": {
+          "status": "SOURCE_PROPAGATED_SCREENING",
+          "R01_rate_sigma_GJ_day": 0.3774241422152815,
+          "E01_rate_sigma_GJ_day": 0.1872548132289284,
+          "net_rate_sigma_GJ_day": 0.3926029862589025,
+          "interpretation": "Source-propagated enthalpy uncertainty only; not a confidence interval and excludes throughput/model-form/covariance uncertainty."
+        },
+        "co2_sensible_heating": {
+          "correlation_id": "SHOMATE-04",
+          "T1_K": 298.15,
+          "T2_K": 523.15,
+          "delta_h_kJ_mol": 9.349192404466308,
+          "molar_flow_mol_s": 18.060842325321023,
+          "duty_kW": 168.8542898861549,
+          "validity_K": [
+            298.0,
+            1200.0
+          ],
+          "status": "SCREENING_ONLY",
+          "source_id": "NIST/JANAF; Prompt 17 report SHOMATE-04",
+          "provenance_class": "EVALUATED_CORRELATION"
+        },
+        "methanol_latent_reference": {
+          "correlation_id": "DHVAP-MEOH-01",
+          "T_K": 298.15,
+          "Tr": 0.5816426063207178,
+          "delta_hvap_kJ_mol": 37.488992496865215,
+          "molar_flow_mol_s": 18.060842325321023,
+          "duty_kW": 677.0827824210255,
+          "validity_K": [
+            298.0,
+            477.0
+          ],
+          "status": "SCREENING_ONLY",
+          "source_id": "NIST Chemistry WebBook; Prompt 17 report DHVAP-MEOH-01",
+          "provenance_class": "EVALUATED_CORRELATION"
+        },
+        "plant_energy_closure": {
+          "status": "BLOCKED",
+          "value": null,
+          "reason": "Physical stream enthalpies, mixture properties, equipment duties and utility states are unavailable."
+        },
+        "reactor_cooling_duty": {
+          "status": "BLOCKED",
+          "value": null
+        },
+        "distillation_duties": {
+          "status": "BLOCKED",
+          "value": null
+        }
+      },
+      "units": {},
+      "warnings": [
+        "Standard-state reaction enthalpies are references, not equipment duties.",
+        "CO2 sensible and methanol latent duties are pure-fluid benchmark illustrations.",
+        "Plant energy closure, reactor cooling and distillation duties remain BLOCKED."
+      ],
+      "errors": [],
+      "residuals": {
+        "reaction_enthalpy_identity_residual_kJ_mol": 1.1368683772161603e-13
+      },
+      "provenance": {
+        "source_ids": [
+          "RXN-001 / PROP-0064..PROP-0071",
+          "PROP-0067 / ENERGY008 Energy Balance reference",
+          "NET-RXN / Prompt 17 hand-calculation report"
+        ]
+      }
+    },
+    "equipment_sizing": {
+      "module_id": "equipment_sizing",
+      "status": "SCREENING_ONLY",
+      "value": {
+        "datasheet_register": [
+          {
+            "equipment_id": "V-101",
+            "equipment_type": "SEPARATOR",
+            "service": "Raw biogenic CO2 source knockout",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "F-101",
+            "equipment_type": "FILTER",
+            "service": "CO2 filter and contaminant guard train",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "P-101",
+            "equipment_type": "OTHER",
+            "service": "CO2 purification/recovery package",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "K-101",
+            "equipment_type": "COMPRESSOR",
+            "service": "CO2 compression and aftercooling",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "W-201",
+            "equipment_type": "OTHER",
+            "service": "Raw-water pretreatment and DI polishing package",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "ELY-201",
+            "equipment_type": "ELECTROLYSER",
+            "service": "Pressurised alkaline electrolyser package",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "D-201",
+            "equipment_type": "OTHER",
+            "service": "Hydrogen gas separation/purification/drying",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "K-201",
+            "equipment_type": "COMPRESSOR",
+            "service": "Hydrogen compression",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "O-201",
+            "equipment_type": "OTHER",
+            "service": "Oxygen conditioning and disposition",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "M-301",
+            "equipment_type": "OTHER",
+            "service": "Fresh/recycle synthesis-feed mixer",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "HX-301",
+            "equipment_type": "HX",
+            "service": "Synthesis feed/effluent heat exchange candidate",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "R-301",
+            "equipment_type": "REACTOR",
+            "service": "Methanol synthesis packed-bed PFR",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "E-302",
+            "equipment_type": "HX",
+            "service": "Synthesis effluent cooling/condensation",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "V-301",
+            "equipment_type": "SEPARATOR",
+            "service": "High-pressure gas/liquid separator",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "SP-301",
+            "equipment_type": "OTHER",
+            "service": "Recycle/purge split interface",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "K-301",
+            "equipment_type": "COMPRESSOR",
+            "service": "Synthesis recycle compressor",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "PCV-301",
+            "equipment_type": "OTHER",
+            "service": "Purge control valve",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "V-302",
+            "equipment_type": "SEPARATOR",
+            "service": "Crude methanol letdown/flash",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "T-401",
+            "equipment_type": "COLUMN",
+            "service": "Methanol-water purification column",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "E-401",
+            "equipment_type": "HX",
+            "service": "Distillation overhead condenser",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "V-401",
+            "equipment_type": "SEPARATOR",
+            "service": "Overhead reflux drum",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "E-402",
+            "equipment_type": "HX",
+            "service": "Distillation reboiler",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "P-401",
+            "equipment_type": "PUMP",
+            "service": "Product transfer pump",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "TK-401",
+            "equipment_type": "TANK",
+            "service": "Methanol product storage",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "U-501",
+            "equipment_type": "OTHER",
+            "service": "Collected off-gas treatment/disposition package",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "W-501",
+            "equipment_type": "OTHER",
+            "service": "Segregated process wastewater/condensate collection and treatment",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "SW-501",
+            "equipment_type": "OTHER",
+            "service": "Segregated solid/hazardous waste collection/export",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          },
+          {
+            "equipment_id": "DR-501",
+            "equipment_type": "OTHER",
+            "service": "Segregated process drain header",
+            "data_status": "BLOCKED",
+            "required_inputs": "source/stream flow and composition; normal/design operating envelope; validated property model; vendor or code design basis; materials and mechanical criteria"
+          }
+        ],
+        "HX_example": {
+          "equipment_id": "HX-A01",
+          "heat_duty_kW": 168.8542898861549,
+          "U_W_m2_K": 100.0,
+          "F": 1.0,
+          "LMTD_K": 30.0,
+          "area_m2": 56.28476329538497,
+          "status": "SCREENING_ONLY",
+          "source_id": "HX-A01 / HX-A02; Prompt 17 hand-calculation report"
+        },
+        "W201_pump_example": {
+          "equipment_id": "W-201",
+          "water_mass_flow_kg_s": 0.9761133945795282,
+          "water_mass_flow_kg_h": 3514.0082204863015,
+          "density_kg_m3": 997.0,
+          "volumetric_flow_m3_s": 0.0009790505462181826,
+          "volumetric_flow_m3_h": 3.5245819663854574,
+          "head_m": 50.0,
+          "efficiency": 0.7,
+          "shaft_power_kW": 0.683743030068095,
+          "flow_margin_fraction": 0.1,
+          "flow_with_margin_m3_h": 3.8770401630240037,
+          "power_with_margin_kW": 0.7521173330749046,
+          "status": "SCREENING_ONLY",
+          "source_id": "P-A01..P-A03 / DB-011; Prompt 17 hand-calculation report"
+        },
+        "other_major_equipment": {
+          "status": "BLOCKED",
+          "items": [
+            "R-301 PFR",
+            "K-101/K-201/K-301 compressors",
+            "vessels/columns",
+            "relief/mechanical design"
+          ]
+        }
+      },
+      "units": {},
+      "warnings": [
+        "HX-A01 and W-201 equations reproduce benchmark arithmetic only; they are not equipment ratings or vendor selections."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {
+        "source_ids": [
+          "HX-A01 / HX-A02; Prompt 17 hand-calculation report",
+          "P-A01..P-A03 / DB-011; Prompt 17 hand-calculation report"
+        ]
+      }
+    },
+    "entropy_exergy": {
+      "module_id": "entropy_exergy",
+      "status": "BLOCKED",
+      "value": {
+        "plant_entropy_generation": {
+          "status": "BLOCKED",
+          "value": null,
+          "units": "kW/K"
+        },
+        "plant_exergy_destruction": {
+          "status": "BLOCKED",
+          "value": null,
+          "units": "kW"
+        }
+      },
+      "units": {},
+      "warnings": [
+        "Validated stream entropies, heat/work boundaries and approved dead-state environment are missing."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "utilities_model": {
+      "module_id": "utilities_model",
+      "status": "BLOCKED",
+      "value": {
+        "electricity": null,
+        "cooling_and_steam": null,
+        "emissions": null
+      },
+      "units": {},
+      "warnings": [
+        "ALK vendor polarization/performance map, rectifier/BOP loads, compressor maps, site utilities and tariffs are unavailable."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "economics": {
+      "module_id": "economics",
+      "status": "BLOCKED",
+      "value": {
+        "CAPEX_INR_2026": null,
+        "OPEX_INR_year": null,
+        "LCOM_INR_per_t": null
+      },
+      "units": {},
+      "warnings": [
+        "Dated vendor quotations, cost factors, tariffs, production basis and finance inputs remain null in the versioned cost template."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "environmental_kpis": {
+      "module_id": "environmental_kpis",
+      "status": "BLOCKED",
+      "value": {
+        "GHG_intensity_kgCO2e_per_kg_MeOH": null,
+        "net_water_intensity_m3_per_t_MeOH": null,
+        "solid_waste_intensity_kg_per_t_MeOH": null
+      },
+      "units": {},
+      "warnings": [
+        "Metered electricity, source-specific emission factor, carbon chain-of-custody, measured water/waste and MRV method are unavailable."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "reactor_calculation": {
+      "module_id": "reactor_calculation",
+      "status": "BLOCKED",
+      "value": {
+        "conversion": null,
+        "catalyst_mass_kg": null,
+        "reactor_volume_m3": null
+      },
+      "units": {},
+      "warnings": [
+        "Catalyst-matched kinetic expression/parameters, validity range, geometry and heat-transfer boundary are absent."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "recycle_solver": {
+      "module_id": "recycle_solver",
+      "status": "BLOCKED",
+      "value": {
+        "physical_recycle_status": "BLOCKED_NOT_COMPUTED",
+        "stream_id": "S-209",
+        "flow": null,
+        "purge_status": "BLOCKED_NOT_COMPUTED",
+        "purge_fraction": null
+      },
+      "units": {},
+      "warnings": [
+        "Physical recycle requires validated PR EOS/flash, stream composition/inerts, purge criterion and compressor performance."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "control_logic": {
+      "module_id": "control_logic",
+      "status": "BLOCKED",
+      "value": {
+        "mode": "OFFLINE / NOT CONNECTED",
+        "BPCS": "NOT_CONNECTED",
+        "SIS_ESD_FGS": "INDICATION_ONLY_NOT_CONNECTED"
+      },
+      "units": {},
+      "warnings": [
+        "No live instrumentation or control system is connected. No commands or setpoints are issued."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "material_kpis": {
+      "module_id": "material_kpis",
+      "status": "REFERENCE_ONLY",
+      "value": [
+        {
+          "KPI": "co2_conversion_fraction",
+          "Value": 1.0,
+          "Units": "fraction or mol/mol",
+          "Status": "REFERENCE_ONLY"
+        },
+        {
+          "KPI": "h2_conversion_fraction",
+          "Value": 1.0,
+          "Units": "fraction or mol/mol",
+          "Status": "REFERENCE_ONLY"
+        },
+        {
+          "KPI": "carbon_selectivity_to_methanol_fraction",
+          "Value": 1.0,
+          "Units": "fraction or mol/mol",
+          "Status": "REFERENCE_ONLY"
+        },
+        {
+          "KPI": "methanol_yield_mol_per_mol_CO2",
+          "Value": 1.0,
+          "Units": "fraction or mol/mol",
+          "Status": "REFERENCE_ONLY"
+        },
+        {
+          "KPI": "methanol_mass_fraction_in_ideal_product",
+          "Value": 1.0,
+          "Units": "fraction or mol/mol",
+          "Status": "REFERENCE_ONLY"
+        },
+        {
+          "KPI": "methanol_mole_fraction_in_ideal_product",
+          "Value": 1.0,
+          "Units": "fraction or mol/mol",
+          "Status": "REFERENCE_ONLY"
+        }
+      ],
+      "units": {},
+      "warnings": [
+        "Ideal conversion/selectivity/product purity values are imposed by the limiting stoichiometric reference and are not reactor/product performance predictions."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {}
+    },
+    "sensitivity_optimisation": {
+      "module_id": "sensitivity_optimisation",
+      "status": "SCREENING_ONLY",
+      "value": {
+        "method": "Each throughput point is recalculated through the material-balance engine using the versioned reaction network. R-02 extent is scaled in proportion to the base-case R-02 extent relative to the methanol component-equivalent basis.",
+        "plan_id": "ENERGY008-SENS-BASE-THROUGHPUT-01",
+        "table": [
+          {
+            "throughput_t_day": 45.0,
+            "status": "REFERENCE_ONLY",
+            "methanol_kg_day": 45000.0,
+            "co2_kg_day": 61807.43027098892,
+            "h2_kg_day": 8493.372740068475,
+            "electrolyser_water_kg_day": 75902.57756250411,
+            "element_residual_max_kmol_atoms_day": 1.2278178473934532e-12
+          },
+          {
+            "throughput_t_day": 50.0,
+            "status": "REFERENCE_ONLY",
+            "methanol_kg_day": 50000.0,
+            "co2_kg_day": 68674.92252332103,
+            "h2_kg_day": 9437.080822298305,
+            "electrolyser_water_kg_day": 84336.19729167124,
+            "element_residual_max_kmol_atoms_day": 0.0
+          },
+          {
+            "throughput_t_day": 55.0,
+            "status": "REFERENCE_ONLY",
+            "methanol_kg_day": 55000.0,
+            "co2_kg_day": 75542.41477565313,
+            "h2_kg_day": 10380.788904528135,
+            "electrolyser_water_kg_day": 92769.81702083835,
+            "element_residual_max_kmol_atoms_day": 0.0
+          }
+        ],
+        "optimisation": {
+          "status": "BLOCKED",
+          "objective": null,
+          "reason": "The available engine does not contain the physical process model and constraints needed for optimisation."
+        }
+      },
+      "units": {},
+      "warnings": [
+        "Prompt 17 illustrative 45/50/55 t/day throughput points are linear stoichiometric reference scenarios around the illustrative 50 t/day case; they are not probabilistic uncertainty bounds, approved capacity range, equipment feasibility cases or plant performance predictions.",
+        "Only throughput sensitivity is implemented in the core Prompt 19 MATLAB sensitivity function; this port does not claim six-variable optimisation."
+      ],
+      "errors": [],
+      "residuals": {},
+      "provenance": {
+        "source_ids": [
+          "ENERGY008-HAND-BASE-C-01 / Prompt 17 throughput sensitivity scenarios"
+        ]
+      }
+    }
+  }
+}

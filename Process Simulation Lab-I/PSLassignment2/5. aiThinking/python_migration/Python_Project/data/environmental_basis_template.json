@@ -1,0 +1,52 @@
+{
+  "schema_id": "ENERGY008-ENVIRONMENTAL-BASIS-0.1.0",
+  "status": "BLOCKED_PENDING_SOURCE_AND_SITE_DATA",
+  "boundary": "Plant gate draft; upstream feed origin/carbon accounting and downstream use tracked separately; G3 approval pending",
+  "reference_limits": {
+    "non_biogenic_GHG_max_kgCO2e_per_kg_MeOH": 0.44,
+    "source_id": "DB-057",
+    "status": "REFERENCE_CEILING_ONLY_NOT_A_CERTIFICATION_RESULT",
+    "note": "The applicable MNRE measurement, reporting and verification method and current applicability must be confirmed before any green-methanol claim."
+  },
+  "inputs": {
+    "measured_electricity_kWh_day": null,
+    "electricity_emission_factor_kgCO2e_per_kWh": null,
+    "direct_non_biogenic_GHG_kgCO2e_day": null,
+    "methanol_saleable_kg_day": null,
+    "water_withdrawal_m3_day": null,
+    "water_discharge_m3_day": null,
+    "solid_waste_kg_day": null,
+    "renewable_electricity_fraction": null,
+    "biogenic_CO2_chain_of_custody": null,
+    "ghg_mrv_method_version": null,
+    "measurement_period_start": null,
+    "measurement_period_end": null,
+    "provenance_class": null,
+    "units": null,
+    "source_map": null
+  },
+  "required_units": {
+    "measured_electricity_kWh_day": "kWh/day",
+    "electricity_emission_factor_kgCO2e_per_kWh": "kg CO2e/kWh",
+    "direct_non_biogenic_GHG_kgCO2e_day": "kg CO2e/day",
+    "methanol_saleable_kg_day": "kg/day",
+    "water_withdrawal_m3_day": "m3/day",
+    "water_discharge_m3_day": "m3/day",
+    "solid_waste_kg_day": "kg/day",
+    "renewable_electricity_fraction": "fraction"
+  },
+  "required_source_map_fields": [
+    "measured_electricity_kWh_day",
+    "electricity_emission_factor_kgCO2e_per_kWh",
+    "direct_non_biogenic_GHG_kgCO2e_day",
+    "methanol_saleable_kg_day",
+    "water_withdrawal_m3_day",
+    "water_discharge_m3_day",
+    "solid_waste_kg_day",
+    "renewable_electricity_fraction",
+    "biogenic_CO2_chain_of_custody",
+    "ghg_mrv_method_version"
+  ],
+  "source_ids": ["DB-057", "DB-058", "DB-061", "DB-062", "DB-063", "DB-064"],
+  "rule": "Null means unavailable, never zero. Values require declared units, individual source IDs, provenance class and measurement period. No green-methanol certification, water-stress, emissions-intensity or waste KPI without source and boundary evidence."
+}

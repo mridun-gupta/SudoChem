@@ -1,0 +1,9 @@
+Prompt 25 final pre-release static checks | 02 November 2026
+$ python tests/check_project_static.py
+Prompt 19 static integrity check: PASS (100 checks; 55 hashed datasets)
+$ python tests/check_gui_static.py
+Prompt 20 GUI static source-contract check: PASS (80 checks)
+This is a file/source-contract check only. It does not parse MATLAB, launch the GUI, or execute engine modules.
+$ python tests/check_prompt19_regression.py
+Prompt 19 independent Python arithmetic audit: PASS (50 checks)
+This is an independent fixture audit, not MATLAB execution or Prompt 21 model validation.

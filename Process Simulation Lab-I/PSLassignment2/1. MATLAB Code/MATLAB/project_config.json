@@ -1,0 +1,137 @@
+{
+  "project_id": "ENERGY-008",
+  "project_name": "ENERGY-008 Green Methanol Process Model",
+  "project_version": "0.3.0-prompt19-engine-prompt20-gui",
+  "architecture_prompt": "Prompt 18",
+  "config_schema_version": "ENERGY008-PROJECT-CONFIG-0.1.0",
+  "project_status": "ROUTE_C_WORKING_BASIS_G3_NOT_FROZEN",
+  "route": "Route C: biogenic CO2 + renewable electrolytic H2; pressurised ALK reference",
+  "design_basis_version": "ENERGY008-DB Rev 0.1-DRAFT",
+  "pfd_version": "ENERGY008-PFD-001 Rev 0.1-DRAFT",
+  "model_version": "ENERGY008-MODEL-0.1.0",
+  "reaction_network_version": "ENERGY008-RXN-0.1.0",
+  "property_data_version": "ENERGY008-DATA-0.1.0",
+  "schema_version": "ENERGY008-SCHEMA-0.1.0",
+  "benchmark_fixture_id": "ENERGY008-HAND-BASE-C-01",
+  "design_status": {
+    "route_gate": "NOT_EVIDENCED_AS_APPROVED",
+    "g3": "NOT_FROZEN",
+    "base_case": "BASE-C-CONCEPT",
+    "illustrative_methanol_component_equivalent_kg_day": 50000,
+    "warning": "The 50 t/day basis is an ideal stoichiometric hand-check reference, not a plant-wide solved balance or approved design capacity."
+  },
+  "paths": {
+    "runtime_path_folders": [
+      "MATLAB"
+    ],
+    "gui_path_folders": [
+      "MATLAB/gui"
+    ],
+    "data_manifest": "data/data_manifest.json",
+    "data_roots": [
+      "data/raw",
+      "data/processed",
+      "data/reference",
+      "data/schemas",
+      "MATLAB/data"
+    ],
+    "outputs": "outputs",
+    "logs": "logs",
+    "flowcharts": "flowcharts",
+    "docs": "MATLAB/docs",
+    "tests": "MATLAB/tests",
+    "reports": "outputs/reports",
+    "case_file": "MATLAB/data/default_case.json",
+    "case_files": [
+      "MATLAB/data/cases/a-indco2-reh2-alk-ref-50tpd.json",
+      "MATLAB/data/cases/b-biomass-syngas-50tpd.json",
+      "MATLAB/data/cases/c-bioco2-reh2-alk-turndown-25tpd.json"
+    ],
+    "disturbance_file": "MATLAB/data/cases/db-059-power-shortfall-50pct-2h.json",
+    "property_data_file": "MATLAB/data/property_data_v0.1.0.json",
+    "reaction_network_file": "MATLAB/data/reaction_network_v0.1.0.json",
+    "equipment_register_file": "MATLAB/data/equipment_register_v0.1.0.json",
+    "utility_register_file": "MATLAB/data/utility_register_v0.1.0.json",
+    "cost_basis_file": "MATLAB/data/cost_basis_template.json",
+    "environmental_basis_file": "MATLAB/data/environmental_basis_template.json",
+    "fixture_file": "data/reference/ENERGY008_Benchmark_Fixture.json",
+    "sensitivity_plan_file": "MATLAB/data/sensitivity_plan_v0.1.0.json",
+    "results": "MATLAB/results"
+  },
+  "formats": {
+    "runtime_data": [
+      ".csv",
+      ".json",
+      ".xlsx"
+    ],
+    "project_documentation": [
+      ".md",
+      ".txt"
+    ],
+    "flowcharts": [
+      ".mmd",
+      ".dot",
+      ".svg",
+      ".png"
+    ],
+    "explicitly_unsupported": [
+      ".xls",
+      ".xlsm",
+      ".ods",
+      ".mat",
+      ".parquet"
+    ],
+    "project_source_assets": [
+      ".drawio",
+      ".dot",
+      ".svg",
+      ".png"
+    ]
+  },
+  "run_control": {
+    "calculation_engine_enabled": false,
+    "overwrite_outputs": false,
+    "create_unique_run_directory": true,
+    "write_json_run_log": true,
+    "write_text_run_log": true,
+    "verify_sha256": true,
+    "fail_on_hash_mismatch": true,
+    "fail_on_ambiguous_data": true,
+    "allow_solver_execution": false,
+    "gui_calculation_engine_enabled": true
+  },
+  "toolbox_policy": {
+    "required_toolboxes_for_prompt18_startup": [],
+    "required_matlab_release": "NOT_VERIFIED_MATLAB_RUNTIME_UNAVAILABLE",
+    "toolbox_availability": "NOT_VERIFIED",
+    "implementation_note": "Prompt 19 must select and verify solver/toolbox dependencies against the exact MATLAB release and deployment environment before enabling calculations.",
+    "required_toolboxes_for_prompt19_implementation": "TO_BE_DETERMINED_AFTER_MODULE_ALGORITHM_AND_RELEASE_CHECK"
+  },
+  "execution_policy": {
+    "never_use_pwd_for_root_or_data_resolution": true,
+    "never_addpath_genpath": true,
+    "never_scan_outside_data_roots": true,
+    "never_zero_fill_missing_data": true,
+    "stop_on_multiple_matches": true,
+    "block_unsupported_property_calls": true,
+    "gui_separate_from_engine": true
+  },
+  "implementation_scope": {
+    "prompt18": "Project layout, startup, manifest discovery, file/hash integrity, unique run directories and module API contracts.",
+    "prompt19": "Modular reference/screening calculations with explicit physical model blockers; standalone MATLAB tests are prepared but runtime status is NOT RUN.",
+    "prompt20": "Programmatic desktop GUI; run_gui.m adds only the fixed MATLAB/gui folder after root/config validation; GUI callbacks delegate to gui_run_engine.m and engine modules."
+  },
+  "implementation_prompt": "Prompt 19",
+  "gui_prompt": "Prompt 20",
+  "sensitivity_plan_version": "0.1.0",
+  "engine_policy": {
+    "reference_calculations_enabled": true,
+    "physical_flowsheet_solver_enabled": false,
+    "plant_recycle_solver_enabled": false,
+    "pfr_kinetic_solver_enabled": false,
+    "pr78_flash_enabled": false,
+    "meoh_water_vle_enabled": false,
+    "dynamic_control_simulation_enabled": false,
+    "economic_model_enabled": false
+  }
+}

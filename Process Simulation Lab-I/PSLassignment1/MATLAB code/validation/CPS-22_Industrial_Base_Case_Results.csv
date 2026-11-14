@@ -1,0 +1,31 @@
+result,value,unit,status,notes
+basis_T,445.1253289473684,K,REFERENCE_INTERPOLATION_FIXTURE,Measured 1.5 MPa isobar interpolation; not target EOS output
+basis_P,1500000.0,Pa,REFERENCE_CASE,Selected experimental isobar
+feed_F,100.0,kmol/h,ASSUMED_SCALE,"Industrial throughput assumption, not lab measurement"
+beta_vapour,0.6980459983116128,mol/mol,EMPIRICAL_INTERPOLATION,Lever rule from measured tie-line
+x_ethanol,0.3884802631578942,mol/mol,EMPIRICAL_INTERPOLATION,"At T=445.1253 K, P=1.5 MPa"
+y_ethanol,0.5482401315789471,mol/mol,EMPIRICAL_INTERPOLATION,"At T=445.1253 K, P=1.5 MPa"
+liquid_flow,30.195400168838717,kmol/h,CALCULATED,F(1-beta)
+vapour_flow,69.80459983116128,kmol/h,CALCULATED,F beta
+Psat_ethanol,1541779.8816990373,Pa,NIST_ANTOINE,Within declared Antoine range
+Psat_water,899893.7043813854,Pa,NIST_ANTOINE,Within declared Antoine range
+gamma_ethanol,1.4123211238191535,-,CANDIDATE_NRTL_DIAGNOSTIC,Candidate low-pressure set; not accepted
+gamma_water,1.3446480563604195,-,CANDIDATE_NRTL_DIAGNOSTIC,Candidate low-pressure set; not accepted
+Z_vapour,0.87999434401015,-,SRK_DIAGNOSTIC,CoolProp critical properties; kij=0 diagnostic
+phi_ethanol_vapour,0.8632695607377423,-,SRK_DIAGNOSTIC,Not validated at high pressure
+phi_water_vapour,0.9293539639748524,-,SRK_DIAGNOSTIC,Not validated at high pressure
+ln_fugacity_residual_ethanol,-0.019120534623567078,-,FAIL,ln(fV/fL); acceptance 1e-6
+ln_fugacity_residual_water,-0.1188632575948906,-,FAIL,ln(fV/fL); acceptance 1e-6
+max_abs_ln_fugacity_residual,0.1188632575948906,-,FAIL,Not a valid equilibrium prediction
+feed_mass_flow,3204.1854000000003,kg/h,CALCULATED,Using source molecular weights
+liquid_mass_flow,873.050826929553,kg/h,CALCULATED,Lever-rule streams
+vapour_mass_flow,2331.134573070447,kg/h,CALCULATED,Lever-rule streams
+total_mass_closure,4.547473508864641e-13,kg/h,PASS_ARITHMETIC,Exact within floating point
+Q_illustrative,664.64328361676,kW,SCREEN_ONLY_NOT_ACCEPTED,Assumed ethanol Cp and latent heat method approximations
+steam_consumption_scenario,1265.9872068890666,kg/h,SCENARIO_ONLY,Uses assumed latent duty 1890 kJ/kg
+D_hydraulic_min,0.27261180640175287,m,SCREEN_ONLY,Souders-Brown with provisional K
+D_selected,0.5,m,ASSUMED_PRACTICAL_SCREEN,"Practical rounding, not final design"
+liquid_level_180s,0.32853890998466084,m,SCREEN_ONLY,At selected diameter; excludes surge/freeboard
+vessel_height_assumption,2.0,m,ASSUMED_SCREEN,2m straight shell length
+CAPEX,,USD,BLOCKED,No defensible high-pressure vessel purchase/install estimate frozen
+OPEX,,USD/y,BLOCKED,Steam tariff is scenario only; validated duty absent

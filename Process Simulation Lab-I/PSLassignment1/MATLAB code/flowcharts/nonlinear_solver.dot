@@ -1,0 +1,23 @@
+digraph CPS22Solver {
+  graph [rankdir=TB, bgcolor="white", pad="0.25", nodesep="0.35", ranksep="0.45", fontname="Arial", label="CPS-22 NRTL-SRK Diagnostic Solver", labelloc=t, fontsize=18];
+  node [shape=box, style="rounded,filled", fillcolor="#eaf2f8", color="#2c3e50", fontname="Arial", fontsize=10, margin="0.15,0.10"];
+  edge [color="#34495e", arrowsize=0.75, fontname="Arial", fontsize=9];
+  A [label="Validate T, P, z, parameter arrays, Antoine ranges"];
+  B [shape=diamond, fillcolor="#fcf3cf", label="Valid inputs?"];
+  C [label="Initialize next logit guess for x1, y1, beta"];
+  D [label="Decode bounded variables: x, y, beta in (0,1)"];
+  E [label="Compute NRTL gamma, SRK phi, Psat, phi-sat, Poynting"];
+  F [label="Evaluate 2 log-fugacity residuals + 1 component balance residual"];
+  G [label="Run fminsearch from this start"];
+  H [shape=diamond, fillcolor="#fcf3cf", label="Finite valid objective?"];
+  I [shape=diamond, fillcolor="#fcf3cf", label="Residual tolerances pass and beta interior?"];
+  J [label="Record numerical-pass candidate; stability still unchecked", fillcolor="#d5f5e3"];
+  K [label="Record boundary / nonconverged / invalid-property status", fillcolor="#fadbd8"];
+  L [shape=diamond, fillcolor="#fcf3cf", label="More starts remain?"];
+  M [label="Select lowest-objective finite candidate; independently check residuals"];
+  N [label="Return diagnostics and model NOT ACCEPTED until independent validation"];
+  X [shape=octagon, fillcolor="#fadbd8", label="Reject invalid input with message"];
+  A->B; B->X [label="No"]; B->C [label="Yes"]; C->D->E->F->G->H;
+  H->K [label="No"]; H->I [label="Yes"]; I->J [label="Yes"]; I->K [label="No"];
+  J->L; K->L; L->C [label="Yes"]; L->M [label="No"]; M->N;
+}

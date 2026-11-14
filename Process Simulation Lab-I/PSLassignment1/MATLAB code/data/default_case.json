@@ -1,0 +1,156 @@
+{
+  "project": {
+    "id": "CPS-22",
+    "name": "NRTL-SRK High-Pressure Separation",
+    "version": "R4 standalone canonical-data release",
+    "component_order": [
+      "ethanol",
+      "water"
+    ]
+  },
+  "constants": {
+    "R_J_mol_K": 8.31446261815324
+  },
+  "components": [
+    {
+      "name": "Ethanol",
+      "formula": "C2H6O",
+      "MW_kg_mol": 0.04606844,
+      "Tc_K": 514.7092848812961,
+      "Pc_Pa": 6267914.582702095,
+      "omega": 0.644,
+      "property_status": "CoolProp ethanol fluid data; source frozen for this industrial rerun"
+    },
+    {
+      "name": "Water",
+      "formula": "H2O",
+      "MW_kg_mol": 0.018015268,
+      "Tc_K": 647.096,
+      "Pc_Pa": 22064000.0,
+      "omega": 0.3442920843,
+      "property_status": "CoolProp/IAPWS water fluid data; source frozen for this industrial rerun"
+    }
+  ],
+  "feed": {
+    "flow_kmol_h": 100.0,
+    "z": [
+      0.5,
+      0.5
+    ],
+    "status": "assumed design basis, not experimental"
+  },
+  "conditions": {
+    "temperature_K": 445.1253289473684,
+    "pressure_Pa": 1500000.0,
+    "feed_temperature_K": 425.1253289473684,
+    "feed_pressure_Pa": 1500000.0,
+    "external_work_W": 0.0
+  },
+  "model": {
+    "primary": "NRTL-SRK gamma-phi",
+    "parameters_accepted": false,
+    "nrtl": {
+      "a_ij": [
+        [
+          0.0,
+          -0.8009
+        ],
+        [
+          3.4578,
+          0.0
+        ]
+      ],
+      "b_ij_K": [
+        [
+          0.0,
+          246.18
+        ],
+        [
+          -586.0809,
+          0.0
+        ]
+      ],
+      "alpha_ij": [
+        [
+          0.0,
+          0.3
+        ],
+        [
+          0.3,
+          0.0
+        ]
+      ],
+      "convention": "tau_ij = a_ij + b_ij_K/T_K; G_ij=exp(-alpha_ij*tau_ij)",
+      "status": "candidate low-pressure parameter set; not accepted at high temperature"
+    },
+    "srk": {
+      "kij_matrix": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "alpha_function": "classical Soave",
+      "mixing_rules": "vdW one-fluid",
+      "status": "kij=0 is a diagnostic initial guess only"
+    },
+    "alternative_model": {
+      "name": "PRSV-Wong-Sandler",
+      "status": "literature-reported comparison only; not independently implemented due to absent convention-matched parameters"
+    }
+  },
+  "saturation_correlations": [
+    {
+      "component": "ethanol",
+      "A": 4.92531,
+      "B_K": 1432.526,
+      "C_K": -61.819,
+      "Tmin_K": 364.8,
+      "Tmax_K": 513.91,
+      "equation": "log10(Psat_bar)=A-B/(T_K+C_K)",
+      "source": "NIST Chemistry WebBook; Ambrose and Sprake et al. (1975)"
+    },
+    {
+      "component": "water",
+      "A": 3.55959,
+      "B_K": 643.748,
+      "C_K": -198.043,
+      "Tmin_K": 379.0,
+      "Tmax_K": 573.0,
+      "equation": "log10(Psat_bar)=A-B/(T_K+C_K)",
+      "source": "NIST Chemistry WebBook; Liu and Lindsay (1970)"
+    }
+  ],
+  "solver": {
+    "fugacity_tolerance": 1e-06,
+    "material_tolerance": 1e-08,
+    "minimum_phase_fraction": 1e-06,
+    "max_iterations_per_start": 600,
+    "max_function_evaluations_per_start": 2000,
+    "algorithm": "multi-start fminsearch in logistic-transformed composition and phase-fraction variables; no Optimization Toolbox required"
+  },
+  "equipment": {
+    "souders_brown_K_m_s": 0.11,
+    "residence_time_s": 180.0,
+    "status": "screening assumptions; confirm K with source/service-specific data",
+    "selected_preliminary_diameter_m": 0.5,
+    "straight_shell_length_m": 2.0,
+    "selected_geometry_status": "SCREENING_ONLY; not a mechanical design"
+  },
+  "engineering": {
+    "enthalpy_model_accepted": false,
+    "utility_basis_accepted": false,
+    "cost_basis_accepted": false,
+    "cost_currency": "USD",
+    "cost_reference_year": "2019 base for cited correlations; 2024 June known index only"
+  },
+  "paths": {
+    "reference_data": "data/CPS22_reference_vle_expanded.csv",
+    "results_dir": "results",
+    "plot_dir": "results/plots"
+  }
+}

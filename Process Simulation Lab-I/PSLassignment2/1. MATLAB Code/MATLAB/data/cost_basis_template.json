@@ -1,0 +1,62 @@
+{
+  "schema_id": "ENERGY008-COST-BASIS-0.1.0",
+  "status": "BLOCKED_PENDING_G3",
+  "currency": "INR",
+  "reference_year": 2026,
+  "currency_convention_source": "DB-060; provisional reporting convention only",
+  "inputs": {
+    "site_location": null,
+    "electricity_tariff_INR_kWh": null,
+    "water_tariff_INR_m3": null,
+    "steam_tariff_INR_t": null,
+    "equipment_vendor_quotes_INR": null,
+    "installation_factor": null,
+    "catalyst_cost_INR_kg": null,
+    "chemical_costs_INR_year": null,
+    "labour_cost_INR_year": null,
+    "maintenance_factor": null,
+    "waste_disposal_cost_INR_t": null,
+    "escalation_index": null,
+    "contingency_fraction": null,
+    "discount_rate_fraction": null,
+    "plant_life_years": null,
+    "screening_cost_model": {
+      "currency": "INR",
+      "reference_year": 2026,
+      "quote_items": null,
+      "annual_cost_drivers": {
+        "electricity_kWh_year": null,
+        "electricity_tariff_INR_kWh": null,
+        "electricity_uncertainty_fraction": null,
+        "water_m3_year": null,
+        "water_tariff_INR_m3": null,
+        "water_uncertainty_fraction": null,
+        "steam_t_year": null,
+        "steam_tariff_INR_t": null,
+        "steam_uncertainty_fraction": null,
+        "chemicals_INR_year": null,
+        "chemicals_uncertainty_fraction": null,
+        "labour_INR_year": null,
+        "labour_uncertainty_fraction": null,
+        "maintenance_fraction_installed_CAPEX": null,
+        "maintenance_uncertainty_fraction": null,
+        "waste_t_year": null,
+        "waste_tariff_INR_t": null,
+        "waste_uncertainty_fraction": null,
+        "saleable_methanol_t_year": null,
+        "discount_rate_fraction": null,
+        "plant_life_years": null,
+        "source_map": null
+      }
+    }
+  },
+  "required_sources": [
+    "site utility tariff schedule",
+    "dated vendor quotations",
+    "cost-estimate methodology and location factor",
+    "year-specific escalation indices",
+    "approved finance and production assumptions",
+    "source-specific uncertainty or documented estimate ranges"
+  ],
+  "rule": "Null means unavailable, never zero. No CAPEX/OPEX/LCOM output until all quote, tariff, escalation, production, finance, source and uncertainty inputs are sourced or explicitly approved."
+}

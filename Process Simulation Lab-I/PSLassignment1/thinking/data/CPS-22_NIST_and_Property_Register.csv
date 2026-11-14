@@ -1,0 +1,35 @@
+parameter,value,unit,source,source_url,status,limitations_and_notes
+MW_ethanol,46.06844,g/mol,NIST Chemistry WebBook SRD 69,https://webbook.nist.gov/cgi/cbook.cgi?ID=C64175&Mask=1,Reported,Identity property; source rounded precision.
+MW_water,18.015268,g/mol,CoolProp Water fluid data; consistent with NIST rounded 18.0153,https://coolprop.org/fluid_properties/fluids/Water.html,Reported,Molar mass used consistently in balance.
+Tc_ethanol,514.7092848813,K,CoolProp ethanol fluid data / REFPROP-validated EOS constants,https://coolprop.org/fluid_properties/fluids/Ethanol.html,Reported,Compare with NIST literature entries near 514 K; model source frozen to CoolProp for this run.
+Pc_ethanol,6267914.5827,Pa,CoolProp ethanol fluid data,https://coolprop.org/fluid_properties/fluids/Ethanol.html,Reported,6.2679146 MPa.
+omega_ethanol,0.644,-,CoolProp ethanol fluid data,https://coolprop.org/fluid_properties/fluids/Ethanol.html,Reported,Acentric factor.
+Tc_water,647.096,K,IAPWS/CoolProp water critical point,https://coolprop.org/fluid_properties/fluids/Water.html,Reported,IAPWS value.
+Pc_water,22064000,Pa,IAPWS/CoolProp water critical point,https://coolprop.org/fluid_properties/fluids/Water.html,Reported,22.064 MPa.
+omega_water,0.3442920843,-,CoolProp water fluid data,https://coolprop.org/fluid_properties/fluids/Water.html,Reported,Acentric factor as listed in the fluid model.
+Psat_ethanol_A,4.92531,-,NIST SRD 69; Ambrose and Sprake et al. (1975),https://webbook.nist.gov/cgi/cbook.cgi?ID=C64175&Mask=1E9F,Published correlation coefficient,"log10(P/bar)=A-B/(T+C), valid 364.8-513.91 K."
+Psat_ethanol_B,1432.526,K,NIST SRD 69; Ambrose and Sprake et al. (1975),https://webbook.nist.gov/cgi/cbook.cgi?ID=C64175&Mask=1E9F,Published correlation coefficient,Ensure denominator is T+C; C=-61.819 K.
+Psat_ethanol_C,-61.819,K,NIST SRD 69; Ambrose and Sprake et al. (1975),https://webbook.nist.gov/cgi/cbook.cgi?ID=C64175&Mask=1E9F,Published correlation coefficient,Range includes benchmark 445.125 K.
+Psat_water_A,3.55959,-,NIST SRD 69; Liu and Lindsay (1970),https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Plot=&Type=ANTOINE,Published correlation coefficient,"log10(P/bar)=A-B/(T+C), valid 379-573 K."
+Psat_water_B,643.748,K,NIST SRD 69; Liu and Lindsay (1970),https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Plot=&Type=ANTOINE,Published correlation coefficient,Denominator T+C where C=-198.043 K.
+Psat_water_C,-198.043,K,NIST SRD 69; Liu and Lindsay (1970),https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Plot=&Type=ANTOINE,Published correlation coefficient,Range includes benchmark.
+Cp_water_liquid_ShomaA,-203.6060,J/mol/K coefficient,NIST-JANAF via NIST SRD 69; Chase (1998),https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Mask=1F&Plot=on&Type=JANAFL,Published coefficient,Liquid phase heat capacity valid 298-500 K; t=T/1000.
+Cp_water_liquid_ShomaB,1523.290,J/mol/K coefficient,NIST-JANAF via NIST SRD 69; Chase (1998),https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Mask=1F&Plot=on&Type=JANAFL,Published coefficient,Liquid phase Shomate correlation.
+Cp_water_liquid_ShomaC,-3196.413,J/mol/K coefficient,NIST-JANAF via NIST SRD 69; Chase (1998),https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Mask=1F&Plot=on&Type=JANAFL,Published coefficient,Liquid phase Shomate correlation.
+Cp_water_liquid_ShomaD,2474.455,J/mol/K coefficient,NIST-JANAF via NIST SRD 69; Chase (1998),https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Mask=1F&Plot=on&Type=JANAFL,Published coefficient,Liquid phase Shomate correlation.
+Cp_water_liquid_ShomaE,3.855326,J/mol/K coefficient,NIST-JANAF via NIST SRD 69; Chase (1998),https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Mask=1F&Plot=on&Type=JANAFL,Published coefficient,Liquid phase Shomate correlation.
+Hvap_ethanol_A,50.43,kJ/mol,NIST SRD 69; Majer and Svoboda (1985),https://webbook.nist.gov/cgi/cbook.cgi?ID=C64175&Mask=1E9F,Published correlation coefficient,DeltaHvap=A exp(-alpha Tr)(1-Tr)^beta; valid 298-469 K.
+Hvap_ethanol_alpha,-0.4475,-,NIST SRD 69; Majer and Svoboda (1985),https://webbook.nist.gov/cgi/cbook.cgi?ID=C64175&Mask=1E9F,Published correlation coefficient,Signed alpha per displayed NIST equation; exp(-alpha Tr).
+Hvap_ethanol_beta,0.4989,-,NIST SRD 69; Majer and Svoboda (1985),https://webbook.nist.gov/cgi/cbook.cgi?ID=C64175&Mask=1E9F,Published correlation coefficient,Tc=513.9 K for this correlation.
+NRTL_a12,-0.8009,dimensionless,Energies 2017 Table 1; VLE-IG parameters reproduced from Aspen database,https://www.mdpi.com/1996-1073/10/9/1276,Candidate only,Do not infer high-pressure validity. Convention tau=a+b/T.
+NRTL_b12,246.18,K,Energies 2017 Table 1,https://www.mdpi.com/1996-1073/10/9/1276,Candidate only,Temperature-dependent NRTL parameter.
+NRTL_a21,3.4578,dimensionless,Energies 2017 Table 1,https://www.mdpi.com/1996-1073/10/9/1276,Candidate only,"Parameter indexing fixed ethanol(1), water(2)."
+NRTL_b21,-586.0809,K,Energies 2017 Table 1,https://www.mdpi.com/1996-1073/10/9/1276,Candidate only,Temperature-dependent NRTL parameter.
+NRTL_alpha12,0.3,dimensionless,Energies 2017 Table 1,https://www.mdpi.com/1996-1073/10/9/1276,Candidate only,Symmetric non-randomness factor.
+SRK_kij,0.0,dimensionless,Diagnostic initial assumption,https://doi.org/10.1016/0009-2509(72)80096-4,Assumed diagnostic,Not validated at 1.5 MPa / 445 K; sensitivity explored.
+vL_ethanol_Rackett,7.19087e-5,m3/mol,Phase 2 candidate modified-Rackett output,Prior Phase 2 handoff,Estimated,"Used only for Poynting/density screen, not validated compressed liquid."
+vL_water_Rackett,2.41893e-5,m3/mol,Phase 2 candidate modified-Rackett output,Prior Phase 2 handoff,Estimated,Used only for Poynting/density screen.
+Cp_ethanol_screen,130,J/mol/K,Engineering assumption for illustrative Q sensitivity only,No source accepted for 425-445 K liquid interval,Assumed,Not a sourced data point; sensitivity 115-160 J/mol/K provided.
+Hvap_water_Watson_reference,40.656,kJ/mol,"Water latent heat at normal boiling point, public standard property value; verify against IAPWS before design",IAPWS-IF97 release link below,Screening basis,Used with Watson exponent 0.38 only for illustrative latent-duty estimate.
+Souders_Brown_K,0.11,m/s,GPSA Engineering Data Book typical comparison value for vertical mesh flow,https://dl.eiepd.com/libraries/manuals/separator-design/pressure-vessel/GPSA.pdf,Provisional screening,Must be de-rated/confirmed with vendor and service-specific design.
+Steam_hfg_scenario,1890,kJ/kg,"Explicit scenario assumption, not IAPWS-calculated",https://iapws.org/technical-guidance/release/IF97-Rev,Assumed scenario only,Replace with steam enthalpy difference from IAPWS-IF97 and selected conditions.

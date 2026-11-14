@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools==82.0.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "energy008-python"
+version = "0.1.0"
+description = "Staged Python migration of the ENERGY-008 reference and screening model"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+license = { text = "ENERGY-008 project source; dependency notices in licenses/THIRD_PARTY_NOTICES.md" }
+authors = [{ name = "ENERGY-008 project team" }]
+dependencies = [
+  "numpy==2.3.5",
+  "scipy==1.17.0",
+  "pandas==2.2.3",
+  "matplotlib==3.10.8",
+]
+
+[project.optional-dependencies]
+test = ["pytest==9.0.2"]
+
+[project.scripts]
+energy008 = "energy008.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 110

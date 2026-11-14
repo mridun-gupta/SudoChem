@@ -1,0 +1,34 @@
+Figure_No,Caption,Units_Status,Source_File,Page
+1,Numerical solver and fail-closed calculation flow,Units: diagram; no runtime solver trace is implied.,ENERGY008_Solver_Flowchart.png,14
+2,"Conceptual process flow diagram (PFD) with feed conditioning, synthesis, recycle/purge, product and waste battery limits",Units: diagram; all numeric flow states are unresolved.,ENERGY008_PFD.png,15
+3,Conceptual heat-network diagram showing HX-301 as the only current process-process recovery candidate,Units: diagram; no rated thermal duty is available.,ENERGY008_Heat_Network.png,16
+4,Composite-curve/pinch screen; numerical hot and cold curves intentionally withheld because stream enthalpies and temperatures are missing,Units: diagram; pinch temperatures and utility targets are not calculable.,ENERGY008_Composite_Curves.png,16
+5,Exergy destruction candidate register; numerical ranking and ED values intentionally withheld,Units: candidate units and irreversibility mechanisms; no numerical ED data.,ENERGY008_Exergy_Destruction_Ranking.png,17
+6,"P&ID-level sketch sheet 1 of 5: CO2 receipt, purification and compression",Units: schematic; no line ratings or relief capacities are approved.,page-1.png,20
+7,"P&ID-level sketch sheet 2 of 5: water, ALK electrolysis and H2/O2 train",Units: schematic; no line ratings or relief capacities are approved.,page-2.png,21
+8,"P&ID-level sketch sheet 3 of 5: methanol synthesis, recycle and purge",Units: schematic; no line ratings or relief capacities are approved.,page-3.png,22
+9,P&ID-level sketch sheet 4 of 5: crude letdown and methanol-water distillation,Units: schematic; no line ratings or relief capacities are approved.,page-4.png,23
+10,"P&ID-level sketch sheet 5 of 5: product storage, off-gas and waste systems",Units: schematic; no line ratings or relief capacities are approved.,page-5.png,24
+11,Automation state and sequence diagram,Units: logical states / transitions; sequence timing is not validated.,ENERGY008_Automation_State_Diagram.png,27
+12,Throughput OAT: ideal component-equivalent feed and electrolyser load,"Units: axes carry parameter/output units; SCREENING ONLY, not physical process optimum.",S01_Throughput.png,31
+13,ALK system specific-electricity OAT: electricity-only contribution,"Units: axes carry parameter/output units; SCREENING ONLY, not physical process optimum.",S02_Alkaline_SEC.png,31
+14,Electricity tariff OAT: electricity-only cost contribution,"Units: axes carry parameter/output units; SCREENING ONLY, not physical process optimum.",S03_Electricity_Tariff.png,32
+15,Electricity carbon-intensity OAT: power-related emissions contribution,"Units: axes carry parameter/output units; SCREENING ONLY, not physical process optimum.",S04_Electricity_Carbon_Intensity.png,32
+16,LHS proxy Pareto screen: electricity-only cost versus electricity-related emissions,"Units: axes carry parameter/output units; SCREENING ONLY, not physical process optimum.",M01_LHS_Pareto.png,33
+17,Top-level process flowchart,Units: logical process blocks; equipment values are not represented as measured results.,ENERGY008_TopLevel_Flowchart.png,34
+18,Numerical solver and calculation flowchart,Units: logic; physical solver convergence not demonstrated.,ENERGY008_Solver_Flowchart.png,36
+19,Automation state and sequence diagram,Units: logical states; response timing and trip settings are not validated.,ENERGY008_Automation_State_Diagram.png,36
+20,Prompt 21 curated verification register status distribution,Units: number of test-register records; this is not a plant KPI.,verification_status.png,39
+21,S01 throughput sensitivity,Units: axis-specific; all scenarios are SCREENING ONLY.,S01_Throughput.png,104
+22,S02 alkaline electrolyser system SEC sensitivity,Units: axis-specific; all scenarios are SCREENING ONLY.,S02_Alkaline_SEC.png,105
+23,S03 electricity tariff sensitivity,Units: axis-specific; all scenarios are SCREENING ONLY.,S03_Electricity_Tariff.png,106
+24,S04 electricity carbon intensity sensitivity,Units: axis-specific; all scenarios are SCREENING ONLY.,S04_Electricity_Carbon_Intensity.png,107
+25,S05 annual availability sensitivity,Units: axis-specific; all scenarios are SCREENING ONLY.,S05_Annual_Availability.png,108
+26,S06 fresh H2/CO2 ratio sensitivity,Units: axis-specific; all scenarios are SCREENING ONLY.,S06_H2_CO2_Ratio.png,109
+27,S07 conditioned CO2 dry purity sensitivity,Units: axis-specific; all scenarios are SCREENING ONLY.,S07_CO2_Purity.png,110
+28,S08 total water intensity sensitivity,Units: axis-specific; all scenarios are SCREENING ONLY.,S08_Total_Water.png,111
+29,S09/S10 illustrative exchanger U and LMTD sensitivity,Units: axis-specific; all scenarios are SCREENING ONLY.,S09_S10_Heat_Exchanger.png,112
+30,S11 W-201 pump flow margin sensitivity,Units: axis-specific; all scenarios are SCREENING ONLY.,S11_Pump_Margin.png,113
+31,S12 heat recovery fraction on pure-CO2 duty example,Units: axis-specific; all scenarios are SCREENING ONLY.,S12_Heat_Recovery.png,114
+32,"M01 1,000-point LHS sampled Pareto proxy",Units: axis-specific; all scenarios are SCREENING ONLY.,M01_LHS_Pareto.png,115
+33,M02 LHS input-output Spearman rank association screen,Units: axis-specific; all scenarios are SCREENING ONLY.,M02_Rank_Correlation.png,116
